@@ -1,0 +1,64 @@
+
+<CH.Code>
+```go GetTranscodeSessions.go
+package main
+
+import(
+	"plexgo/models/components"
+	"plexgo"
+	"context"
+	"log"
+)
+
+func main() {
+    s := plexgo.New(
+        plexgo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    )
+
+    ctx := context.Background()
+    res, err := s.Sessions.GetTranscodeSessions(ctx)
+    if err != nil {
+        log.Fatal(err)
+    }
+
+    if res.Object != nil {
+        // handle response
+    }
+}
+```
+---
+
+```json Example Response
+  {
+    "MediaContainer": {
+      "size": 1,
+      "TranscodeSession": [
+        {
+          "key": "zz7llzqlx8w9vnrsbnwhbmep",
+          "throttled": false,
+          "complete": false,
+          "progress": 0.4000000059604645,
+          "size": -22,
+          "speed": 22.399999618530273,
+          "error": false,
+          "duration": 2561768,
+          "context": "streaming",
+          "sourceVideoCodec": "h264",
+          "sourceAudioCodec": "ac3",
+          "videoDecision": "transcode",
+          "audioDecision": "transcode",
+          "protocol": "http",
+          "container": "mkv",
+          "videoCodec": "h264",
+          "audioCodec": "opus",
+          "audioChannels": 2,
+          "transcodeHwRequested": false,
+          "timeStamp": 1681869535.7764285,
+          "maxOffsetAvailable": 861.778,
+          "minOffsetAvailable": 0
+        }
+      ]
+    }
+  }
+```
+</CH.Code>

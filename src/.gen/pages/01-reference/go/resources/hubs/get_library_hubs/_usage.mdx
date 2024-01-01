@@ -1,0 +1,51 @@
+
+<CH.Code>
+```go GetLibraryHubs.go
+package main
+
+import(
+	"plexgo/models/components"
+	"plexgo"
+	"plexgo/models/operations"
+	"context"
+	"log"
+	"net/http"
+)
+
+func main() {
+    s := plexgo.New(
+        plexgo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    )
+
+
+    var sectionID float64 = 6235.64
+
+    var count *float64 = 6458.94
+
+    var onlyTransient *operations.QueryParamOnlyTransient = operations.QueryParamOnlyTransientZero
+
+    ctx := context.Background()
+    res, err := s.Hubs.GetLibraryHubs(ctx, sectionID, count, onlyTransient)
+    if err != nil {
+        log.Fatal(err)
+    }
+
+    if res.StatusCode == http.StatusOK {
+        // handle response
+    }
+}
+```
+---
+
+```json Example Response
+  {
+    "errors": [
+      {
+        "code": 1001,
+        "message": "User could not be authenticated",
+        "status": 401
+      }
+    ]
+  }
+```
+</CH.Code>

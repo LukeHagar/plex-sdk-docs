@@ -1,0 +1,49 @@
+
+<CH.Code>
+```go GetGlobalHubs.go
+package main
+
+import(
+	"plexgo/models/components"
+	"plexgo"
+	"plexgo/models/operations"
+	"context"
+	"log"
+	"net/http"
+)
+
+func main() {
+    s := plexgo.New(
+        plexgo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    )
+
+
+    var count *float64 = 8472.52
+
+    var onlyTransient *operations.OnlyTransient = operations.OnlyTransientZero
+
+    ctx := context.Background()
+    res, err := s.Hubs.GetGlobalHubs(ctx, count, onlyTransient)
+    if err != nil {
+        log.Fatal(err)
+    }
+
+    if res.StatusCode == http.StatusOK {
+        // handle response
+    }
+}
+```
+---
+
+```json Example Response
+  {
+    "errors": [
+      {
+        "code": 1001,
+        "message": "User could not be authenticated",
+        "status": 401
+      }
+    ]
+  }
+```
+</CH.Code>

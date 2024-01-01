@@ -1,0 +1,40 @@
+
+<CH.Code>
+```typescript GetLibraryHubs.ts
+import { SDK } from "@lukehagar/plexjs";
+import { QueryParamOnlyTransient } from "@lukehagar/plexjs/models/operations";
+
+async function run() {
+  const sdk = new SDK({
+    accessToken: "<YOUR_API_KEY_HERE>",
+  });
+
+  const sectionId = 6235.64;
+  const count = 6458.94;
+  const onlyTransient = QueryParamOnlyTransient.Zero;
+  
+  const res = await sdk.hubs.getLibraryHubs(sectionId, count, onlyTransient);
+
+  if (res?.statusCode !== 200) {
+    throw new Error("Unexpected status code: " + res?.statusCode || "-");
+  }
+  
+  // handle response
+}
+
+run();
+```
+---
+
+```json Example Response
+  {
+    "errors": [
+      {
+        "code": 1001,
+        "message": "User could not be authenticated",
+        "status": 401
+      }
+    ]
+  }
+```
+</CH.Code>

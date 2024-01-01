@@ -1,0 +1,48 @@
+
+<CH.Code>
+```go CreatePlaylist.go
+package main
+
+import(
+	"plexgo/models/components"
+	"plexgo"
+	"context"
+	"plexgo/models/operations"
+	"log"
+	"net/http"
+)
+
+func main() {
+    s := plexgo.New(
+        plexgo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    )
+
+    ctx := context.Background()
+    res, err := s.Playlists.CreatePlaylist(ctx, operations.CreatePlaylistRequest{
+        Title: "string",
+        Type: operations.TypePhoto,
+        Smart: operations.SmartZero,
+    })
+    if err != nil {
+        log.Fatal(err)
+    }
+
+    if res.StatusCode == http.StatusOK {
+        // handle response
+    }
+}
+```
+---
+
+```json Example Response
+  {
+    "errors": [
+      {
+        "code": 1001,
+        "message": "User could not be authenticated",
+        "status": 401
+      }
+    ]
+  }
+```
+</CH.Code>

@@ -1,0 +1,50 @@
+
+<CH.Code>
+```go PerformSearch.go
+package main
+
+import(
+	"plexgo/models/components"
+	"plexgo"
+	"context"
+	"log"
+	"net/http"
+)
+
+func main() {
+    s := plexgo.New(
+        plexgo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    )
+
+
+    var query string = "arnold"
+
+    var sectionID *float64 = 2975.34
+
+    var limit *float64 = 5
+
+    ctx := context.Background()
+    res, err := s.Search.PerformSearch(ctx, query, sectionID, limit)
+    if err != nil {
+        log.Fatal(err)
+    }
+
+    if res.StatusCode == http.StatusOK {
+        // handle response
+    }
+}
+```
+---
+
+```json Example Response
+  {
+    "errors": [
+      {
+        "code": 1001,
+        "message": "User could not be authenticated",
+        "status": 401
+      }
+    ]
+  }
+```
+</CH.Code>

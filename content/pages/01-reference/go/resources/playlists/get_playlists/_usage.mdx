@@ -1,0 +1,49 @@
+
+<CH.Code>
+```go GetPlaylists.go
+package main
+
+import(
+	"plexgo/models/components"
+	"plexgo"
+	"plexgo/models/operations"
+	"context"
+	"log"
+	"net/http"
+)
+
+func main() {
+    s := plexgo.New(
+        plexgo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    )
+
+
+    var playlistType *operations.PlaylistType = operations.PlaylistTypeVideo
+
+    var smart *operations.QueryParamSmart = operations.QueryParamSmartZero
+
+    ctx := context.Background()
+    res, err := s.Playlists.GetPlaylists(ctx, playlistType, smart)
+    if err != nil {
+        log.Fatal(err)
+    }
+
+    if res.StatusCode == http.StatusOK {
+        // handle response
+    }
+}
+```
+---
+
+```json Example Response
+  {
+    "errors": [
+      {
+        "code": 1001,
+        "message": "User could not be authenticated",
+        "status": 401
+      }
+    ]
+  }
+```
+</CH.Code>

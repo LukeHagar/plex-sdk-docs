@@ -1,0 +1,27 @@
+
+<CH.Code>
+```bash Example Request
+curl http://10.10.10.47:32400/servers \
+--header 'Accept: application/json' \
+--header 'X-Plex-Token: YOUR_API_KEY_HERE'
+```
+---
+
+```json Example Response
+  {
+    "MediaContainer": {
+      "size": 1,
+      "Server": [
+        {
+          "name": "Hera",
+          "host": "10.10.10.47",
+          "address": "10.10.10.47",
+          "port": 32400,
+          "machineIdentifier": "96f2fe7a78c9dc1f16a16bedbe90f98149be16b4",
+          "version": "1.31.3.6868-28fc46b27"
+        }
+      ]
+    }
+  }
+```
+</CH.Code>

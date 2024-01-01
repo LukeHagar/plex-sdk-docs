@@ -1,0 +1,48 @@
+
+<CH.Code>
+```typescript GetAvailableClients.ts
+import { SDK } from "@lukehagar/plexjs";
+
+async function run() {
+  const sdk = new SDK({
+    accessToken: "<YOUR_API_KEY_HERE>",
+  });
+
+  const res = await sdk.server.getAvailableClients();
+
+  if (res?.statusCode !== 200) {
+    throw new Error("Unexpected status code: " + res?.statusCode || "-");
+  }
+  
+  // handle response
+}
+
+run();
+```
+---
+
+```json Example Response
+  [
+    {
+      "MediaContainer": {
+        "size": 1,
+        "Server": [
+          {
+            "name": "iPad",
+            "host": "10.10.10.102",
+            "address": "10.10.10.102",
+            "port": 32500,
+            "machineIdentifier": "A2E901F8-E016-43A7-ADFB-EF8CA8A4AC05",
+            "version": "8.17",
+            "protocol": "plex",
+            "product": "Plex for iOS",
+            "deviceClass": "tablet",
+            "protocolVersion": 2,
+            "protocolCapabilities": "playback,playqueues,timeline,provider-playback"
+          }
+        ]
+      }
+    }
+  ]
+```
+</CH.Code>

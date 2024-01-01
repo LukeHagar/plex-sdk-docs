@@ -1,0 +1,40 @@
+
+<CH.Code>
+```python GetResizedPhoto.py
+import sdk
+from sdk.models import operations
+
+s = sdk.SDK(
+    access_token="<YOUR_API_KEY_HERE>",
+)
+
+req = operations.GetResizedPhotoRequest(
+    width=110,
+    height=165,
+    opacity=548814,
+    blur=20,
+    min_size=operations.MinSize.ONE,
+    upscale=operations.Upscale.ONE,
+    url='/library/metadata/49564/thumb/1654258204',
+)
+
+res = s.server.get_resized_photo(req)
+
+if res.status_code == 200:
+    # handle response
+    pass
+```
+---
+
+```json Example Response
+  {
+    "errors": [
+      {
+        "code": 1001,
+        "message": "User could not be authenticated",
+        "status": 401
+      }
+    ]
+  }
+```
+</CH.Code>

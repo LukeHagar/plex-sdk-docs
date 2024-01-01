@@ -1,0 +1,43 @@
+
+<CH.Code>
+```python GetTimeline.py
+import sdk
+from sdk.models import operations
+
+s = sdk.SDK(
+    access_token="<YOUR_API_KEY_HERE>",
+)
+
+req = operations.GetTimelineRequest(
+    rating_key=6788.8,
+    key='<key>',
+    state=operations.State.PLAYING,
+    has_mde=7206.33,
+    time=6399.21,
+    duration=5820.2,
+    context='string',
+    play_queue_item_id=1433.53,
+    play_back_time=5373.73,
+    row=9446.69,
+)
+
+res = s.video.get_timeline(req)
+
+if res.status_code == 200:
+    # handle response
+    pass
+```
+---
+
+```json Example Response
+  {
+    "errors": [
+      {
+        "code": 1001,
+        "message": "User could not be authenticated",
+        "status": 401
+      }
+    ]
+  }
+```
+</CH.Code>

@@ -1,0 +1,44 @@
+{/* Start Go Errors */}
+Handling errors in this SDK should largely match your expectations.  All operations return a response object or an error, they will never return both.  When specified by the OpenAPI spec document, the SDK will return the appropriate subclass.
+
+
+
+### Example
+
+```go
+package main
+
+import (
+	"context"
+	"errors"
+	"log"
+	"plexgo"
+	"plexgo/models/components"
+	"plexgo/models/sdkerrors"
+)
+
+func main() {
+	s := plexgo.New(
+		plexgo.WithSecurity("<YOUR_API_KEY_HERE>"),
+	)
+
+	ctx := context.Background()
+	res, err := s.Server.GetServerCapabilities(ctx)
+	if err != nil {
+
+		var e *sdkerrors.GetServerCapabilitiesResponseBody
+		if errors.As(err, &e) {
+			// handle error
+			log.Fatal(e.Error())
+		}
+
+		var e *sdkerrors.SDKError
+		if errors.As(err, &e) {
+			// handle error
+			log.Fatal(e.Error())
+		}
+	}
+}
+
+```
+{/* End Go Errors */}

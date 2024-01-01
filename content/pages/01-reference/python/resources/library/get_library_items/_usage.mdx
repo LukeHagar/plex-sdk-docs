@@ -1,0 +1,31 @@
+
+<CH.Code>
+```python GetLibraryItems.py
+import sdk
+from sdk.models import operations
+
+s = sdk.SDK(
+    access_token="<YOUR_API_KEY_HERE>",
+)
+
+
+res = s.library.get_library_items(section_id=2726.56, type=3834.41, filter_='string')
+
+if res.status_code == 200:
+    # handle response
+    pass
+```
+---
+
+```json Example Response
+  {
+    "errors": [
+      {
+        "code": 1001,
+        "message": "User could not be authenticated",
+        "status": 401
+      }
+    ]
+  }
+```
+</CH.Code>

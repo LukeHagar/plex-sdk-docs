@@ -1,0 +1,52 @@
+
+<CH.Code>
+```python GetTranscodeSessions.py
+import sdk
+
+s = sdk.SDK(
+    access_token="<YOUR_API_KEY_HERE>",
+)
+
+
+res = s.sessions.get_transcode_sessions()
+
+if res.object is not None:
+    # handle response
+    pass
+```
+---
+
+```json Example Response
+  {
+    "MediaContainer": {
+      "size": 1,
+      "TranscodeSession": [
+        {
+          "key": "zz7llzqlx8w9vnrsbnwhbmep",
+          "throttled": false,
+          "complete": false,
+          "progress": 0.4000000059604645,
+          "size": -22,
+          "speed": 22.399999618530273,
+          "error": false,
+          "duration": 2561768,
+          "context": "streaming",
+          "sourceVideoCodec": "h264",
+          "sourceAudioCodec": "ac3",
+          "videoDecision": "transcode",
+          "audioDecision": "transcode",
+          "protocol": "http",
+          "container": "mkv",
+          "videoCodec": "h264",
+          "audioCodec": "opus",
+          "audioChannels": 2,
+          "transcodeHwRequested": false,
+          "timeStamp": 1681869535.7764285,
+          "maxOffsetAvailable": 861.778,
+          "minOffsetAvailable": 0
+        }
+      ]
+    }
+  }
+```
+</CH.Code>

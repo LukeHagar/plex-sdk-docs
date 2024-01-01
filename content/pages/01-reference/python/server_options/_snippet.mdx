@@ -1,0 +1,52 @@
+{/* Start Python Server Options */}
+
+### Select Server by Index
+
+You can override the default server globally by passing a server index to the `server_idx: int` optional parameter when initializing the SDK client instance. The selected server will then be used as the default on the operations that use it. This table lists the indexes associated with the available servers:
+
+
+
+#### Example
+
+```python
+import sdk
+
+s = sdk.SDK(
+    server_idx=1,
+    access_token="<YOUR_API_KEY_HERE>",
+)
+
+
+res = s.server.get_server_capabilities()
+
+if res.object is not None:
+    # handle response
+    pass
+```
+
+#### Variables
+
+Some of the server options above contain variables. If you want to set the values of those variables, the following optional parameters are available when initializing the SDK client instance:
+ * `protocol: models.ServerProtocol`
+ * `ip: str`
+ * `port: str`
+
+### Override Server URL Per-Client
+
+The default server can also be overridden globally by passing a URL to the `server_url: str` optional parameter when initializing the SDK client instance. For example:
+```python
+import sdk
+
+s = sdk.SDK(
+    server_url="http://10.10.10.47:32400",
+    access_token="<YOUR_API_KEY_HERE>",
+)
+
+
+res = s.server.get_server_capabilities()
+
+if res.object is not None:
+    # handle response
+    pass
+```
+{/* End Python Server Options */}

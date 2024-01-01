@@ -1,0 +1,37 @@
+
+<CH.Code>
+```typescript StopTranscodeSession.ts
+import { SDK } from "@lukehagar/plexjs";
+
+async function run() {
+  const sdk = new SDK({
+    accessToken: "<YOUR_API_KEY_HERE>",
+  });
+
+  const sessionKey = "zz7llzqlx8w9vnrsbnwhbmep";
+  
+  const res = await sdk.sessions.stopTranscodeSession(sessionKey);
+
+  if (res?.statusCode !== 200) {
+    throw new Error("Unexpected status code: " + res?.statusCode || "-");
+  }
+  
+  // handle response
+}
+
+run();
+```
+---
+
+```json Example Response
+  {
+    "errors": [
+      {
+        "code": 1001,
+        "message": "User could not be authenticated",
+        "status": 401
+      }
+    ]
+  }
+```
+</CH.Code>

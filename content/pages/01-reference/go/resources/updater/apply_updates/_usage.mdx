@@ -1,0 +1,49 @@
+
+<CH.Code>
+```go ApplyUpdates.go
+package main
+
+import(
+	"plexgo/models/components"
+	"plexgo"
+	"plexgo/models/operations"
+	"context"
+	"log"
+	"net/http"
+)
+
+func main() {
+    s := plexgo.New(
+        plexgo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    )
+
+
+    var tonight *operations.Tonight = operations.TonightZero
+
+    var skip *operations.Skip = operations.SkipOne
+
+    ctx := context.Background()
+    res, err := s.Updater.ApplyUpdates(ctx, tonight, skip)
+    if err != nil {
+        log.Fatal(err)
+    }
+
+    if res.StatusCode == http.StatusOK {
+        // handle response
+    }
+}
+```
+---
+
+```json Example Response
+  {
+    "errors": [
+      {
+        "code": 1001,
+        "message": "User could not be authenticated",
+        "status": 401
+      }
+    ]
+  }
+```
+</CH.Code>

@@ -1,0 +1,35 @@
+{/* Start Go Security Options */}
+### Per-Client Security Schemes
+
+This SDK supports the following security scheme globally:
+
+
+
+You can configure it using the `WithSecurity` option when initializing the SDK client instance. For example:
+```go
+package main
+
+import (
+	"context"
+	"log"
+	"plexgo"
+)
+
+func main() {
+	s := plexgo.New(
+		plexgo.WithSecurity("<YOUR_API_KEY_HERE>"),
+	)
+
+	ctx := context.Background()
+	res, err := s.Server.GetServerCapabilities(ctx)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	if res.Object != nil {
+		// handle response
+	}
+}
+
+```
+{/* End Go Security Options */}

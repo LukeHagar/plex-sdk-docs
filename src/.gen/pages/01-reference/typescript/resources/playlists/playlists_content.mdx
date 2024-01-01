@@ -1,0 +1,55 @@
+import CreatePlaylist from "./create_playlist/create_playlist.mdx";
+import GetPlaylists from "./get_playlists/get_playlists.mdx";
+import GetPlaylist from "./get_playlist/get_playlist.mdx";
+import DeletePlaylist from "./delete_playlist/delete_playlist.mdx";
+import UpdatePlaylist from "./update_playlist/update_playlist.mdx";
+import GetPlaylistContents from "./get_playlist_contents/get_playlist_contents.mdx";
+import ClearPlaylistContents from "./clear_playlist_contents/clear_playlist_contents.mdx";
+import AddPlaylistContents from "./add_playlist_contents/add_playlist_contents.mdx";
+import UploadPlaylist from "./upload_playlist/upload_playlist.mdx";
+
+## Playlists
+Playlists are ordered collections of media. They can be dumb (just a list of media) or smart (based on a media query, such as "all albums from 2017"). 
+They can be organized in (optionally nesting) folders.
+Retrieving a playlist, or its items, will trigger a refresh of its metadata. 
+This may cause the duration and number of items to change.
+
+
+### Available Operations
+
+* [Create Playlist](/typescript/playlists/create_playlist) - Create a Playlist
+* [Get Playlists](/typescript/playlists/get_playlists) - Get All Playlists
+* [Get Playlist](/typescript/playlists/get_playlist) - Retrieve Playlist
+* [Delete Playlist](/typescript/playlists/delete_playlist) - Deletes a Playlist
+* [Update Playlist](/typescript/playlists/update_playlist) - Update a Playlist
+* [Get Playlist Contents](/typescript/playlists/get_playlist_contents) - Retrieve Playlist Contents
+* [Clear Playlist Contents](/typescript/playlists/clear_playlist_contents) - Delete Playlist Contents
+* [Add Playlist Contents](/typescript/playlists/add_playlist_contents) - Adding to a Playlist
+* [Upload Playlist](/typescript/playlists/upload_playlist) - Upload Playlist
+
+---
+<CreatePlaylist />
+
+---
+<GetPlaylists />
+
+---
+<GetPlaylist />
+
+---
+<DeletePlaylist />
+
+---
+<UpdatePlaylist />
+
+---
+<GetPlaylistContents />
+
+---
+<ClearPlaylistContents />
+
+---
+<AddPlaylistContents />
+
+---
+<UploadPlaylist />

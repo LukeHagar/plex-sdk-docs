@@ -1,0 +1,41 @@
+
+<CH.Code>
+```typescript StartUniversalTranscode.ts
+import { SDK } from "@lukehagar/plexjs";
+
+async function run() {
+  const sdk = new SDK({
+    accessToken: "<YOUR_API_KEY_HERE>",
+  });
+
+  const res = await sdk.video.startUniversalTranscode({
+    hasMDE: 8009.11,
+    path: "/private",
+    mediaIndex: 5204.78,
+    partIndex: 7805.29,
+    protocol: "string",
+  });
+
+  if (res?.statusCode !== 200) {
+    throw new Error("Unexpected status code: " + res?.statusCode || "-");
+  }
+  
+  // handle response
+}
+
+run();
+```
+---
+
+```json Example Response
+  {
+    "errors": [
+      {
+        "code": 1001,
+        "message": "User could not be authenticated",
+        "status": 401
+      }
+    ]
+  }
+```
+</CH.Code>

@@ -1,0 +1,31 @@
+
+<CH.Code>
+```python GetLatestLibraryItems.py
+import sdk
+from sdk.models import operations
+
+s = sdk.SDK(
+    access_token="<YOUR_API_KEY_HERE>",
+)
+
+
+res = s.library.get_latest_library_items(section_id=7917.25, type=8121.69, filter_='string')
+
+if res.status_code == 200:
+    # handle response
+    pass
+```
+---
+
+```json Example Response
+  {
+    "errors": [
+      {
+        "code": 1001,
+        "message": "User could not be authenticated",
+        "status": 401
+      }
+    ]
+  }
+```
+</CH.Code>

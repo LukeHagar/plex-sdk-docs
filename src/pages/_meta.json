@@ -1,0 +1,18 @@
+{
+  "python": {
+    "type": "page",
+    "display": "hidden"
+  },
+  "typescript": {
+    "type": "page",
+    "display": "hidden"
+  },
+  "go": {
+    "type": "page",
+    "display": "hidden"
+  },
+  "curl": {
+    "type": "page",
+    "display": "hidden"
+  }
+}

@@ -1,0 +1,36 @@
+
+<CH.Code>
+```python CreatePlaylist.py
+import sdk
+from sdk.models import operations
+
+s = sdk.SDK(
+    access_token="<YOUR_API_KEY_HERE>",
+)
+
+req = operations.CreatePlaylistRequest(
+    title='string',
+    type=operations.Type.PHOTO,
+    smart=operations.Smart.ZERO,
+)
+
+res = s.playlists.create_playlist(req)
+
+if res.status_code == 200:
+    # handle response
+    pass
+```
+---
+
+```json Example Response
+  {
+    "errors": [
+      {
+        "code": 1001,
+        "message": "User could not be authenticated",
+        "status": 401
+      }
+    ]
+  }
+```
+</CH.Code>

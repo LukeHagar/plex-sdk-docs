@@ -1,0 +1,34 @@
+
+<CH.Code>
+```typescript GetServerIdentity.ts
+import { SDK } from "@lukehagar/plexjs";
+
+async function run() {
+  const sdk = new SDK({
+    accessToken: "<YOUR_API_KEY_HERE>",
+  });
+
+  const res = await sdk.server.getServerIdentity();
+
+  if (res?.statusCode !== 200) {
+    throw new Error("Unexpected status code: " + res?.statusCode || "-");
+  }
+  
+  // handle response
+}
+
+run();
+```
+---
+
+```json Example Response
+  {
+    "MediaContainer": {
+      "size": 0,
+      "claimed": false,
+      "machineIdentifier": "96f2fe7a78c9dc1f16a16bedbe90f98149be16b4",
+      "version": "1.31.3.6868-28fc46b27"
+    }
+  }
+```
+</CH.Code>

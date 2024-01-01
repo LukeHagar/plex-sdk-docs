@@ -1,0 +1,39 @@
+
+<CH.Code>
+```typescript PerformSearch.ts
+import { SDK } from "@lukehagar/plexjs";
+
+async function run() {
+  const sdk = new SDK({
+    accessToken: "<YOUR_API_KEY_HERE>",
+  });
+
+  const query = "arnold";
+  const sectionId = 2975.34;
+  const limit = 5;
+  
+  const res = await sdk.search.performSearch(query, sectionId, limit);
+
+  if (res?.statusCode !== 200) {
+    throw new Error("Unexpected status code: " + res?.statusCode || "-");
+  }
+  
+  // handle response
+}
+
+run();
+```
+---
+
+```json Example Response
+  {
+    "errors": [
+      {
+        "code": 1001,
+        "message": "User could not be authenticated",
+        "status": 401
+      }
+    ]
+  }
+```
+</CH.Code>

@@ -1,0 +1,7 @@
+{
+  "get_butler_tasks": "Get Butler Tasks",
+  "start_all_tasks": "Start All Tasks",
+  "stop_all_tasks": "Stop All Tasks",
+  "start_task": "Start Task",
+  "stop_task": "Stop Task"
+}

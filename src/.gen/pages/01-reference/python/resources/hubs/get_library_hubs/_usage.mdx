@@ -1,0 +1,31 @@
+
+<CH.Code>
+```python GetLibraryHubs.py
+import sdk
+from sdk.models import operations
+
+s = sdk.SDK(
+    access_token="<YOUR_API_KEY_HERE>",
+)
+
+
+res = s.hubs.get_library_hubs(section_id=6235.64, count=6458.94, only_transient=operations.QueryParamOnlyTransient.ZERO)
+
+if res.status_code == 200:
+    # handle response
+    pass
+```
+---
+
+```json Example Response
+  {
+    "errors": [
+      {
+        "code": 1001,
+        "message": "User could not be authenticated",
+        "status": 401
+      }
+    ]
+  }
+```
+</CH.Code>

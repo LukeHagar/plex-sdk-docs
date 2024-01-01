@@ -1,0 +1,38 @@
+
+<CH.Code>
+```python StartUniversalTranscode.py
+import sdk
+from sdk.models import operations
+
+s = sdk.SDK(
+    access_token="<YOUR_API_KEY_HERE>",
+)
+
+req = operations.StartUniversalTranscodeRequest(
+    has_mde=8009.11,
+    path='/private',
+    media_index=5204.78,
+    part_index=7805.29,
+    protocol='string',
+)
+
+res = s.video.start_universal_transcode(req)
+
+if res.status_code == 200:
+    # handle response
+    pass
+```
+---
+
+```json Example Response
+  {
+    "errors": [
+      {
+        "code": 1001,
+        "message": "User could not be authenticated",
+        "status": 401
+      }
+    ]
+  }
+```
+</CH.Code>

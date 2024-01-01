@@ -1,0 +1,39 @@
+
+<CH.Code>
+```typescript GetCommonLibraryItems.ts
+import { SDK } from "@lukehagar/plexjs";
+
+async function run() {
+  const sdk = new SDK({
+    accessToken: "<YOUR_API_KEY_HERE>",
+  });
+
+  const sectionId = 5288.95;
+  const type = 4799.77;
+  const filter = "string";
+  
+  const res = await sdk.library.getCommonLibraryItems(sectionId, type, filter);
+
+  if (res?.statusCode !== 200) {
+    throw new Error("Unexpected status code: " + res?.statusCode || "-");
+  }
+  
+  // handle response
+}
+
+run();
+```
+---
+
+```json Example Response
+  {
+    "errors": [
+      {
+        "code": 1001,
+        "message": "User could not be authenticated",
+        "status": 401
+      }
+    ]
+  }
+```
+</CH.Code>

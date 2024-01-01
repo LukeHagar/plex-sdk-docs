@@ -1,0 +1,38 @@
+
+<CH.Code>
+```typescript StopTask.ts
+import { SDK } from "@lukehagar/plexjs";
+import { PathParamTaskName } from "@lukehagar/plexjs/models/operations";
+
+async function run() {
+  const sdk = new SDK({
+    accessToken: "<YOUR_API_KEY_HERE>",
+  });
+
+  const taskName = PathParamTaskName.GenerateChapterThumbs;
+  
+  const res = await sdk.butler.stopTask(taskName);
+
+  if (res?.statusCode !== 200) {
+    throw new Error("Unexpected status code: " + res?.statusCode || "-");
+  }
+  
+  // handle response
+}
+
+run();
+```
+---
+
+```json Example Response
+  {
+    "errors": [
+      {
+        "code": 1001,
+        "message": "User could not be authenticated",
+        "status": 401
+      }
+    ]
+  }
+```
+</CH.Code>

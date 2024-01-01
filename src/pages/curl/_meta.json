@@ -1,0 +1,24 @@
+{
+  "-- guides": {
+    "title": "Guides",
+    "type": "separator"
+  },
+  "client_sdks": "Client SDKs",
+  "-- resources": {
+    "title": "Resources",
+    "type": "separator"
+  },
+  "server": "Server",
+  "media": "Media",
+  "activities": "Activities",
+  "butler": "Butler",
+  "hubs": "Hubs",
+  "search": "Search",
+  "library": "Library",
+  "log": "Log",
+  "playlists": "Playlists",
+  "security": "Security",
+  "sessions": "Sessions",
+  "updater": "Updater",
+  "video": "Video"
+}

@@ -1,0 +1,45 @@
+
+<CH.Code>
+```typescript GetServerActivities.ts
+import { SDK } from "@lukehagar/plexjs";
+
+async function run() {
+  const sdk = new SDK({
+    accessToken: "<YOUR_API_KEY_HERE>",
+  });
+
+  const res = await sdk.activities.getServerActivities();
+
+  if (res?.statusCode !== 200) {
+    throw new Error("Unexpected status code: " + res?.statusCode || "-");
+  }
+  
+  // handle response
+}
+
+run();
+```
+---
+
+```json Example Response
+  {
+    "MediaContainer": {
+      "size": 6235.64,
+      "Activity": [
+        {
+          "uuid": "string",
+          "type": "string",
+          "cancellable": false,
+          "userID": 6458.94,
+          "title": "string",
+          "subtitle": "string",
+          "progress": 3843.82,
+          "Context": {
+            "librarySectionID": "string"
+          }
+        }
+      ]
+    }
+  }
+```
+</CH.Code>

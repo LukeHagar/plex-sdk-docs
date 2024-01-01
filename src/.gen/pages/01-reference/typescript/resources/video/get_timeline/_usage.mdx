@@ -1,0 +1,47 @@
+
+<CH.Code>
+```typescript GetTimeline.ts
+import { SDK } from "@lukehagar/plexjs";
+import { State } from "@lukehagar/plexjs/models/operations";
+
+async function run() {
+  const sdk = new SDK({
+    accessToken: "<YOUR_API_KEY_HERE>",
+  });
+
+  const res = await sdk.video.getTimeline({
+    ratingKey: 6788.8,
+    key: "<key>",
+    state: State.Playing,
+    hasMDE: 7206.33,
+    time: 6399.21,
+    duration: 5820.2,
+    context: "string",
+    playQueueItemID: 1433.53,
+    playBackTime: 5373.73,
+    row: 9446.69,
+  });
+
+  if (res?.statusCode !== 200) {
+    throw new Error("Unexpected status code: " + res?.statusCode || "-");
+  }
+  
+  // handle response
+}
+
+run();
+```
+---
+
+```json Example Response
+  {
+    "errors": [
+      {
+        "code": 1001,
+        "message": "User could not be authenticated",
+        "status": 401
+      }
+    ]
+  }
+```
+</CH.Code>

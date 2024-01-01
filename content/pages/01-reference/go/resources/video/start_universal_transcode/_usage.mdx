@@ -1,0 +1,50 @@
+
+<CH.Code>
+```go StartUniversalTranscode.go
+package main
+
+import(
+	"plexgo/models/components"
+	"plexgo"
+	"context"
+	"plexgo/models/operations"
+	"log"
+	"net/http"
+)
+
+func main() {
+    s := plexgo.New(
+        plexgo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    )
+
+    ctx := context.Background()
+    res, err := s.Video.StartUniversalTranscode(ctx, operations.StartUniversalTranscodeRequest{
+        HasMDE: 8009.11,
+        Path: "/private",
+        MediaIndex: 5204.78,
+        PartIndex: 7805.29,
+        Protocol: "string",
+    })
+    if err != nil {
+        log.Fatal(err)
+    }
+
+    if res.StatusCode == http.StatusOK {
+        // handle response
+    }
+}
+```
+---
+
+```json Example Response
+  {
+    "errors": [
+      {
+        "code": 1001,
+        "message": "User could not be authenticated",
+        "status": 401
+      }
+    ]
+  }
+```
+</CH.Code>

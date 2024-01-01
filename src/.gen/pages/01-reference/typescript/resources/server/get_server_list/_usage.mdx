@@ -1,0 +1,41 @@
+
+<CH.Code>
+```typescript GetServerList.ts
+import { SDK } from "@lukehagar/plexjs";
+
+async function run() {
+  const sdk = new SDK({
+    accessToken: "<YOUR_API_KEY_HERE>",
+  });
+
+  const res = await sdk.server.getServerList();
+
+  if (res?.statusCode !== 200) {
+    throw new Error("Unexpected status code: " + res?.statusCode || "-");
+  }
+  
+  // handle response
+}
+
+run();
+```
+---
+
+```json Example Response
+  {
+    "MediaContainer": {
+      "size": 1,
+      "Server": [
+        {
+          "name": "Hera",
+          "host": "10.10.10.47",
+          "address": "10.10.10.47",
+          "port": 32400,
+          "machineIdentifier": "96f2fe7a78c9dc1f16a16bedbe90f98149be16b4",
+          "version": "1.31.3.6868-28fc46b27"
+        }
+      ]
+    }
+  }
+```
+</CH.Code>

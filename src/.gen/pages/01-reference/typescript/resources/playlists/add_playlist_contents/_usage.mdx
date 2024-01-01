@@ -1,0 +1,39 @@
+
+<CH.Code>
+```typescript AddPlaylistContents.ts
+import { SDK } from "@lukehagar/plexjs";
+
+async function run() {
+  const sdk = new SDK({
+    accessToken: "<YOUR_API_KEY_HERE>",
+  });
+
+  const playlistID = 1403.5;
+  const uri = "library://..";
+  const playQueueID = 123;
+  
+  const res = await sdk.playlists.addPlaylistContents(playlistID, uri, playQueueID);
+
+  if (res?.statusCode !== 200) {
+    throw new Error("Unexpected status code: " + res?.statusCode || "-");
+  }
+  
+  // handle response
+}
+
+run();
+```
+---
+
+```json Example Response
+  {
+    "errors": [
+      {
+        "code": 1001,
+        "message": "User could not be authenticated",
+        "status": 401
+      }
+    ]
+  }
+```
+</CH.Code>

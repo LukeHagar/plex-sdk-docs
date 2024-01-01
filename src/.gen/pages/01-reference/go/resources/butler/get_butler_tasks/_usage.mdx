@@ -1,0 +1,47 @@
+
+<CH.Code>
+```go GetButlerTasks.go
+package main
+
+import(
+	"plexgo/models/components"
+	"plexgo"
+	"context"
+	"log"
+)
+
+func main() {
+    s := plexgo.New(
+        plexgo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    )
+
+    ctx := context.Background()
+    res, err := s.Butler.GetButlerTasks(ctx)
+    if err != nil {
+        log.Fatal(err)
+    }
+
+    if res.Object != nil {
+        // handle response
+    }
+}
+```
+---
+
+```json Example Response
+  {
+    "ButlerTasks": {
+      "ButlerTask": [
+        {
+          "name": "BackupDatabase",
+          "interval": 3,
+          "scheduleRandomized": false,
+          "enabled": false,
+          "title": "Backup Database",
+          "description": "Create a backup copy of the server's database in the configured backup directory"
+        }
+      ]
+    }
+  }
+```
+</CH.Code>

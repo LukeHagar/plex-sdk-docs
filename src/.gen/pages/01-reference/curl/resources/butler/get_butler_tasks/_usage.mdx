@@ -1,0 +1,26 @@
+
+<CH.Code>
+```bash Example Request
+curl http://10.10.10.47:32400/butler \
+--header 'Accept: application/json' \
+--header 'X-Plex-Token: YOUR_API_KEY_HERE'
+```
+---
+
+```json Example Response
+  {
+    "ButlerTasks": {
+      "ButlerTask": [
+        {
+          "name": "BackupDatabase",
+          "interval": 3,
+          "scheduleRandomized": false,
+          "enabled": false,
+          "title": "Backup Database",
+          "description": "Create a backup copy of the server's database in the configured backup directory"
+        }
+      ]
+    }
+  }
+```
+</CH.Code>

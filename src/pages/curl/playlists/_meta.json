@@ -1,0 +1,11 @@
+{
+  "create_playlist": "Create Playlist",
+  "get_playlists": "Get Playlists",
+  "get_playlist": "Get Playlist",
+  "delete_playlist": "Delete Playlist",
+  "update_playlist": "Update Playlist",
+  "get_playlist_contents": "Get Playlist Contents",
+  "clear_playlist_contents": "Clear Playlist Contents",
+  "add_playlist_contents": "Add Playlist Contents",
+  "upload_playlist": "Upload Playlist"
+}

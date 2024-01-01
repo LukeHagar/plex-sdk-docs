@@ -1,0 +1,9 @@
+import OperationInfo from '/src/components/OperationInfo';
+
+## Add Playlist Contents
+
+<OperationInfo method='put' path='/playlists/{playlistID}/items' />
+
+Adds a generator to a playlist, same parameters as the POST above. With a dumb playlist, this adds the specified items to the playlist. 
+With a smart playlist, passing a new `uri` parameter replaces the rules for the playlist. Returns the playlist.
+

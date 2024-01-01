@@ -1,0 +1,50 @@
+
+<CH.Code>
+```go GetLibraryItems.go
+package main
+
+import(
+	"plexgo/models/components"
+	"plexgo"
+	"context"
+	"log"
+	"net/http"
+)
+
+func main() {
+    s := plexgo.New(
+        plexgo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    )
+
+
+    var sectionID float64 = 2726.56
+
+    var type_ *float64 = 3834.41
+
+    var filter *string = "string"
+
+    ctx := context.Background()
+    res, err := s.Library.GetLibraryItems(ctx, sectionID, type_, filter)
+    if err != nil {
+        log.Fatal(err)
+    }
+
+    if res.StatusCode == http.StatusOK {
+        // handle response
+    }
+}
+```
+---
+
+```json Example Response
+  {
+    "errors": [
+      {
+        "code": 1001,
+        "message": "User could not be authenticated",
+        "status": 401
+      }
+    ]
+  }
+```
+</CH.Code>

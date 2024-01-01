@@ -1,0 +1,39 @@
+
+<CH.Code>
+```typescript PerformVoiceSearch.ts
+import { SDK } from "@lukehagar/plexjs";
+
+async function run() {
+  const sdk = new SDK({
+    accessToken: "<YOUR_API_KEY_HERE>",
+  });
+
+  const query = "dead+poop";
+  const sectionId = 8917.73;
+  const limit = 5;
+  
+  const res = await sdk.search.performVoiceSearch(query, sectionId, limit);
+
+  if (res?.statusCode !== 200) {
+    throw new Error("Unexpected status code: " + res?.statusCode || "-");
+  }
+  
+  // handle response
+}
+
+run();
+```
+---
+
+```json Example Response
+  {
+    "errors": [
+      {
+        "code": 1001,
+        "message": "User could not be authenticated",
+        "status": 401
+      }
+    ]
+  }
+```
+</CH.Code>

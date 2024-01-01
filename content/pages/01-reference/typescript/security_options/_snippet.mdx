@@ -1,0 +1,29 @@
+{/* Start Typescript Security Options */}
+### Per-Client Security Schemes
+
+This SDK supports the following security scheme globally:
+
+
+
+To authenticate with the API the `accessToken` parameter must be set when initializing the SDK client instance. For example:
+```typescript
+import { SDK } from "@lukehagar/plexjs";
+
+async function run() {
+    const sdk = new SDK({
+        accessToken: "<YOUR_API_KEY_HERE>",
+    });
+
+    const res = await sdk.server.getServerCapabilities();
+
+    if (res?.statusCode !== 200) {
+        throw new Error("Unexpected status code: " + res?.statusCode || "-");
+    }
+
+    // handle response
+}
+
+run();
+
+```
+{/* End Typescript Security Options */}

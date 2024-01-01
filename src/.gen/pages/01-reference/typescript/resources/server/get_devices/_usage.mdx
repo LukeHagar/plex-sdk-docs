@@ -1,0 +1,41 @@
+
+<CH.Code>
+```typescript GetDevices.ts
+import { SDK } from "@lukehagar/plexjs";
+
+async function run() {
+  const sdk = new SDK({
+    accessToken: "<YOUR_API_KEY_HERE>",
+  });
+
+  const res = await sdk.server.getDevices();
+
+  if (res?.statusCode !== 200) {
+    throw new Error("Unexpected status code: " + res?.statusCode || "-");
+  }
+  
+  // handle response
+}
+
+run();
+```
+---
+
+```json Example Response
+  {
+    "MediaContainer": {
+      "size": 151,
+      "identifier": "com.plexapp.system.devices",
+      "Device": [
+        {
+          "id": 1,
+          "name": "iPhone",
+          "platform": "iOS",
+          "clientIdentifier": "string",
+          "createdAt": 1654131230
+        }
+      ]
+    }
+  }
+```
+</CH.Code>

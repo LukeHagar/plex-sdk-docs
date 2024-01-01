@@ -1,0 +1,31 @@
+
+<CH.Code>
+```bash Example Request
+curl http://10.10.10.47:32400/activities \
+--header 'Accept: application/json' \
+--header 'X-Plex-Token: YOUR_API_KEY_HERE'
+```
+---
+
+```json Example Response
+  {
+    "MediaContainer": {
+      "size": 4375.87,
+      "Activity": [
+        {
+          "uuid": "string",
+          "type": "string",
+          "cancellable": false,
+          "userID": 2975.34,
+          "title": "string",
+          "subtitle": "string",
+          "progress": 8917.73,
+          "Context": {
+            "librarySectionID": "string"
+          }
+        }
+      ]
+    }
+  }
+```
+</CH.Code>
