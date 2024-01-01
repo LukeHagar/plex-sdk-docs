@@ -20,9 +20,7 @@ module.exports = withPlugins([], {
   sassOptions: {
     importer: jsonImporter(),
   },
-  ...withNextra({
-    distDir: 'out'
-  }),
+  ...withNextra(),
   eslint: {
     ignoreDuringBuilds: true,
   },
