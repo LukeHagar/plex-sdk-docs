@@ -21,11 +21,7 @@ module.exports = withPlugins([], {
     importer: jsonImporter(),
   },
   ...withNextra({
-    output: 'export',
-    distDir: 'out',
-    images: {
-      unoptimized: true,
-    },
+    distDir: 'out'
   }),
   eslint: {
     ignoreDuringBuilds: true,

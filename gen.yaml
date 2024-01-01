@@ -64,7 +64,7 @@ python:
   installationURL: speakeasy-bar
   maxMethodParams: 4
   outputModelSuffix: output
-  packageName: openapi
+  packageName: plexpy
   published: true
 typescript:
   version: 0.0.1
