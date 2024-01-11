@@ -26,7 +26,7 @@ func rootHandler(fs http.Handler) http.HandlerFunc {
 		// There is nothing at /, so redirect to the client SDKs page for the default language
 		// We need to check for this explicitly because mux matches / to every route
 		if r.URL.Path == "/" {
-			http.RedirectHandler("/typescript/client_sdks", http.StatusSeeOther).ServeHTTP(w, r)
+			http.RedirectHandler("/go/client_sdks", http.StatusSeeOther).ServeHTTP(w, r)
 			return
 		}
 

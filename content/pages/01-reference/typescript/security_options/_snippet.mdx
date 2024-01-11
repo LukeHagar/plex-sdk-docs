@@ -7,10 +7,10 @@ This SDK supports the following security scheme globally:
 
 To authenticate with the API the `accessToken` parameter must be set when initializing the SDK client instance. For example:
 ```typescript
-import { SDK } from "@lukehagar/plexjs";
+import { PlexAPI } from "@lukehagar/plexjs";
 
 async function run() {
-    const sdk = new SDK({
+    const sdk = new PlexAPI({
         accessToken: "<YOUR_API_KEY_HERE>",
     });
 

@@ -1,11 +1,11 @@
 
 <CH.Code>
 ```typescript GetLibrary.ts
-import { SDK } from "@lukehagar/plexjs";
+import { PlexAPI } from "@lukehagar/plexjs";
 import { IncludeDetails } from "@lukehagar/plexjs/models/operations";
 
 async function run() {
-  const sdk = new SDK({
+  const sdk = new PlexAPI({
     accessToken: "<YOUR_API_KEY_HERE>",
   });
 

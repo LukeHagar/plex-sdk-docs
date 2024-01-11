@@ -6,11 +6,11 @@ All SDK methods return a response object or throw an error. If Error objects are
 Example
 
 ```typescript
-import { SDK } from "@lukehagar/plexjs";
+import { PlexAPI } from "@lukehagar/plexjs";
 import * as errors from "@lukehagar/plexjs/models/errors";
 
 async function run() {
-    const sdk = new SDK({
+    const sdk = new PlexAPI({
         accessToken: "<YOUR_API_KEY_HERE>",
     });
 

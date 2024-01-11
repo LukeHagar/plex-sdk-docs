@@ -1,2 +1,2 @@
 docs:
-	speakeasy generate docs --schema https://raw.githubusercontent.com/LukeHagar/plex-api-spec/main/plex-media-server-spec-dereferenced.yaml --out ./ --langs python,typescript,go,curl --compile
+	speakeasy generate docs --schema /github/workspace/openapi/openapi_0 --out ./ --langs python,typescript,go,curl --compile

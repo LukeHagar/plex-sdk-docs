@@ -1,11 +1,11 @@
 
 <CH.Code>
 ```typescript StartTask.ts
-import { SDK } from "@lukehagar/plexjs";
+import { PlexAPI } from "@lukehagar/plexjs";
 import { TaskName } from "@lukehagar/plexjs/models/operations";
 
 async function run() {
-  const sdk = new SDK({
+  const sdk = new PlexAPI({
     accessToken: "<YOUR_API_KEY_HERE>",
   });
 

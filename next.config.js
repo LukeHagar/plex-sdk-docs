@@ -20,7 +20,13 @@ module.exports = withPlugins([], {
   sassOptions: {
     importer: jsonImporter(),
   },
-  ...withNextra(),
+  ...withNextra({
+    output: 'export',
+    distDir: 'out',
+    images: {
+      unoptimized: true,
+    },
+  }),
   eslint: {
     ignoreDuringBuilds: true,
   },

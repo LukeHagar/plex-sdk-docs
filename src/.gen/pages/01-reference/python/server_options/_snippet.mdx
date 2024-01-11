@@ -9,10 +9,10 @@ You can override the default server globally by passing a server index to the `s
 #### Example
 
 ```python
-import sdk
+import plex_api
 
-s = sdk.SDK(
-    server_idx=1,
+s = plex_api.PlexAPI(
+    server_idx=0,
     access_token="<YOUR_API_KEY_HERE>",
 )
 
@@ -35,10 +35,10 @@ Some of the server options above contain variables. If you want to set the value
 
 The default server can also be overridden globally by passing a URL to the `server_url: str` optional parameter when initializing the SDK client instance. For example:
 ```python
-import sdk
+import plex_api
 
-s = sdk.SDK(
-    server_url="http://10.10.10.47:32400",
+s = plex_api.PlexAPI(
+    server_url="{protocol}://{ip}:{port}",
     access_token="<YOUR_API_KEY_HERE>",
 )
 

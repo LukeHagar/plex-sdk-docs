@@ -13,14 +13,14 @@ package main
 
 import (
 	"context"
+	"github.com/LukeHagar/plexgo"
+	"github.com/LukeHagar/plexgo/models/components"
 	"log"
-	"plexgo"
-	"plexgo/models/components"
 )
 
 func main() {
 	s := plexgo.New(
-		plexgo.WithServerIndex(1),
+		plexgo.WithServerIndex(0),
 		plexgo.WithSecurity("<YOUR_API_KEY_HERE>"),
 	)
 
@@ -52,14 +52,14 @@ package main
 
 import (
 	"context"
+	"github.com/LukeHagar/plexgo"
+	"github.com/LukeHagar/plexgo/models/components"
 	"log"
-	"plexgo"
-	"plexgo/models/components"
 )
 
 func main() {
 	s := plexgo.New(
-		plexgo.WithServerURL("http://10.10.10.47:32400"),
+		plexgo.WithServerURL("{protocol}://{ip}:{port}"),
 		plexgo.WithSecurity("<YOUR_API_KEY_HERE>"),
 	)
 

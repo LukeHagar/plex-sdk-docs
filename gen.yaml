@@ -1,21 +1,26 @@
-configVersion: 1.0.0
+configVersion: 2.0.0
 generation:
-  comments: {}
   sdkClassName: Plex-API
   maintainOpenAPIOrder: true
   usageSnippets:
     optionalPropertyRendering: withExample
   fixes:
     nameResolutionDec2023: false
-features:
-  docs:
-    core: 1.21.0
-    globalSecurity: 0.1.1
-    globalServerURLs: 0.1.1
-    nameOverrides: 0.1.0
 docs:
-  static: true
+  version: ""
   defaultLanguage: go
+  imports:
+    option: openapi
+    paths:
+      callbacks: callbacks
+      errors: errors
+      operations: operations
+      shared: shared
+      webhooks: webhooks
+  inputModelSuffix: input
+  maxMethodParams: 4
+  outputModelSuffix: output
+  static: true
 go:
   version: 0.0.2
   clientServerStatusCodesAsErrors: true
@@ -32,7 +37,6 @@ go:
   maxMethodParams: 4
   outputModelSuffix: output
   packageName: github.com/LukeHagar/plexgo
-  published: true
 python:
   version: 0.0.1
   author: LukeHagar

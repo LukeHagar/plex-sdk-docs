@@ -18,7 +18,7 @@ import { useSetPage } from '@/src/components/scrollManager';
 
 export const Languages = ["python", "typescript", "go", "curl"];
 export type Language = (typeof Languages)[number];
-export const DefaultLanguage = 'typescript';
+export const DefaultLanguage = 'go';
 
 export const LanguageProvider = (props: { children: ReactNode }) => {
   const slug = usePathname();

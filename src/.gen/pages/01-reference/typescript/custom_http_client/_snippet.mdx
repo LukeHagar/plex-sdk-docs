@@ -14,7 +14,7 @@ custom header and a timeout to requests and how to use the `"requestError"` hook
 to log errors:
 
 ```typescript
-import { SDK } from "@lukehagar/plexjs";
+import { PlexAPI } from "@lukehagar/plexjs";
 import { HTTPClient } from "@lukehagar/plexjs/lib/http";
 
 const httpClient = new HTTPClient({
@@ -41,6 +41,6 @@ httpClient.addHook("requestError", (error, request) => {
   console.groupEnd();
 });
 
-const sdk = new SDK({ httpClient });
+const sdk = new PlexAPI({ httpClient });
 ```
 {/* End Typescript Custom HTTP Client */}
