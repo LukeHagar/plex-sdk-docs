@@ -20,7 +20,7 @@ docs:
   inputModelSuffix: input
   maxMethodParams: 4
   outputModelSuffix: output
-  static: true
+  static: false
 go:
   version: 0.0.2
   clientServerStatusCodesAsErrors: true
