@@ -5,7 +5,8 @@ management:
   docVersion: 0.0.3
   speakeasyVersion: internal
   generationVersion: 2.231.0
-  configChecksum: d210bf572a517293dd9174bc846ad612
+  releaseVersion: 0.0.1
+  configChecksum: 88bdac673170dbc3b42817fc60e8a98a
   published: true
 features:
   docs:
@@ -2566,7 +2567,6 @@ generatedFiles:
   - Makefile
   - src/components/customRedirects.tsx
   - next.config.js
-  - server.go
   - Dockerfile
   - src/pages/_app.mdx
   - src/pages/python/[[...rest]].mdx

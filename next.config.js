@@ -20,14 +20,37 @@ module.exports = withPlugins([], {
   sassOptions: {
     importer: jsonImporter(),
   },
-  ...withNextra({
-    output: 'export',
-    distDir: 'out',
-    images: {
-      unoptimized: true,
-    },
-  }),
+  ...withNextra(),
   eslint: {
     ignoreDuringBuilds: true,
+  },
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/go/client_sdks/',
+        permanent: true,
+      },
+      {
+        source: '/python',
+        destination: '/python/client_sdks/',
+        permanent: true,
+      },
+      {
+        source: '/typescript',
+        destination: '/typescript/client_sdks/',
+        permanent: true,
+      },
+      {
+        source: '/go',
+        destination: '/go/client_sdks/',
+        permanent: true,
+      },
+      {
+        source: '/curl',
+        destination: '/curl/client_sdks/',
+        permanent: true,
+      },
+    ]
   },
 });
