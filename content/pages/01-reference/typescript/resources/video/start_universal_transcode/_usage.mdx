@@ -8,7 +8,7 @@ async function run() {
     accessToken: "<YOUR_API_KEY_HERE>",
   });
 
-  const res = await sdk.video.startUniversalTranscode({
+  const result = await sdk.video.startUniversalTranscode({
     hasMDE: 8009.11,
     path: "/private",
     mediaIndex: 5204.78,
@@ -16,11 +16,8 @@ async function run() {
     protocol: "string",
   });
 
-  if (res?.statusCode !== 200) {
-    throw new Error("Unexpected status code: " + res?.statusCode || "-");
-  }
-  
-  // handle response
+  // Handle the result
+  console.log(result)
 }
 
 run();

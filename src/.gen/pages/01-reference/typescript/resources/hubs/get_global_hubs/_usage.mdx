@@ -12,13 +12,10 @@ async function run() {
   const count = 8472.52;
   const onlyTransient = OnlyTransient.Zero;
   
-  const res = await sdk.hubs.getGlobalHubs(count, onlyTransient);
+  const result = await sdk.hubs.getGlobalHubs(count, onlyTransient);
 
-  if (res?.statusCode !== 200) {
-    throw new Error("Unexpected status code: " + res?.statusCode || "-");
-  }
-  
-  // handle response
+  // Handle the result
+  console.log(result)
 }
 
 run();

@@ -3,11 +3,28 @@
 
 ### Select Server by Index
 
-You can override the default server globally by passing a server index to the `serverIdx: number` optional parameter when initializing the SDK client instance. The selected server will then be used as the default on the operations that use it. This table lists the indexes associated with the available servers:
+You can override the default server globally by passing a server index to the `serverIdx` optional parameter when initializing the SDK client instance. The selected server will then be used as the default on the operations that use it. This table lists the indexes associated with the available servers:
 
 
 
+```typescript
+import { PlexAPI } from "@lukehagar/plexjs";
 
+async function run() {
+    const sdk = new PlexAPI({
+        serverIdx: 0,
+        accessToken: "<YOUR_API_KEY_HERE>",
+    });
+
+    const result = await sdk.server.getServerCapabilities();
+
+    // Handle the result
+    console.log(result);
+}
+
+run();
+
+```
 
 #### Variables
 
@@ -18,6 +35,24 @@ Some of the server options above contain variables. If you want to set the value
 
 ### Override Server URL Per-Client
 
-The default server can also be overridden globally by passing a URL to the `serverURL: str` optional parameter when initializing the SDK client instance. For example:
+The default server can also be overridden globally by passing a URL to the `serverURL` optional parameter when initializing the SDK client instance. For example:
 
+```typescript
+import { PlexAPI } from "@lukehagar/plexjs";
+
+async function run() {
+    const sdk = new PlexAPI({
+        serverURL: "{protocol}://{ip}:{port}",
+        accessToken: "<YOUR_API_KEY_HERE>",
+    });
+
+    const result = await sdk.server.getServerCapabilities();
+
+    // Handle the result
+    console.log(result);
+}
+
+run();
+
+```
 {/* End Typescript Server Options */}

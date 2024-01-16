@@ -11,13 +11,10 @@ async function run() {
 
   const taskName = PathParamTaskName.GenerateChapterThumbs;
   
-  const res = await sdk.butler.stopTask(taskName);
+  const result = await sdk.butler.stopTask(taskName);
 
-  if (res?.statusCode !== 200) {
-    throw new Error("Unexpected status code: " + res?.statusCode || "-");
-  }
-  
-  // handle response
+  // Handle the result
+  console.log(result)
 }
 
 run();

@@ -11,13 +11,10 @@ async function run() {
   const url = "file://C:\Image.png&type=13";
   const type = 567.13;
   
-  const res = await sdk.library.getFileHash(url, type);
+  const result = await sdk.library.getFileHash(url, type);
 
-  if (res?.statusCode !== 200) {
-    throw new Error("Unexpected status code: " + res?.statusCode || "-");
-  }
-  
-  // handle response
+  // Handle the result
+  console.log(result)
 }
 
 run();

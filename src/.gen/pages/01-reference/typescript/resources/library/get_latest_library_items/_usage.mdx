@@ -12,13 +12,10 @@ async function run() {
   const type = 8121.69;
   const filter = "string";
   
-  const res = await sdk.library.getLatestLibraryItems(sectionId, type, filter);
+  const result = await sdk.library.getLatestLibraryItems(sectionId, type, filter);
 
-  if (res?.statusCode !== 200) {
-    throw new Error("Unexpected status code: " + res?.statusCode || "-");
-  }
-  
-  // handle response
+  // Handle the result
+  console.log(result)
 }
 
 run();

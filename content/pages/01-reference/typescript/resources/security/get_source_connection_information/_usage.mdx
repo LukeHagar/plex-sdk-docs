@@ -10,13 +10,10 @@ async function run() {
 
   const source = "provider://provider-identifier";
   
-  const res = await sdk.security.getSourceConnectionInformation(source);
+  const result = await sdk.security.getSourceConnectionInformation(source);
 
-  if (res?.statusCode !== 200) {
-    throw new Error("Unexpected status code: " + res?.statusCode || "-");
-  }
-  
-  // handle response
+  // Handle the result
+  console.log(result)
 }
 
 run();

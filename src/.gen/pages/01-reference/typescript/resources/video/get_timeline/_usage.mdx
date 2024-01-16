@@ -9,7 +9,7 @@ async function run() {
     accessToken: "<YOUR_API_KEY_HERE>",
   });
 
-  const res = await sdk.video.getTimeline({
+  const result = await sdk.video.getTimeline({
     ratingKey: 6788.8,
     key: "<key>",
     state: State.Playing,
@@ -22,11 +22,8 @@ async function run() {
     row: 9446.69,
   });
 
-  if (res?.statusCode !== 200) {
-    throw new Error("Unexpected status code: " + res?.statusCode || "-");
-  }
-  
-  // handle response
+  // Handle the result
+  console.log(result)
 }
 
 run();

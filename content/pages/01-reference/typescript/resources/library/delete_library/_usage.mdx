@@ -10,13 +10,10 @@ async function run() {
 
   const sectionId = 1000;
   
-  const res = await sdk.library.deleteLibrary(sectionId);
+  const result = await sdk.library.deleteLibrary(sectionId);
 
-  if (res?.statusCode !== 200) {
-    throw new Error("Unexpected status code: " + res?.statusCode || "-");
-  }
-  
-  // handle response
+  // Handle the result
+  console.log(result)
 }
 
 run();

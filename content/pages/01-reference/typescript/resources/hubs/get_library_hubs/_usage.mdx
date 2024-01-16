@@ -13,13 +13,10 @@ async function run() {
   const count = 6458.94;
   const onlyTransient = QueryParamOnlyTransient.Zero;
   
-  const res = await sdk.hubs.getLibraryHubs(sectionId, count, onlyTransient);
+  const result = await sdk.hubs.getLibraryHubs(sectionId, count, onlyTransient);
 
-  if (res?.statusCode !== 200) {
-    throw new Error("Unexpected status code: " + res?.statusCode || "-");
-  }
-  
-  // handle response
+  // Handle the result
+  console.log(result)
 }
 
 run();

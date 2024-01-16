@@ -10,13 +10,10 @@ async function run() {
 
   const playlistID = 202.18;
   
-  const res = await sdk.playlists.deletePlaylist(playlistID);
+  const result = await sdk.playlists.deletePlaylist(playlistID);
 
-  if (res?.statusCode !== 200) {
-    throw new Error("Unexpected status code: " + res?.statusCode || "-");
-  }
-  
-  // handle response
+  // Handle the result
+  console.log(result)
 }
 
 run();

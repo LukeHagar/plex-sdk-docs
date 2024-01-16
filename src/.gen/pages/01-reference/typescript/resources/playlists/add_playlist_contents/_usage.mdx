@@ -12,13 +12,10 @@ async function run() {
   const uri = "library://..";
   const playQueueID = 123;
   
-  const res = await sdk.playlists.addPlaylistContents(playlistID, uri, playQueueID);
+  const result = await sdk.playlists.addPlaylistContents(playlistID, uri, playQueueID);
 
-  if (res?.statusCode !== 200) {
-    throw new Error("Unexpected status code: " + res?.statusCode || "-");
-  }
-  
-  // handle response
+  // Handle the result
+  console.log(result)
 }
 
 run();

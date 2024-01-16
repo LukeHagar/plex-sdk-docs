@@ -12,13 +12,10 @@ async function run() {
   const playlistType = PlaylistType.Video;
   const smart = QueryParamSmart.Zero;
   
-  const res = await sdk.playlists.getPlaylists(playlistType, smart);
+  const result = await sdk.playlists.getPlaylists(playlistType, smart);
 
-  if (res?.statusCode !== 200) {
-    throw new Error("Unexpected status code: " + res?.statusCode || "-");
-  }
-  
-  // handle response
+  // Handle the result
+  console.log(result)
 }
 
 run();

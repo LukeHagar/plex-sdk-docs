@@ -10,13 +10,10 @@ async function run() {
 
   const query = "110";
   
-  const res = await sdk.search.getSearchResults(query);
+  const result = await sdk.search.getSearchResults(query);
 
-  if (res?.statusCode !== 200) {
-    throw new Error("Unexpected status code: " + res?.statusCode || "-");
-  }
-  
-  // handle response
+  // Handle the result
+  console.log(result)
 }
 
 run();

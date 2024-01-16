@@ -10,13 +10,10 @@ async function run() {
 
   const sessionKey = "zz7llzqlx8w9vnrsbnwhbmep";
   
-  const res = await sdk.sessions.stopTranscodeSession(sessionKey);
+  const result = await sdk.sessions.stopTranscodeSession(sessionKey);
 
-  if (res?.statusCode !== 200) {
-    throw new Error("Unexpected status code: " + res?.statusCode || "-");
-  }
-  
-  // handle response
+  // Handle the result
+  console.log(result)
 }
 
 run();

@@ -10,13 +10,10 @@ async function run() {
 
   const ratingKey = 3927.85;
   
-  const res = await sdk.library.getMetadataChildren(ratingKey);
+  const result = await sdk.library.getMetadataChildren(ratingKey);
 
-  if (res?.statusCode !== 200) {
-    throw new Error("Unexpected status code: " + res?.statusCode || "-");
-  }
-  
-  // handle response
+  // Handle the result
+  console.log(result)
 }
 
 run();

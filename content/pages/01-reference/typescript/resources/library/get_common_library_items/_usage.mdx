@@ -12,13 +12,10 @@ async function run() {
   const type = 4799.77;
   const filter = "string";
   
-  const res = await sdk.library.getCommonLibraryItems(sectionId, type, filter);
+  const result = await sdk.library.getCommonLibraryItems(sectionId, type, filter);
 
-  if (res?.statusCode !== 200) {
-    throw new Error("Unexpected status code: " + res?.statusCode || "-");
-  }
-  
-  // handle response
+  // Handle the result
+  console.log(result)
 }
 
 run();

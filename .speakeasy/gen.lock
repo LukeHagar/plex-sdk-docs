@@ -4,14 +4,14 @@ management:
   docChecksum: 34d22936f2456c2c461abdfc773e3fc4
   docVersion: 0.0.3
   speakeasyVersion: internal
-  generationVersion: 2.231.0
-  releaseVersion: 0.0.1
-  configChecksum: 88bdac673170dbc3b42817fc60e8a98a
+  generationVersion: 2.233.2
+  releaseVersion: 0.0.2
+  configChecksum: ae8f58e0dd52c12423b7b5904ee680d4
   published: true
 features:
   docs:
     constsAndDefaults: 0.1.0
-    core: 1.23.1
+    core: 1.23.3
     flattening: 0.1.0
     globalSecurity: 0.1.1
     globalServerURLs: 0.1.1

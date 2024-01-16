@@ -10,13 +10,10 @@ async function run() {
 
   const playlistID = 3682.41;
   
-  const res = await sdk.playlists.updatePlaylist(playlistID);
+  const result = await sdk.playlists.updatePlaylist(playlistID);
 
-  if (res?.statusCode !== 200) {
-    throw new Error("Unexpected status code: " + res?.statusCode || "-");
-  }
-  
-  // handle response
+  // Handle the result
+  console.log(result)
 }
 
 run();

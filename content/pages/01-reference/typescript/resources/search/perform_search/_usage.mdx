@@ -12,13 +12,10 @@ async function run() {
   const sectionId = 2975.34;
   const limit = 5;
   
-  const res = await sdk.search.performSearch(query, sectionId, limit);
+  const result = await sdk.search.performSearch(query, sectionId, limit);
 
-  if (res?.statusCode !== 200) {
-    throw new Error("Unexpected status code: " + res?.statusCode || "-");
-  }
-  
-  // handle response
+  // Handle the result
+  console.log(result)
 }
 
 run();

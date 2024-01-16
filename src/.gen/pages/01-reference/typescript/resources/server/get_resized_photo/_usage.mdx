@@ -9,7 +9,7 @@ async function run() {
     accessToken: "<YOUR_API_KEY_HERE>",
   });
 
-  const res = await sdk.server.getResizedPhoto({
+  const result = await sdk.server.getResizedPhoto({
     width: 110,
     height: 165,
     opacity: 548814,
@@ -19,11 +19,8 @@ async function run() {
     url: "/library/metadata/49564/thumb/1654258204",
   });
 
-  if (res?.statusCode !== 200) {
-    throw new Error("Unexpected status code: " + res?.statusCode || "-");
-  }
-  
-  // handle response
+  // Handle the result
+  console.log(result)
 }
 
 run();

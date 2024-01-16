@@ -12,13 +12,10 @@ async function run() {
   const tonight = Tonight.Zero;
   const skip = Skip.One;
   
-  const res = await sdk.updater.applyUpdates(tonight, skip);
+  const result = await sdk.updater.applyUpdates(tonight, skip);
 
-  if (res?.statusCode !== 200) {
-    throw new Error("Unexpected status code: " + res?.statusCode || "-");
-  }
-  
-  // handle response
+  // Handle the result
+  console.log(result)
 }
 
 run();
