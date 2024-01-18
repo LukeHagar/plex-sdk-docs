@@ -4,13 +4,15 @@ import Labels from "/src/lib/labels";
 
 ##### `tonight` _enumeration (optional)_
 Indicate that you want the update to run during the next Butler execution. Omitting this or setting it to false indicates that the update should install
-<Collapsible content={() => import('/content/types/operations/tonight/curl.mdx')} openLabel={Labels.showProperties} closeLabel={Labels.hideProperties}>
-</Collapsible>
+
+<Collapsible content={() => import('/content/types/operations/tonight/curl.mdx')} openLabel={Labels.showProperties} closeLabel={Labels.hideProperties} />
+
 
 ---
 ##### `skip` _enumeration (optional)_
 Indicate that the latest version should be marked as skipped. The \<Release\> entry for this version will have the `state` set to `skipped`.
-<Collapsible content={() => import('/content/types/operations/skip/curl.mdx')} openLabel={Labels.showProperties} closeLabel={Labels.hideProperties}>
-</Collapsible>
+
+<Collapsible content={() => import('/content/types/operations/skip/curl.mdx')} openLabel={Labels.showProperties} closeLabel={Labels.hideProperties} />
+
 
 

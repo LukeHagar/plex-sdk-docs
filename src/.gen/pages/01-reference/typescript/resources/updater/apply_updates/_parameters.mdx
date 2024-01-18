@@ -6,23 +6,23 @@ import Labels from "/src/lib/labels";
 
 ##### `tonight?`: *{`operations.Tonight`}*
 Indicate that you want the update to run during the next Butler execution. Omitting this or setting it to false indicates that the update should install
+
 <Collapsible openLabel={Labels.showProperties} closeLabel={Labels.hideProperties}>
-    <Tonight/>
+  <Tonight />
 </Collapsible>
 
 ---
 ##### `skip?`: *{`operations.Skip`}*
 Indicate that the latest version should be marked as skipped. The \<Release\> entry for this version will have the `state` set to `skipped`.
+
 <Collapsible openLabel={Labels.showProperties} closeLabel={Labels.hideProperties}>
-    <Skip/>
+  <Skip />
 </Collapsible>
 
 ---
 ##### `options?`: *{`RequestOptions`}*
 Options for making HTTP requests.
-
 ---
 ##### `options.fetchOptions?`: [*{ `RequestInit` }*](https://developer.mozilla.org/en-US/docs/Web/API/Request/Request#options)
 Options that are passed to the underlying HTTP request. This can be used to inject extra headers for examples. All `Request` options, except `method` and `body`, are allowed.
-
 

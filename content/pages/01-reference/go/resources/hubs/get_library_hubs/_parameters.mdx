@@ -5,20 +5,18 @@ import Labels from "/src/lib/labels";
 
 ##### `ctx` [*{ `context.Context` }*](https://pkg.go.dev/context#Context)
 The context to use for the request.
-
 ---
 ##### `sectionID` *{`float64`}*
 the Id of the library to query
-
 ---
 ##### `count` *{`*float64`}*
 The number of items to return with each hub.
-
 ---
 ##### `onlyTransient` *{`*operations.QueryParamOnlyTransient`}*
 Only return hubs which are "transient", meaning those which are prone to changing after media playback or addition (e.g. On Deck, or Recently Added).
+
 <Collapsible openLabel={Labels.showProperties} closeLabel={Labels.hideProperties}>
-    <QueryParamOnlyTransient/>
+  <QueryParamOnlyTransient />
 </Collapsible>
 
 

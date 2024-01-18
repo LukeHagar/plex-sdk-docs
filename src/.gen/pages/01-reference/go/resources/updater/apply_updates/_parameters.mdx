@@ -6,19 +6,20 @@ import Labels from "/src/lib/labels";
 
 ##### `ctx` [*{ `context.Context` }*](https://pkg.go.dev/context#Context)
 The context to use for the request.
-
 ---
 ##### `tonight` *{`*operations.Tonight`}*
 Indicate that you want the update to run during the next Butler execution. Omitting this or setting it to false indicates that the update should install
+
 <Collapsible openLabel={Labels.showProperties} closeLabel={Labels.hideProperties}>
-    <Tonight/>
+  <Tonight />
 </Collapsible>
 
 ---
 ##### `skip` *{`*operations.Skip`}*
 Indicate that the latest version should be marked as skipped. The \<Release\> entry for this version will have the `state` set to `skipped`.
+
 <Collapsible openLabel={Labels.showProperties} closeLabel={Labels.hideProperties}>
-    <Skip/>
+  <Skip />
 </Collapsible>
 
 
