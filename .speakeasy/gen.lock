@@ -1,17 +1,17 @@
 lockVersion: 2.0.0
 id: 7fc33f51-d778-40ef-b094-90972c025d39
 management:
-  docChecksum: 34d22936f2456c2c461abdfc773e3fc4
+  docChecksum: d7e0ebb6913e00a62d90ea05f2e5542d
   docVersion: 0.0.3
   speakeasyVersion: internal
-  generationVersion: 2.235.3
-  releaseVersion: 0.1.0
-  configChecksum: 96b7a3b4b875dd83be35e7433e294291
+  generationVersion: 2.237.2
+  releaseVersion: 0.1.1
+  configChecksum: 0c20dc849e2f416cfc75b0f5279fd965
   published: true
 features:
   docs:
     constsAndDefaults: 0.1.0
-    core: 1.24.1
+    core: 1.24.2
     flattening: 0.1.0
     globalSecurity: 0.1.1
     globalServerURLs: 0.1.1
@@ -1311,9 +1311,18 @@ generatedFiles:
   - content/types/models/operations/get_latest_library_items_response/go.mdx
   - content/types/models/operations/get_latest_library_items_response/python.mdx
   - content/types/models/operations/get_latest_library_items_response/typescript.mdx
+  - content/types/models/operations/get_libraries_directory/go.mdx
+  - content/types/models/operations/get_libraries_directory/python.mdx
+  - content/types/models/operations/get_libraries_directory/typescript.mdx
+  - content/types/models/operations/get_libraries_media_container/go.mdx
+  - content/types/models/operations/get_libraries_media_container/python.mdx
+  - content/types/models/operations/get_libraries_media_container/typescript.mdx
   - content/types/models/operations/get_libraries_response/go.mdx
   - content/types/models/operations/get_libraries_response/python.mdx
   - content/types/models/operations/get_libraries_response/typescript.mdx
+  - content/types/models/operations/get_libraries_response_body/go.mdx
+  - content/types/models/operations/get_libraries_response_body/python.mdx
+  - content/types/models/operations/get_libraries_response_body/typescript.mdx
   - content/types/models/operations/get_library_hubs_request/go.mdx
   - content/types/models/operations/get_library_hubs_request/python.mdx
   - content/types/models/operations/get_library_hubs_request/typescript.mdx
@@ -1521,6 +1530,9 @@ generatedFiles:
   - content/types/models/operations/level/go.mdx
   - content/types/models/operations/level/python.mdx
   - content/types/models/operations/level/typescript.mdx
+  - content/types/models/operations/location/go.mdx
+  - content/types/models/operations/location/python.mdx
+  - content/types/models/operations/location/typescript.mdx
   - content/types/models/operations/log_line_request/go.mdx
   - content/types/models/operations/log_line_request/python.mdx
   - content/types/models/operations/log_line_request/typescript.mdx
@@ -2307,6 +2319,10 @@ generatedFiles:
   - content/types/operations/get_recently_added_response_body/curl.mdx
   - content/types/operations/get_recently_added_response/curl.mdx
   - content/types/operations/get_libraries_errors/curl.mdx
+  - content/types/operations/get_libraries_library_response_body/curl.mdx
+  - content/types/operations/location/curl.mdx
+  - content/types/operations/get_libraries_directory/curl.mdx
+  - content/types/operations/get_libraries_media_container/curl.mdx
   - content/types/operations/get_libraries_response_body/curl.mdx
   - content/types/operations/get_libraries_response/curl.mdx
   - content/types/operations/include_details/curl.mdx

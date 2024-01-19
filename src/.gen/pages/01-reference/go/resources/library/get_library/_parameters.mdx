@@ -5,11 +5,13 @@ import Labels from "/src/lib/labels";
 
 ##### `ctx` [*{ `context.Context` }*](https://pkg.go.dev/context#Context)
 The context to use for the request.
+
 ---
 ##### `sectionID` *{`float64`}*
 the Id of the library to query
 <br/>
 **Example:** `1000`
+
 ---
 ##### `includeDetails` *{`*operations.IncludeDetails`}*
 Whether or not to include details for a section (types, filters, and sorts). 
@@ -19,5 +21,4 @@ Only exists for backwards compatibility, media providers other than the server l
 <Collapsible openLabel={Labels.showProperties} closeLabel={Labels.hideProperties}>
   <IncludeDetails />
 </Collapsible>
-
 

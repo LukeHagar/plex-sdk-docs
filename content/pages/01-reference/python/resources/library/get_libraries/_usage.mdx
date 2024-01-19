@@ -10,7 +10,7 @@ s = plex_api.PlexAPI(
 
 res = s.library.get_libraries()
 
-if res.status_code == 200:
+if res.object is not None:
     # handle response
     pass
 ```
@@ -18,13 +18,12 @@ if res.status_code == 200:
 
 ```json Example Response
   {
-    "errors": [
-      {
-        "code": 1001,
-        "message": "User could not be authenticated",
-        "status": 401
-      }
-    ]
+    "MediaContainer": {
+      "size": 5,
+      "allowSync": false,
+      "title1": "Plex Library",
+      "Directory": []
+    }
   }
 ```
 </CH.Code>
