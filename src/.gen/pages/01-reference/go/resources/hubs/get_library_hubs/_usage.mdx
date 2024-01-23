@@ -9,7 +9,6 @@ import(
 	"github.com/LukeHagar/plexgo/models/operations"
 	"context"
 	"log"
-	"net/http"
 )
 
 func main() {
@@ -30,7 +29,7 @@ func main() {
         log.Fatal(err)
     }
 
-    if res.StatusCode == http.StatusOK {
+    if res.Object != nil {
         // handle response
     }
 }
@@ -39,13 +38,15 @@ func main() {
 
 ```json Example Response
   {
-    "errors": [
-      {
-        "code": 1001,
-        "message": "User could not be authenticated",
-        "status": 401
-      }
-    ]
+    "MediaContainer": {
+      "size": 7,
+      "allowSync": true,
+      "identifier": "com.plexapp.plugins.library",
+      "librarySectionID": 1,
+      "librarySectionTitle": "Movies",
+      "librarySectionUUID": "322a231a-b7f7-49f5-920f-14c61199cd30",
+      "Hub": []
+    }
   }
 ```
 </CH.Code>

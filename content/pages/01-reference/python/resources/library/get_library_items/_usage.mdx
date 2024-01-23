@@ -9,9 +9,9 @@ s = plex_api.PlexAPI(
 )
 
 
-res = s.library.get_library_items(section_id=2726.56, type=3834.41, filter_='string')
+res = s.library.get_library_items(section_id=272656, tag=operations.Tag.EDITION)
 
-if res.status_code == 200:
+if res.object is not None:
     # handle response
     pass
 ```
@@ -19,13 +19,23 @@ if res.status_code == 200:
 
 ```json Example Response
   {
-    "errors": [
-      {
-        "code": 1001,
-        "message": "User could not be authenticated",
-        "status": 401
-      }
-    ]
+    "MediaContainer": {
+      "size": 70,
+      "allowSync": true,
+      "art": "/:/resources/movie-fanart.jpg",
+      "identifier": "com.plexapp.plugins.library",
+      "librarySectionID": 1,
+      "librarySectionTitle": "Movies",
+      "librarySectionUUID": "322a231a-b7f7-49f5-920f-14c61199cd30",
+      "mediaTagPrefix": "/system/bundle/media/flags/",
+      "mediaTagVersion": 1701731894,
+      "thumb": "/:/resources/movie.png",
+      "title1": "Movies",
+      "title2": "Recently Released",
+      "viewGroup": "movie",
+      "viewMode": 65592,
+      "Metadata": []
+    }
   }
 ```
 </CH.Code>

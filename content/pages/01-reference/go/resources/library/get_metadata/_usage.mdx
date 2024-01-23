@@ -8,7 +8,6 @@ import(
 	"github.com/LukeHagar/plexgo"
 	"context"
 	"log"
-	"net/http"
 )
 
 func main() {
@@ -17,7 +16,7 @@ func main() {
     )
 
 
-    var ratingKey float64 = 5680.45
+    var ratingKey float64 = 7917.25
 
     ctx := context.Background()
     res, err := s.Library.GetMetadata(ctx, ratingKey)
@@ -25,7 +24,7 @@ func main() {
         log.Fatal(err)
     }
 
-    if res.StatusCode == http.StatusOK {
+    if res.Object != nil {
         // handle response
     }
 }
@@ -34,13 +33,17 @@ func main() {
 
 ```json Example Response
   {
-    "errors": [
-      {
-        "code": 1001,
-        "message": "User could not be authenticated",
-        "status": 401
-      }
-    ]
+    "MediaContainer": {
+      "size": 1,
+      "allowSync": true,
+      "identifier": "com.plexapp.plugins.library",
+      "librarySectionID": 1,
+      "librarySectionTitle": "Movies",
+      "librarySectionUUID": "cfc899d7-3000-46f6-8489-b9592714ada5",
+      "mediaTagPrefix": "/system/bundle/media/flags/",
+      "mediaTagVersion": 1698860922,
+      "Metadata": []
+    }
   }
 ```
 </CH.Code>

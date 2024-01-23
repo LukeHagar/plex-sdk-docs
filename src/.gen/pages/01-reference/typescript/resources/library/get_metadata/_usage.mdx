@@ -8,7 +8,7 @@ async function run() {
     accessToken: "<YOUR_API_KEY_HERE>",
   });
 
-  const ratingKey = 5680.45;
+  const ratingKey = 7917.25;
   
   const result = await sdk.library.getMetadata(ratingKey);
 
@@ -22,13 +22,17 @@ run();
 
 ```json Example Response
   {
-    "errors": [
-      {
-        "code": 1001,
-        "message": "User could not be authenticated",
-        "status": 401
-      }
-    ]
+    "MediaContainer": {
+      "size": 1,
+      "allowSync": true,
+      "identifier": "com.plexapp.plugins.library",
+      "librarySectionID": 1,
+      "librarySectionTitle": "Movies",
+      "librarySectionUUID": "cfc899d7-3000-46f6-8489-b9592714ada5",
+      "mediaTagPrefix": "/system/bundle/media/flags/",
+      "mediaTagVersion": 1698860922,
+      "Metadata": []
+    }
   }
 ```
 </CH.Code>

@@ -10,7 +10,7 @@ s = plex_api.PlexAPI(
 
 res = s.sessions.get_session_history()
 
-if res.status_code == 200:
+if res.object is not None:
     # handle response
     pass
 ```
@@ -18,13 +18,10 @@ if res.status_code == 200:
 
 ```json Example Response
   {
-    "errors": [
-      {
-        "code": 1001,
-        "message": "User could not be authenticated",
-        "status": 401
-      }
-    ]
+    "MediaContainer": {
+      "size": 10855,
+      "Metadata": []
+    }
   }
 ```
 </CH.Code>

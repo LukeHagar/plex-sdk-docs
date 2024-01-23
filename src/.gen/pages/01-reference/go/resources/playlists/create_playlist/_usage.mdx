@@ -9,7 +9,6 @@ import(
 	"context"
 	"github.com/LukeHagar/plexgo/models/operations"
 	"log"
-	"net/http"
 )
 
 func main() {
@@ -20,14 +19,15 @@ func main() {
     ctx := context.Background()
     res, err := s.Playlists.CreatePlaylist(ctx, operations.CreatePlaylistRequest{
         Title: "string",
-        Type: operations.TypePhoto,
-        Smart: operations.SmartZero,
+        Type: operations.TypeVideo,
+        Smart: operations.SmartOne,
+        URI: "http://velvety-spiderling.com",
     })
     if err != nil {
         log.Fatal(err)
     }
 
-    if res.StatusCode == http.StatusOK {
+    if res.Object != nil {
         // handle response
     }
 }
@@ -36,13 +36,10 @@ func main() {
 
 ```json Example Response
   {
-    "errors": [
-      {
-        "code": 1001,
-        "message": "User could not be authenticated",
-        "status": 401
-      }
-    ]
+    "MediaContainer": {
+      "size": 7,
+      "Metadata": []
+    }
   }
 ```
 </CH.Code>

@@ -19,8 +19,12 @@ func main() {
 
     var playlistID float64 = 3682.41
 
+    var title *string = "string"
+
+    var summary *string = "string"
+
     ctx := context.Background()
-    res, err := s.Playlists.UpdatePlaylist(ctx, playlistID)
+    res, err := s.Playlists.UpdatePlaylist(ctx, playlistID, title, summary)
     if err != nil {
         log.Fatal(err)
     }

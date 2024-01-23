@@ -9,7 +9,7 @@ s = plex_api.PlexAPI(
 )
 
 
-res = s.playlists.update_playlist(playlist_id=3682.41)
+res = s.playlists.update_playlist(playlist_id=3682.41, title='string', summary='string')
 
 if res.status_code == 200:
     # handle response

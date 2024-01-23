@@ -10,7 +10,7 @@ s = plex_api.PlexAPI(
 
 res = s.server.get_server_preferences()
 
-if res.status_code == 200:
+if res.object is not None:
     # handle response
     pass
 ```
@@ -18,13 +18,10 @@ if res.status_code == 200:
 
 ```json Example Response
   {
-    "errors": [
-      {
-        "code": 1001,
-        "message": "User could not be authenticated",
-        "status": 401
-      }
-    ]
+    "MediaContainer": {
+      "size": 161,
+      "Setting": []
+    }
   }
 ```
 </CH.Code>

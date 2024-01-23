@@ -11,7 +11,7 @@ s = plex_api.PlexAPI(
 
 res = s.hubs.get_global_hubs(count=8472.52, only_transient=operations.OnlyTransient.ZERO)
 
-if res.status_code == 200:
+if res.object is not None:
     # handle response
     pass
 ```
@@ -19,13 +19,12 @@ if res.status_code == 200:
 
 ```json Example Response
   {
-    "errors": [
-      {
-        "code": 1001,
-        "message": "User could not be authenticated",
-        "status": 401
-      }
-    ]
+    "MediaContainer": {
+      "size": 8,
+      "allowSync": true,
+      "identifier": "com.plexapp.plugins.library",
+      "Hub": []
+    }
   }
 ```
 </CH.Code>

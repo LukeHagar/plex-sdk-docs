@@ -7,7 +7,7 @@ generation:
   fixes:
     nameResolutionDec2023: false
 docs:
-  version: 0.1.1
+  version: 0.2.0
   defaultLanguage: go
   imports:
     option: openapi

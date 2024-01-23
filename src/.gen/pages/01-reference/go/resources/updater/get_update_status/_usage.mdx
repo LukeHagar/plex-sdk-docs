@@ -8,7 +8,6 @@ import(
 	"github.com/LukeHagar/plexgo"
 	"context"
 	"log"
-	"net/http"
 )
 
 func main() {
@@ -22,7 +21,7 @@ func main() {
         log.Fatal(err)
     }
 
-    if res.StatusCode == http.StatusOK {
+    if res.Object != nil {
         // handle response
     }
 }
@@ -31,13 +30,14 @@ func main() {
 
 ```json Example Response
   {
-    "errors": [
-      {
-        "code": 1001,
-        "message": "User could not be authenticated",
-        "status": 401
-      }
-    ]
+    "MediaContainer": {
+      "size": 1,
+      "canInstall": false,
+      "checkedAt": 1705801232,
+      "downloadURL": "https://plex.tv/downloads/latest/5?channel=8&build=linux-x86_64&distro=redhat&X-Plex-Token=xxxxxxxxxxxxxxxxxxxx",
+      "status": 0,
+      "Release": []
+    }
   }
 ```
 </CH.Code>

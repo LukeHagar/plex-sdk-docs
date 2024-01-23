@@ -8,7 +8,9 @@ async function run() {
     accessToken: "<YOUR_API_KEY_HERE>",
   });
 
-  const result = await sdk.log.logMultiLine();
+  const result = await sdk.log.logMultiLine("level=4&message=Test%20message%201&source=postman
+  level=3&message=Test%20message%202&source=postman
+  level=1&message=Test%20message%203&source=postman");
 
   // Handle the result
   console.log(result)

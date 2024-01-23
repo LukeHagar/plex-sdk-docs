@@ -11,7 +11,7 @@ s = plex_api.PlexAPI(
 
 res = s.playlists.get_playlists(playlist_type=operations.PlaylistType.VIDEO, smart=operations.QueryParamSmart.ZERO)
 
-if res.status_code == 200:
+if res.object is not None:
     # handle response
     pass
 ```
@@ -19,13 +19,10 @@ if res.status_code == 200:
 
 ```json Example Response
   {
-    "errors": [
-      {
-        "code": 1001,
-        "message": "User could not be authenticated",
-        "status": 401
-      }
-    ]
+    "MediaContainer": {
+      "size": 4,
+      "Metadata": []
+    }
   }
 ```
 </CH.Code>

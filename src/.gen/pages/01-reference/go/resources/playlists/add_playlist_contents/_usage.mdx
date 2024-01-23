@@ -8,7 +8,6 @@ import(
 	"github.com/LukeHagar/plexgo"
 	"context"
 	"log"
-	"net/http"
 )
 
 func main() {
@@ -19,9 +18,9 @@ func main() {
 
     var playlistID float64 = 1403.5
 
-    var uri string = "library://.."
+    var uri string = "server://12345/com.plexapp.plugins.library/library/metadata/1"
 
-    var playQueueID float64 = 123
+    var playQueueID *float64 = 123
 
     ctx := context.Background()
     res, err := s.Playlists.AddPlaylistContents(ctx, playlistID, uri, playQueueID)
@@ -29,7 +28,7 @@ func main() {
         log.Fatal(err)
     }
 
-    if res.StatusCode == http.StatusOK {
+    if res.Object != nil {
         // handle response
     }
 }
@@ -38,13 +37,12 @@ func main() {
 
 ```json Example Response
   {
-    "errors": [
-      {
-        "code": 1001,
-        "message": "User could not be authenticated",
-        "status": 401
-      }
-    ]
+    "MediaContainer": {
+      "size": 1,
+      "leafCountAdded": 1,
+      "leafCountRequested": 1,
+      "Metadata": []
+    }
   }
 ```
 </CH.Code>

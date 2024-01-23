@@ -9,8 +9,10 @@ async function run() {
   });
 
   const playlistID = 3682.41;
+  const title = "string";
+  const summary = "string";
   
-  const result = await sdk.playlists.updatePlaylist(playlistID);
+  const result = await sdk.playlists.updatePlaylist(playlistID, title, summary);
 
   // Handle the result
   console.log(result)

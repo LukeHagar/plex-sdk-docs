@@ -9,7 +9,7 @@ async function run() {
   });
 
   const playlistID = 1403.5;
-  const uri = "library://..";
+  const uri = "server://12345/com.plexapp.plugins.library/library/metadata/1";
   const playQueueID = 123;
   
   const result = await sdk.playlists.addPlaylistContents(playlistID, uri, playQueueID);
@@ -24,13 +24,12 @@ run();
 
 ```json Example Response
   {
-    "errors": [
-      {
-        "code": 1001,
-        "message": "User could not be authenticated",
-        "status": 401
-      }
-    ]
+    "MediaContainer": {
+      "size": 1,
+      "leafCountAdded": 1,
+      "leafCountRequested": 1,
+      "Metadata": []
+    }
   }
 ```
 </CH.Code>

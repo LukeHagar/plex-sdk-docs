@@ -1,7 +1,7 @@
 
 <CH.Code>
 ```bash Example Request
-curl http://10.10.10.47:32400/playlists/8700.13/items?playQueueID=123&uri=library%3A%2F%2F.. \
+curl http://10.10.10.47:32400/playlists/3682.41/items?playQueueID=123&uri=server%3A%2F%2F12345%2Fcom.plexapp.plugins.library%2Flibrary%2Fmetadata%2F1 \
 --header 'Accept: application/json' \
 --header 'X-Plex-Token: YOUR_API_KEY_HERE'
 ```
@@ -9,13 +9,12 @@ curl http://10.10.10.47:32400/playlists/8700.13/items?playQueueID=123&uri=librar
 
 ```json Example Response
   {
-    "errors": [
-      {
-        "code": 1001,
-        "message": "User could not be authenticated",
-        "status": 401
-      }
-    ]
+    "MediaContainer": {
+      "size": 1,
+      "leafCountAdded": 1,
+      "leafCountRequested": 1,
+      "Metadata": []
+    }
   }
 ```
 </CH.Code>

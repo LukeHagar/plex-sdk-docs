@@ -8,7 +8,6 @@ import(
 	"github.com/LukeHagar/plexgo"
 	"context"
 	"log"
-	"net/http"
 )
 
 func main() {
@@ -27,7 +26,7 @@ func main() {
         log.Fatal(err)
     }
 
-    if res.StatusCode == http.StatusOK {
+    if res.Object != nil {
         // handle response
     }
 }
@@ -36,13 +35,17 @@ func main() {
 
 ```json Example Response
   {
-    "errors": [
-      {
-        "code": 1001,
-        "message": "User could not be authenticated",
-        "status": 401
-      }
-    ]
+    "MediaContainer": {
+      "size": 2,
+      "composite": "/playlists/95/composite/1705717521",
+      "duration": 282,
+      "leafCount": 2,
+      "playlistType": "video",
+      "ratingKey": "95",
+      "smart": true,
+      "title": "Smart Movie Playlist",
+      "Metadata": []
+    }
   }
 ```
 </CH.Code>

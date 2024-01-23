@@ -1,7 +1,7 @@
 
 <CH.Code>
 ```bash Example Request
-curl http://10.10.10.47:32400/library/metadata/871.29/children \
+curl http://10.10.10.47:32400/library/metadata/3927.85/children \
 --header 'Accept: application/json' \
 --header 'X-Plex-Token: YOUR_API_KEY_HERE'
 ```
@@ -9,13 +9,31 @@ curl http://10.10.10.47:32400/library/metadata/871.29/children \
 
 ```json Example Response
   {
-    "errors": [
-      {
-        "code": 1001,
-        "message": "User could not be authenticated",
-        "status": 401
-      }
-    ]
+    "MediaContainer": {
+      "size": 3,
+      "allowSync": true,
+      "art": "/library/metadata/30072/art/1705739923",
+      "identifier": "com.plexapp.plugins.library",
+      "key": "30072",
+      "librarySectionID": 2,
+      "librarySectionTitle": "TV Shows",
+      "librarySectionUUID": "4bb2521c-8ba9-459b-aaee-8ab8bc35eabd",
+      "mediaTagPrefix": "/system/bundle/media/flags/",
+      "mediaTagVersion": 1701731894,
+      "nocache": true,
+      "parentIndex": 1,
+      "parentTitle": "Reacher",
+      "parentYear": 2022,
+      "summary": "When retired Military Police Officer Jack Reacher is arrested for a murder he did not commit, he finds himself in the middle of a deadly conspiracy full of dirty cops, shady businessmen, and scheming politicians. With nothing but his wits, he must figure out what is happening in Margrave, Georgia.",
+      "theme": "/library/metadata/30072/theme/1705739923",
+      "thumb": "/library/metadata/30072/thumb/1705739923",
+      "title1": "TV Shows",
+      "title2": "Reacher",
+      "viewGroup": "season",
+      "viewMode": 65593,
+      "Directory": [],
+      "Metadata": []
+    }
   }
 ```
 </CH.Code>

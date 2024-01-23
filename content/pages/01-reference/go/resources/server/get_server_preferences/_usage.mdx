@@ -8,7 +8,6 @@ import(
 	"github.com/LukeHagar/plexgo"
 	"context"
 	"log"
-	"net/http"
 )
 
 func main() {
@@ -22,7 +21,7 @@ func main() {
         log.Fatal(err)
     }
 
-    if res.StatusCode == http.StatusOK {
+    if res.Object != nil {
         // handle response
     }
 }
@@ -31,13 +30,10 @@ func main() {
 
 ```json Example Response
   {
-    "errors": [
-      {
-        "code": 1001,
-        "message": "User could not be authenticated",
-        "status": 401
-      }
-    ]
+    "MediaContainer": {
+      "size": 161,
+      "Setting": []
+    }
   }
 ```
 </CH.Code>

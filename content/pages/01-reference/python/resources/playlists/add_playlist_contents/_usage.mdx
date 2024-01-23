@@ -9,9 +9,9 @@ s = plex_api.PlexAPI(
 )
 
 
-res = s.playlists.add_playlist_contents(playlist_id=1403.5, uri='library://..', play_queue_id=123)
+res = s.playlists.add_playlist_contents(playlist_id=1403.5, uri='server://12345/com.plexapp.plugins.library/library/metadata/1', play_queue_id=123)
 
-if res.status_code == 200:
+if res.object is not None:
     # handle response
     pass
 ```
@@ -19,13 +19,12 @@ if res.status_code == 200:
 
 ```json Example Response
   {
-    "errors": [
-      {
-        "code": 1001,
-        "message": "User could not be authenticated",
-        "status": 401
-      }
-    ]
+    "MediaContainer": {
+      "size": 1,
+      "leafCountAdded": 1,
+      "leafCountRequested": 1,
+      "Metadata": []
+    }
   }
 ```
 </CH.Code>

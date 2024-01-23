@@ -9,9 +9,9 @@ async function run() {
     accessToken: "<YOUR_API_KEY_HERE>",
   });
 
-  const level = Level.Four;
-  const message = "string";
-  const source = "string";
+  const level = Level.Two;
+  const message = "Test log message";
+  const source = "Postman";
   
   const result = await sdk.log.logLine(level, message, source);
 

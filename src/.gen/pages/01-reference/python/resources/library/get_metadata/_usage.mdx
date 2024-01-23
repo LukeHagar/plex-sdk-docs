@@ -9,9 +9,9 @@ s = plex_api.PlexAPI(
 )
 
 
-res = s.library.get_metadata(rating_key=5680.45)
+res = s.library.get_metadata(rating_key=7917.25)
 
-if res.status_code == 200:
+if res.object is not None:
     # handle response
     pass
 ```
@@ -19,13 +19,17 @@ if res.status_code == 200:
 
 ```json Example Response
   {
-    "errors": [
-      {
-        "code": 1001,
-        "message": "User could not be authenticated",
-        "status": 401
-      }
-    ]
+    "MediaContainer": {
+      "size": 1,
+      "allowSync": true,
+      "identifier": "com.plexapp.plugins.library",
+      "librarySectionID": 1,
+      "librarySectionTitle": "Movies",
+      "librarySectionUUID": "cfc899d7-3000-46f6-8489-b9592714ada5",
+      "mediaTagPrefix": "/system/bundle/media/flags/",
+      "mediaTagVersion": 1698860922,
+      "Metadata": []
+    }
   }
 ```
 </CH.Code>

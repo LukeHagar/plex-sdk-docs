@@ -18,11 +18,11 @@ func main() {
     )
 
 
-    var level operations.Level = operations.LevelFour
+    var level operations.Level = operations.LevelTwo
 
-    var message string = "string"
+    var message string = "Test log message"
 
-    var source string = "string"
+    var source string = "Postman"
 
     ctx := context.Background()
     res, err := s.Log.LogLine(ctx, level, message, source)

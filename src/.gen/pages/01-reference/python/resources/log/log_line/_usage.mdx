@@ -9,7 +9,7 @@ s = plex_api.PlexAPI(
 )
 
 
-res = s.log.log_line(level=operations.Level.FOUR, message='string', source='string')
+res = s.log.log_line(level=operations.Level.TWO, message='Test log message', source='Postman')
 
 if res.status_code == 200:
     # handle response

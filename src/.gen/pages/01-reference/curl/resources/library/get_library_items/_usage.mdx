@@ -1,7 +1,7 @@
 
 <CH.Code>
 ```bash Example Request
-curl http://10.10.10.47:32400/library/sections/5288.95/all?filter=string&type=4799.77 \
+curl http://10.10.10.47:32400/library/sections/528895/{{tag}} \
 --header 'Accept: application/json' \
 --header 'X-Plex-Token: YOUR_API_KEY_HERE'
 ```
@@ -9,13 +9,23 @@ curl http://10.10.10.47:32400/library/sections/5288.95/all?filter=string&type=47
 
 ```json Example Response
   {
-    "errors": [
-      {
-        "code": 1001,
-        "message": "User could not be authenticated",
-        "status": 401
-      }
-    ]
+    "MediaContainer": {
+      "size": 70,
+      "allowSync": true,
+      "art": "/:/resources/movie-fanart.jpg",
+      "identifier": "com.plexapp.plugins.library",
+      "librarySectionID": 1,
+      "librarySectionTitle": "Movies",
+      "librarySectionUUID": "322a231a-b7f7-49f5-920f-14c61199cd30",
+      "mediaTagPrefix": "/system/bundle/media/flags/",
+      "mediaTagVersion": 1701731894,
+      "thumb": "/:/resources/movie.png",
+      "title1": "Movies",
+      "title2": "Recently Released",
+      "viewGroup": "movie",
+      "viewMode": 65592,
+      "Metadata": []
+    }
   }
 ```
 </CH.Code>
