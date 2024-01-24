@@ -1,13 +1,12 @@
 {
-  "delete_library": "Delete Library",
-  "get_common_library_items": "Get Common Library Items",
   "get_file_hash": "Get File Hash",
-  "get_latest_library_items": "Get Latest Library Items",
   "get_recently_added": "Get Recently Added",
   "get_libraries": "Get Libraries",
   "get_library": "Get Library",
+  "delete_library": "Delete Library",
   "get_library_items": "Get Library Items",
   "refresh_library": "Refresh Library",
+  "search_library": "Search Library",
   "get_metadata": "Get Metadata",
   "get_metadata_children": "Get Metadata Children",
   "get_on_deck": "Get On Deck"

@@ -9,8 +9,8 @@ async function run() {
     accessToken: "<YOUR_API_KEY_HERE>",
   });
 
-  const tonight = Tonight.Zero;
-  const skip = Skip.One;
+  const tonight = Tonight.One;
+  const skip = Skip.Zero;
   
   const result = await sdk.updater.applyUpdates(tonight, skip);
 

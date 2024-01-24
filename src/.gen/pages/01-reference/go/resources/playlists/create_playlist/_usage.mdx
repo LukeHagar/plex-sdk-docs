@@ -19,9 +19,9 @@ func main() {
     ctx := context.Background()
     res, err := s.Playlists.CreatePlaylist(ctx, operations.CreatePlaylistRequest{
         Title: "string",
-        Type: operations.TypeVideo,
+        Type: operations.QueryParamTypeVideo,
         Smart: operations.SmartOne,
-        URI: "http://velvety-spiderling.com",
+        URI: "https://bite-sized-favorite.com",
     })
     if err != nil {
         log.Fatal(err)

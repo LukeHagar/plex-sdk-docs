@@ -9,7 +9,7 @@ s = plex_api.PlexAPI(
 )
 
 
-res = s.security.get_transient_token(type=operations.QueryParamType.DELEGATION, scope=operations.Scope.ALL)
+res = s.security.get_transient_token(type=operations.GetTransientTokenQueryParamType.DELEGATION, scope=operations.Scope.ALL)
 
 if res.status_code == 200:
     # handle response

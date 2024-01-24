@@ -17,7 +17,7 @@ func main() {
     )
 
 
-    var source string = "provider://provider-identifier"
+    var source string = "server://client-identifier"
 
     ctx := context.Background()
     res, err := s.Security.GetSourceConnectionInformation(ctx, source)

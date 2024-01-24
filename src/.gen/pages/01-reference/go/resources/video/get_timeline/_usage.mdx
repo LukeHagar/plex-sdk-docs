@@ -19,16 +19,16 @@ func main() {
 
     ctx := context.Background()
     res, err := s.Video.GetTimeline(ctx, operations.GetTimelineRequest{
-        RatingKey: 6788.8,
+        RatingKey: 7206.33,
         Key: "<key>",
-        State: operations.StatePlaying,
-        HasMDE: 7206.33,
-        Time: 6399.21,
-        Duration: 5820.2,
+        State: operations.StatePaused,
+        HasMDE: 5820.2,
+        Time: 1433.53,
+        Duration: 5373.73,
         Context: "string",
-        PlayQueueItemID: 1433.53,
-        PlayBackTime: 5373.73,
-        Row: 9446.69,
+        PlayQueueItemID: 9446.69,
+        PlayBackTime: 7586.16,
+        Row: 5218.48,
     })
     if err != nil {
         log.Fatal(err)

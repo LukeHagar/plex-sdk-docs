@@ -10,9 +10,9 @@ s = plex_api.PlexAPI(
 
 req = operations.CreatePlaylistRequest(
     title='string',
-    type=operations.Type.VIDEO,
+    type=operations.QueryParamType.VIDEO,
     smart=operations.Smart.ONE,
-    uri='http://velvety-spiderling.com',
+    uri='https://bite-sized-favorite.com',
 )
 
 res = s.playlists.create_playlist(req)

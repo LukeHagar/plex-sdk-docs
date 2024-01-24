@@ -9,16 +9,16 @@ s = plex_api.PlexAPI(
 )
 
 req = operations.GetTimelineRequest(
-    rating_key=6788.8,
+    rating_key=7206.33,
     key='<key>',
-    state=operations.State.PLAYING,
-    has_mde=7206.33,
-    time=6399.21,
-    duration=5820.2,
+    state=operations.State.PAUSED,
+    has_mde=5820.2,
+    time=1433.53,
+    duration=5373.73,
     context='string',
-    play_queue_item_id=1433.53,
-    play_back_time=5373.73,
-    row=9446.69,
+    play_queue_item_id=9446.69,
+    play_back_time=7586.16,
+    row=5218.48,
 )
 
 res = s.video.get_timeline(req)

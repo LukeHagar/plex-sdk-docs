@@ -1,12 +1,12 @@
 lockVersion: 2.0.0
 id: 7fc33f51-d778-40ef-b094-90972c025d39
 management:
-  docChecksum: 7aba498c024534142941d65a7c2e649c
+  docChecksum: 95d4ac4070b7f9db42126fc81b258e02
   docVersion: 0.0.3
   speakeasyVersion: internal
-  generationVersion: 2.237.3
-  releaseVersion: 0.2.0
-  configChecksum: 7adcc65dd0834e56b5a7642677ff9159
+  generationVersion: 2.239.0
+  releaseVersion: 0.2.1
+  configChecksum: 5421929b3e489a66ede916e408575cf8
   published: true
 features:
   docs:
@@ -122,6 +122,11 @@ generatedFiles:
   - content/pages/01-reference/go/resources/library/refresh_library/_response.mdx
   - content/pages/01-reference/go/resources/library/refresh_library/_usage.mdx
   - content/pages/01-reference/go/resources/library/refresh_library/refresh_library.mdx
+  - content/pages/01-reference/go/resources/library/search_library/_header.mdx
+  - content/pages/01-reference/go/resources/library/search_library/_parameters.mdx
+  - content/pages/01-reference/go/resources/library/search_library/_response.mdx
+  - content/pages/01-reference/go/resources/library/search_library/_usage.mdx
+  - content/pages/01-reference/go/resources/library/search_library/search_library.mdx
   - content/pages/01-reference/go/resources/log/enable_paper_trail/_header.mdx
   - content/pages/01-reference/go/resources/log/enable_paper_trail/_parameters.mdx
   - content/pages/01-reference/go/resources/log/enable_paper_trail/_response.mdx
@@ -422,6 +427,11 @@ generatedFiles:
   - content/pages/01-reference/python/resources/library/refresh_library/_response.mdx
   - content/pages/01-reference/python/resources/library/refresh_library/_usage.mdx
   - content/pages/01-reference/python/resources/library/refresh_library/refresh_library.mdx
+  - content/pages/01-reference/python/resources/library/search_library/_header.mdx
+  - content/pages/01-reference/python/resources/library/search_library/_parameters.mdx
+  - content/pages/01-reference/python/resources/library/search_library/_response.mdx
+  - content/pages/01-reference/python/resources/library/search_library/_usage.mdx
+  - content/pages/01-reference/python/resources/library/search_library/search_library.mdx
   - content/pages/01-reference/python/resources/log/enable_paper_trail/_header.mdx
   - content/pages/01-reference/python/resources/log/enable_paper_trail/_parameters.mdx
   - content/pages/01-reference/python/resources/log/enable_paper_trail/_response.mdx
@@ -722,6 +732,11 @@ generatedFiles:
   - content/pages/01-reference/typescript/resources/library/refresh_library/_response.mdx
   - content/pages/01-reference/typescript/resources/library/refresh_library/_usage.mdx
   - content/pages/01-reference/typescript/resources/library/refresh_library/refresh_library.mdx
+  - content/pages/01-reference/typescript/resources/library/search_library/_header.mdx
+  - content/pages/01-reference/typescript/resources/library/search_library/_parameters.mdx
+  - content/pages/01-reference/typescript/resources/library/search_library/_response.mdx
+  - content/pages/01-reference/typescript/resources/library/search_library/_usage.mdx
+  - content/pages/01-reference/typescript/resources/library/search_library/search_library.mdx
   - content/pages/01-reference/typescript/resources/log/enable_paper_trail/_header.mdx
   - content/pages/01-reference/typescript/resources/log/enable_paper_trail/_parameters.mdx
   - content/pages/01-reference/typescript/resources/log/enable_paper_trail/_response.mdx
@@ -1702,6 +1717,9 @@ generatedFiles:
   - content/types/models/operations/get_transcode_sessions_response_body/go.mdx
   - content/types/models/operations/get_transcode_sessions_response_body/python.mdx
   - content/types/models/operations/get_transcode_sessions_response_body/typescript.mdx
+  - content/types/models/operations/get_transient_token_query_param_type/go.mdx
+  - content/types/models/operations/get_transient_token_query_param_type/python.mdx
+  - content/types/models/operations/get_transient_token_query_param_type/typescript.mdx
   - content/types/models/operations/get_transient_token_request/go.mdx
   - content/types/models/operations/get_transient_token_request/python.mdx
   - content/types/models/operations/get_transient_token_request/typescript.mdx
@@ -1834,6 +1852,21 @@ generatedFiles:
   - content/types/models/operations/scope/go.mdx
   - content/types/models/operations/scope/python.mdx
   - content/types/models/operations/scope/typescript.mdx
+  - content/types/models/operations/search_library_media_container/go.mdx
+  - content/types/models/operations/search_library_media_container/python.mdx
+  - content/types/models/operations/search_library_media_container/typescript.mdx
+  - content/types/models/operations/search_library_metadata/go.mdx
+  - content/types/models/operations/search_library_metadata/python.mdx
+  - content/types/models/operations/search_library_metadata/typescript.mdx
+  - content/types/models/operations/search_library_request/go.mdx
+  - content/types/models/operations/search_library_request/python.mdx
+  - content/types/models/operations/search_library_request/typescript.mdx
+  - content/types/models/operations/search_library_response/go.mdx
+  - content/types/models/operations/search_library_response/python.mdx
+  - content/types/models/operations/search_library_response/typescript.mdx
+  - content/types/models/operations/search_library_response_body/go.mdx
+  - content/types/models/operations/search_library_response_body/python.mdx
+  - content/types/models/operations/search_library_response_body/typescript.mdx
   - content/types/models/operations/server/go.mdx
   - content/types/models/operations/server/python.mdx
   - content/types/models/operations/server/typescript.mdx
@@ -2232,6 +2265,12 @@ generatedFiles:
   - content/pages/01-reference/curl/resources/library/refresh_library/_parameters.mdx
   - content/pages/01-reference/curl/resources/library/refresh_library/_usage.mdx
   - content/pages/01-reference/curl/resources/library/refresh_library/_header.mdx
+  - content/pages/01-reference/curl/resources/library/search_library/search_library.mdx
+  - content/pages/01-reference/curl/resources/library/search_library/_authentication.mdx
+  - content/pages/01-reference/curl/resources/library/search_library/_response.mdx
+  - content/pages/01-reference/curl/resources/library/search_library/_parameters.mdx
+  - content/pages/01-reference/curl/resources/library/search_library/_usage.mdx
+  - content/pages/01-reference/curl/resources/library/search_library/_header.mdx
   - content/pages/01-reference/curl/resources/library/get_metadata/get_metadata.mdx
   - content/pages/01-reference/curl/resources/library/get_metadata/_authentication.mdx
   - content/pages/01-reference/curl/resources/library/get_metadata/_response.mdx
@@ -2594,6 +2633,12 @@ generatedFiles:
   - content/types/operations/refresh_library_errors/curl.mdx
   - content/types/operations/refresh_library_response_body/curl.mdx
   - content/types/operations/refresh_library_response/curl.mdx
+  - content/types/operations/type/curl.mdx
+  - content/types/operations/search_library_request/curl.mdx
+  - content/types/operations/search_library_metadata/curl.mdx
+  - content/types/operations/search_library_media_container/curl.mdx
+  - content/types/operations/search_library_response_body/curl.mdx
+  - content/types/operations/search_library_response/curl.mdx
   - content/types/operations/get_metadata_request/curl.mdx
   - content/types/operations/get_metadata_errors/curl.mdx
   - content/types/operations/get_metadata_library_response_body/curl.mdx
@@ -2642,7 +2687,7 @@ generatedFiles:
   - content/types/operations/enable_paper_trail_errors/curl.mdx
   - content/types/operations/enable_paper_trail_response_body/curl.mdx
   - content/types/operations/enable_paper_trail_response/curl.mdx
-  - content/types/operations/type/curl.mdx
+  - content/types/operations/query_param_type/curl.mdx
   - content/types/operations/smart/curl.mdx
   - content/types/operations/create_playlist_request/curl.mdx
   - content/types/operations/create_playlist_errors/curl.mdx
@@ -2705,7 +2750,7 @@ generatedFiles:
   - content/types/operations/upload_playlist_errors/curl.mdx
   - content/types/operations/upload_playlist_response_body/curl.mdx
   - content/types/operations/upload_playlist_response/curl.mdx
-  - content/types/operations/query_param_type/curl.mdx
+  - content/types/operations/get_transient_token_query_param_type/curl.mdx
   - content/types/operations/scope/curl.mdx
   - content/types/operations/get_transient_token_request/curl.mdx
   - content/types/operations/get_transient_token_errors/curl.mdx
@@ -3018,6 +3063,12 @@ generatedFiles:
   - src/.gen/pages/01-reference/python/resources/library/refresh_library/_usage.mdx
   - src/.gen/pages/01-reference/python/resources/library/refresh_library/refresh_library.mdx
   - src/.gen/pages/01-reference/python/resources/library/refresh_library/refresh_library_content.mdx
+  - src/.gen/pages/01-reference/python/resources/library/search_library/_header.mdx
+  - src/.gen/pages/01-reference/python/resources/library/search_library/_parameters.mdx
+  - src/.gen/pages/01-reference/python/resources/library/search_library/_response.mdx
+  - src/.gen/pages/01-reference/python/resources/library/search_library/_usage.mdx
+  - src/.gen/pages/01-reference/python/resources/library/search_library/search_library.mdx
+  - src/.gen/pages/01-reference/python/resources/library/search_library/search_library_content.mdx
   - src/.gen/pages/01-reference/python/resources/library/library.mdx
   - src/.gen/pages/01-reference/python/resources/library/library_content.mdx
   - src/.gen/pages/01-reference/python/resources/log/enable_paper_trail/_header.mdx
@@ -3289,9 +3340,7 @@ generatedFiles:
   - src/pages/python/hubs/get_library_hubs/_meta.json
   - src/pages/python/hubs/_meta.json
   - src/pages/python/library/delete_library/_meta.json
-  - src/pages/python/library/get_common_library_items/_meta.json
   - src/pages/python/library/get_file_hash/_meta.json
-  - src/pages/python/library/get_latest_library_items/_meta.json
   - src/pages/python/library/get_libraries/_meta.json
   - src/pages/python/library/get_library/_meta.json
   - src/pages/python/library/get_library_items/_meta.json
@@ -3300,6 +3349,7 @@ generatedFiles:
   - src/pages/python/library/get_on_deck/_meta.json
   - src/pages/python/library/get_recently_added/_meta.json
   - src/pages/python/library/refresh_library/_meta.json
+  - src/pages/python/library/search_library/_meta.json
   - src/pages/python/library/_meta.json
   - src/pages/python/log/enable_paper_trail/_meta.json
   - src/pages/python/log/log_line/_meta.json
@@ -3481,6 +3531,12 @@ generatedFiles:
   - src/.gen/pages/01-reference/typescript/resources/library/refresh_library/_usage.mdx
   - src/.gen/pages/01-reference/typescript/resources/library/refresh_library/refresh_library.mdx
   - src/.gen/pages/01-reference/typescript/resources/library/refresh_library/refresh_library_content.mdx
+  - src/.gen/pages/01-reference/typescript/resources/library/search_library/_header.mdx
+  - src/.gen/pages/01-reference/typescript/resources/library/search_library/_parameters.mdx
+  - src/.gen/pages/01-reference/typescript/resources/library/search_library/_response.mdx
+  - src/.gen/pages/01-reference/typescript/resources/library/search_library/_usage.mdx
+  - src/.gen/pages/01-reference/typescript/resources/library/search_library/search_library.mdx
+  - src/.gen/pages/01-reference/typescript/resources/library/search_library/search_library_content.mdx
   - src/.gen/pages/01-reference/typescript/resources/library/library.mdx
   - src/.gen/pages/01-reference/typescript/resources/library/library_content.mdx
   - src/.gen/pages/01-reference/typescript/resources/log/enable_paper_trail/_header.mdx
@@ -3752,9 +3808,7 @@ generatedFiles:
   - src/pages/typescript/hubs/get_library_hubs/_meta.json
   - src/pages/typescript/hubs/_meta.json
   - src/pages/typescript/library/delete_library/_meta.json
-  - src/pages/typescript/library/get_common_library_items/_meta.json
   - src/pages/typescript/library/get_file_hash/_meta.json
-  - src/pages/typescript/library/get_latest_library_items/_meta.json
   - src/pages/typescript/library/get_libraries/_meta.json
   - src/pages/typescript/library/get_library/_meta.json
   - src/pages/typescript/library/get_library_items/_meta.json
@@ -3763,6 +3817,7 @@ generatedFiles:
   - src/pages/typescript/library/get_on_deck/_meta.json
   - src/pages/typescript/library/get_recently_added/_meta.json
   - src/pages/typescript/library/refresh_library/_meta.json
+  - src/pages/typescript/library/search_library/_meta.json
   - src/pages/typescript/library/_meta.json
   - src/pages/typescript/log/enable_paper_trail/_meta.json
   - src/pages/typescript/log/log_line/_meta.json
@@ -3944,6 +3999,12 @@ generatedFiles:
   - src/.gen/pages/01-reference/go/resources/library/refresh_library/_usage.mdx
   - src/.gen/pages/01-reference/go/resources/library/refresh_library/refresh_library.mdx
   - src/.gen/pages/01-reference/go/resources/library/refresh_library/refresh_library_content.mdx
+  - src/.gen/pages/01-reference/go/resources/library/search_library/_header.mdx
+  - src/.gen/pages/01-reference/go/resources/library/search_library/_parameters.mdx
+  - src/.gen/pages/01-reference/go/resources/library/search_library/_response.mdx
+  - src/.gen/pages/01-reference/go/resources/library/search_library/_usage.mdx
+  - src/.gen/pages/01-reference/go/resources/library/search_library/search_library.mdx
+  - src/.gen/pages/01-reference/go/resources/library/search_library/search_library_content.mdx
   - src/.gen/pages/01-reference/go/resources/library/library.mdx
   - src/.gen/pages/01-reference/go/resources/library/library_content.mdx
   - src/.gen/pages/01-reference/go/resources/log/enable_paper_trail/_header.mdx
@@ -4215,9 +4276,7 @@ generatedFiles:
   - src/pages/go/hubs/get_library_hubs/_meta.json
   - src/pages/go/hubs/_meta.json
   - src/pages/go/library/delete_library/_meta.json
-  - src/pages/go/library/get_common_library_items/_meta.json
   - src/pages/go/library/get_file_hash/_meta.json
-  - src/pages/go/library/get_latest_library_items/_meta.json
   - src/pages/go/library/get_libraries/_meta.json
   - src/pages/go/library/get_library/_meta.json
   - src/pages/go/library/get_library_items/_meta.json
@@ -4226,6 +4285,7 @@ generatedFiles:
   - src/pages/go/library/get_on_deck/_meta.json
   - src/pages/go/library/get_recently_added/_meta.json
   - src/pages/go/library/refresh_library/_meta.json
+  - src/pages/go/library/search_library/_meta.json
   - src/pages/go/library/_meta.json
   - src/pages/go/log/enable_paper_trail/_meta.json
   - src/pages/go/log/log_line/_meta.json
@@ -4417,6 +4477,13 @@ generatedFiles:
   - src/.gen/pages/01-reference/curl/resources/library/refresh_library/_usage.mdx
   - src/.gen/pages/01-reference/curl/resources/library/refresh_library/refresh_library.mdx
   - src/.gen/pages/01-reference/curl/resources/library/refresh_library/refresh_library_content.mdx
+  - src/.gen/pages/01-reference/curl/resources/library/search_library/_authentication.mdx
+  - src/.gen/pages/01-reference/curl/resources/library/search_library/_header.mdx
+  - src/.gen/pages/01-reference/curl/resources/library/search_library/_parameters.mdx
+  - src/.gen/pages/01-reference/curl/resources/library/search_library/_response.mdx
+  - src/.gen/pages/01-reference/curl/resources/library/search_library/_usage.mdx
+  - src/.gen/pages/01-reference/curl/resources/library/search_library/search_library.mdx
+  - src/.gen/pages/01-reference/curl/resources/library/search_library/search_library_content.mdx
   - src/.gen/pages/01-reference/curl/resources/library/library.mdx
   - src/.gen/pages/01-reference/curl/resources/library/library_content.mdx
   - src/.gen/pages/01-reference/curl/resources/log/enable_paper_trail/_authentication.mdx
@@ -4714,9 +4781,7 @@ generatedFiles:
   - src/pages/curl/hubs/get_library_hubs/_meta.json
   - src/pages/curl/hubs/_meta.json
   - src/pages/curl/library/delete_library/_meta.json
-  - src/pages/curl/library/get_common_library_items/_meta.json
   - src/pages/curl/library/get_file_hash/_meta.json
-  - src/pages/curl/library/get_latest_library_items/_meta.json
   - src/pages/curl/library/get_libraries/_meta.json
   - src/pages/curl/library/get_library/_meta.json
   - src/pages/curl/library/get_library_items/_meta.json
@@ -4725,6 +4790,7 @@ generatedFiles:
   - src/pages/curl/library/get_on_deck/_meta.json
   - src/pages/curl/library/get_recently_added/_meta.json
   - src/pages/curl/library/refresh_library/_meta.json
+  - src/pages/curl/library/search_library/_meta.json
   - src/pages/curl/library/_meta.json
   - src/pages/curl/log/enable_paper_trail/_meta.json
   - src/pages/curl/log/log_line/_meta.json

@@ -9,7 +9,7 @@ s = plex_api.PlexAPI(
 )
 
 
-res = s.security.get_source_connection_information(source='provider://provider-identifier')
+res = s.security.get_source_connection_information(source='server://client-identifier')
 
 if res.status_code == 200:
     # handle response

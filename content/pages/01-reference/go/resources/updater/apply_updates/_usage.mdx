@@ -18,9 +18,9 @@ func main() {
     )
 
 
-    var tonight *operations.Tonight = operations.TonightZero
+    var tonight *operations.Tonight = operations.TonightOne
 
-    var skip *operations.Skip = operations.SkipOne
+    var skip *operations.Skip = operations.SkipZero
 
     ctx := context.Background()
     res, err := s.Updater.ApplyUpdates(ctx, tonight, skip)

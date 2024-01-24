@@ -9,7 +9,7 @@ s = plex_api.PlexAPI(
 )
 
 
-res = s.updater.apply_updates(tonight=operations.Tonight.ZERO, skip=operations.Skip.ONE)
+res = s.updater.apply_updates(tonight=operations.Tonight.ONE, skip=operations.Skip.ZERO)
 
 if res.status_code == 200:
     # handle response

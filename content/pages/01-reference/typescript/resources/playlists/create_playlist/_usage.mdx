@@ -2,7 +2,7 @@
 <CH.Code>
 ```typescript CreatePlaylist.ts
 import { PlexAPI } from "@lukehagar/plexjs";
-import { Smart, TypeT } from "@lukehagar/plexjs/models/operations";
+import { QueryParamType, Smart } from "@lukehagar/plexjs/models/operations";
 
 async function run() {
   const sdk = new PlexAPI({
@@ -11,9 +11,9 @@ async function run() {
 
   const result = await sdk.playlists.createPlaylist({
     title: "string",
-    type: TypeT.Video,
+    type: QueryParamType.Video,
     smart: Smart.One,
-    uri: "http://velvety-spiderling.com",
+    uri: "https://bite-sized-favorite.com",
   });
 
   // Handle the result

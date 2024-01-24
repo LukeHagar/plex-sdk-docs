@@ -1,0 +1,39 @@
+
+<CH.Code>
+```python SearchLibrary.py
+import plex_api
+from plex_api.models import operations
+
+s = plex_api.PlexAPI(
+    access_token="<YOUR_API_KEY_HERE>",
+)
+
+
+res = s.library.search_library(section_id=791725, type=operations.Type.FOUR)
+
+if res.object is not None:
+    # handle response
+    pass
+```
+---
+
+```json Example Response
+  {
+    "MediaContainer": {
+      "size": 2,
+      "allowSync": false,
+      "art": "/:/resources/show-fanart.jpg",
+      "identifier": "com.plexapp.plugins.library",
+      "mediaTagPrefix": "/system/bundle/media/flags/",
+      "mediaTagVersion": 1698860922,
+      "nocache": true,
+      "thumb": "/:/resources/show.png",
+      "title1": "TV Shows",
+      "title2": "Search for ''",
+      "viewGroup": "season",
+      "viewMode": 65593,
+      "Metadata": []
+    }
+  }
+```
+</CH.Code>
