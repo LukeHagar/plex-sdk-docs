@@ -1,0 +1,48 @@
+
+<CH.Code>
+```go GetToken.go
+package main
+
+import(
+	"github.com/LukeHagar/plexgo/models/components"
+	"github.com/LukeHagar/plexgo"
+	"context"
+	"log"
+	"net/http"
+)
+
+func main() {
+    s := plexgo.New(
+        plexgo.WithSecurity("<YOUR_API_KEY_HERE>"),
+    )
+
+
+    var pinID string = "string"
+
+    var xPlexClientIdentifier string = "string"
+
+    ctx := context.Background()
+    res, err := s.Plex.Tv.GetToken(ctx, pinID, xPlexClientIdentifier)
+    if err != nil {
+        log.Fatal(err)
+    }
+
+    if res.StatusCode == http.StatusOK {
+        // handle response
+    }
+}
+```
+---
+
+```json Example Response
+  {
+    "errors": [
+      {
+        "code": 1000,
+        "message": "X-Plex-Client-Identifier is missing",
+        "status": 400
+      }
+    ]
+  }
+```
+</CH.Code>

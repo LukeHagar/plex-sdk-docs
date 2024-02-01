@@ -1,0 +1,35 @@
+
+<CH.Code>
+```typescript GetToken.ts
+import { PlexAPI } from "@lukehagar/plexjs";
+
+async function run() {
+  const sdk = new PlexAPI({
+    accessToken: "<YOUR_API_KEY_HERE>",
+  });
+
+  const pinID = "string";
+  const xPlexClientIdentifier = "string";
+  
+  const result = await sdk.plex.tv.getToken(pinID, xPlexClientIdentifier);
+
+  // Handle the result
+  console.log(result)
+}
+
+run();
+```
+---
+
+```json Example Response
+  {
+    "errors": [
+      {
+        "code": 1000,
+        "message": "X-Plex-Client-Identifier is missing",
+        "status": 400
+      }
+    ]
+  }
+```
+</CH.Code>

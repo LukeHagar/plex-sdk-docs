@@ -2,7 +2,7 @@
 <CH.Code>
 ```typescript SearchLibrary.ts
 import { PlexAPI } from "@lukehagar/plexjs";
-import { TypeT } from "@lukehagar/plexjs/models/operations";
+import { Type } from "@lukehagar/plexjs/models/operations";
 
 async function run() {
   const sdk = new PlexAPI({
@@ -10,7 +10,7 @@ async function run() {
   });
 
   const sectionId = 791725;
-  const type = TypeT.Four;
+  const type = Type.Four;
   
   const result = await sdk.library.searchLibrary(sectionId, type);
 

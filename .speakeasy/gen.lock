@@ -1,20 +1,21 @@
 lockVersion: 2.0.0
 id: 7fc33f51-d778-40ef-b094-90972c025d39
 management:
-  docChecksum: 95d4ac4070b7f9db42126fc81b258e02
+  docChecksum: 94439465ae5d544f0e52b00719af05ee
   docVersion: 0.0.3
   speakeasyVersion: internal
-  generationVersion: 2.239.0
-  releaseVersion: 0.2.1
-  configChecksum: 5421929b3e489a66ede916e408575cf8
+  generationVersion: 2.245.1
+  releaseVersion: 0.3.0
+  configChecksum: 263b58c1fc894b4f65ef4ffd5a694be3
   published: true
 features:
   docs:
     constsAndDefaults: 0.1.0
-    core: 1.24.2
+    core: 1.25.0
     flattening: 0.1.0
     globalSecurity: 0.1.1
     globalServerURLs: 0.1.1
+    methodServerURLs: 0.1.1
     nameOverrides: 0.1.0
     unions: 0.1.2
 generatedFiles:
@@ -205,6 +206,18 @@ generatedFiles:
   - content/pages/01-reference/go/resources/playlists/upload_playlist/_response.mdx
   - content/pages/01-reference/go/resources/playlists/upload_playlist/_usage.mdx
   - content/pages/01-reference/go/resources/playlists/upload_playlist/upload_playlist.mdx
+  - content/pages/01-reference/go/resources/plex/plex.mdx
+  - content/pages/01-reference/go/resources/plex/tv/get_pin/_header.mdx
+  - content/pages/01-reference/go/resources/plex/tv/get_pin/_parameters.mdx
+  - content/pages/01-reference/go/resources/plex/tv/get_pin/_response.mdx
+  - content/pages/01-reference/go/resources/plex/tv/get_pin/_usage.mdx
+  - content/pages/01-reference/go/resources/plex/tv/get_pin/get_pin.mdx
+  - content/pages/01-reference/go/resources/plex/tv/get_token/_header.mdx
+  - content/pages/01-reference/go/resources/plex/tv/get_token/_parameters.mdx
+  - content/pages/01-reference/go/resources/plex/tv/get_token/_response.mdx
+  - content/pages/01-reference/go/resources/plex/tv/get_token/_usage.mdx
+  - content/pages/01-reference/go/resources/plex/tv/get_token/get_token.mdx
+  - content/pages/01-reference/go/resources/plex/tv/tv.mdx
   - content/pages/01-reference/go/resources/search/get_search_results/_header.mdx
   - content/pages/01-reference/go/resources/search/get_search_results/_parameters.mdx
   - content/pages/01-reference/go/resources/search/get_search_results/_response.mdx
@@ -510,6 +523,18 @@ generatedFiles:
   - content/pages/01-reference/python/resources/playlists/upload_playlist/_response.mdx
   - content/pages/01-reference/python/resources/playlists/upload_playlist/_usage.mdx
   - content/pages/01-reference/python/resources/playlists/upload_playlist/upload_playlist.mdx
+  - content/pages/01-reference/python/resources/plex/plex.mdx
+  - content/pages/01-reference/python/resources/plex/tv/get_pin/_header.mdx
+  - content/pages/01-reference/python/resources/plex/tv/get_pin/_parameters.mdx
+  - content/pages/01-reference/python/resources/plex/tv/get_pin/_response.mdx
+  - content/pages/01-reference/python/resources/plex/tv/get_pin/_usage.mdx
+  - content/pages/01-reference/python/resources/plex/tv/get_pin/get_pin.mdx
+  - content/pages/01-reference/python/resources/plex/tv/get_token/_header.mdx
+  - content/pages/01-reference/python/resources/plex/tv/get_token/_parameters.mdx
+  - content/pages/01-reference/python/resources/plex/tv/get_token/_response.mdx
+  - content/pages/01-reference/python/resources/plex/tv/get_token/_usage.mdx
+  - content/pages/01-reference/python/resources/plex/tv/get_token/get_token.mdx
+  - content/pages/01-reference/python/resources/plex/tv/tv.mdx
   - content/pages/01-reference/python/resources/search/get_search_results/_header.mdx
   - content/pages/01-reference/python/resources/search/get_search_results/_parameters.mdx
   - content/pages/01-reference/python/resources/search/get_search_results/_response.mdx
@@ -815,6 +840,18 @@ generatedFiles:
   - content/pages/01-reference/typescript/resources/playlists/upload_playlist/_response.mdx
   - content/pages/01-reference/typescript/resources/playlists/upload_playlist/_usage.mdx
   - content/pages/01-reference/typescript/resources/playlists/upload_playlist/upload_playlist.mdx
+  - content/pages/01-reference/typescript/resources/plex/plex.mdx
+  - content/pages/01-reference/typescript/resources/plex/tv/get_pin/_header.mdx
+  - content/pages/01-reference/typescript/resources/plex/tv/get_pin/_parameters.mdx
+  - content/pages/01-reference/typescript/resources/plex/tv/get_pin/_response.mdx
+  - content/pages/01-reference/typescript/resources/plex/tv/get_pin/_usage.mdx
+  - content/pages/01-reference/typescript/resources/plex/tv/get_pin/get_pin.mdx
+  - content/pages/01-reference/typescript/resources/plex/tv/get_token/_header.mdx
+  - content/pages/01-reference/typescript/resources/plex/tv/get_token/_parameters.mdx
+  - content/pages/01-reference/typescript/resources/plex/tv/get_token/_response.mdx
+  - content/pages/01-reference/typescript/resources/plex/tv/get_token/_usage.mdx
+  - content/pages/01-reference/typescript/resources/plex/tv/get_token/get_token.mdx
+  - content/pages/01-reference/typescript/resources/plex/tv/tv.mdx
   - content/pages/01-reference/typescript/resources/search/get_search_results/_header.mdx
   - content/pages/01-reference/typescript/resources/search/get_search_results/_parameters.mdx
   - content/pages/01-reference/typescript/resources/search/get_search_results/_response.mdx
@@ -1022,6 +1059,10 @@ generatedFiles:
   - content/types/models/errors/get_on_deck_errors/typescript.mdx
   - content/types/models/errors/get_on_deck_response_body/python.mdx
   - content/types/models/errors/get_on_deck_response_body/typescript.mdx
+  - content/types/models/errors/get_pin_errors/python.mdx
+  - content/types/models/errors/get_pin_errors/typescript.mdx
+  - content/types/models/errors/get_pin_response_body/python.mdx
+  - content/types/models/errors/get_pin_response_body/typescript.mdx
   - content/types/models/errors/get_playlist_contents_errors/python.mdx
   - content/types/models/errors/get_playlist_contents_errors/typescript.mdx
   - content/types/models/errors/get_playlist_contents_response_body/python.mdx
@@ -1080,6 +1121,10 @@ generatedFiles:
   - content/types/models/errors/get_timeline_errors/typescript.mdx
   - content/types/models/errors/get_timeline_response_body/python.mdx
   - content/types/models/errors/get_timeline_response_body/typescript.mdx
+  - content/types/models/errors/get_token_errors/python.mdx
+  - content/types/models/errors/get_token_errors/typescript.mdx
+  - content/types/models/errors/get_token_response_body/python.mdx
+  - content/types/models/errors/get_token_response_body/typescript.mdx
   - content/types/models/errors/get_transcode_sessions_errors/python.mdx
   - content/types/models/errors/get_transcode_sessions_errors/typescript.mdx
   - content/types/models/errors/get_transcode_sessions_response_body/python.mdx
@@ -1315,6 +1360,9 @@ generatedFiles:
   - content/types/models/operations/get_libraries_directory/go.mdx
   - content/types/models/operations/get_libraries_directory/python.mdx
   - content/types/models/operations/get_libraries_directory/typescript.mdx
+  - content/types/models/operations/get_libraries_location/go.mdx
+  - content/types/models/operations/get_libraries_location/python.mdx
+  - content/types/models/operations/get_libraries_location/typescript.mdx
   - content/types/models/operations/get_libraries_media_container/go.mdx
   - content/types/models/operations/get_libraries_media_container/python.mdx
   - content/types/models/operations/get_libraries_media_container/typescript.mdx
@@ -1501,6 +1549,15 @@ generatedFiles:
   - content/types/models/operations/get_on_deck_stream/go.mdx
   - content/types/models/operations/get_on_deck_stream/python.mdx
   - content/types/models/operations/get_on_deck_stream/typescript.mdx
+  - content/types/models/operations/get_pin_request/go.mdx
+  - content/types/models/operations/get_pin_request/python.mdx
+  - content/types/models/operations/get_pin_request/typescript.mdx
+  - content/types/models/operations/get_pin_response/go.mdx
+  - content/types/models/operations/get_pin_response/python.mdx
+  - content/types/models/operations/get_pin_response/typescript.mdx
+  - content/types/models/operations/get_pin_response_body/go.mdx
+  - content/types/models/operations/get_pin_response_body/python.mdx
+  - content/types/models/operations/get_pin_response_body/typescript.mdx
   - content/types/models/operations/get_playlist_contents_country/go.mdx
   - content/types/models/operations/get_playlist_contents_country/python.mdx
   - content/types/models/operations/get_playlist_contents_country/typescript.mdx
@@ -1708,6 +1765,12 @@ generatedFiles:
   - content/types/models/operations/get_timeline_response/go.mdx
   - content/types/models/operations/get_timeline_response/python.mdx
   - content/types/models/operations/get_timeline_response/typescript.mdx
+  - content/types/models/operations/get_token_request/go.mdx
+  - content/types/models/operations/get_token_request/python.mdx
+  - content/types/models/operations/get_token_request/typescript.mdx
+  - content/types/models/operations/get_token_response/go.mdx
+  - content/types/models/operations/get_token_response/python.mdx
+  - content/types/models/operations/get_token_response/typescript.mdx
   - content/types/models/operations/get_transcode_sessions_media_container/go.mdx
   - content/types/models/operations/get_transcode_sessions_media_container/python.mdx
   - content/types/models/operations/get_transcode_sessions_media_container/typescript.mdx
@@ -1938,7 +2001,7 @@ generatedFiles:
   - content/types/models/operations/two/typescript.mdx
   - content/types/models/operations/type/go.mdx
   - content/types/models/operations/type/python.mdx
-  - content/types/models/operations/type_t/typescript.mdx
+  - content/types/models/operations/type/typescript.mdx
   - content/types/models/operations/update_play_progress_request/go.mdx
   - content/types/models/operations/update_play_progress_request/python.mdx
   - content/types/models/operations/update_play_progress_request/typescript.mdx
@@ -2009,6 +2072,8 @@ generatedFiles:
   - content/types/models/sdkerrors/get_my_plex_account_response_body/go.mdx
   - content/types/models/sdkerrors/get_on_deck_errors/go.mdx
   - content/types/models/sdkerrors/get_on_deck_response_body/go.mdx
+  - content/types/models/sdkerrors/get_pin_errors/go.mdx
+  - content/types/models/sdkerrors/get_pin_response_body/go.mdx
   - content/types/models/sdkerrors/get_playlist_contents_errors/go.mdx
   - content/types/models/sdkerrors/get_playlist_contents_response_body/go.mdx
   - content/types/models/sdkerrors/get_playlist_errors/go.mdx
@@ -2038,6 +2103,8 @@ generatedFiles:
   - content/types/models/sdkerrors/get_source_connection_information_response_body/go.mdx
   - content/types/models/sdkerrors/get_timeline_errors/go.mdx
   - content/types/models/sdkerrors/get_timeline_response_body/go.mdx
+  - content/types/models/sdkerrors/get_token_errors/go.mdx
+  - content/types/models/sdkerrors/get_token_response_body/go.mdx
   - content/types/models/sdkerrors/get_transcode_sessions_errors/go.mdx
   - content/types/models/sdkerrors/get_transcode_sessions_response_body/go.mdx
   - content/types/models/sdkerrors/get_transient_token_errors/go.mdx
@@ -2308,6 +2375,20 @@ generatedFiles:
   - content/pages/01-reference/curl/resources/log/enable_paper_trail/_parameters.mdx
   - content/pages/01-reference/curl/resources/log/enable_paper_trail/_usage.mdx
   - content/pages/01-reference/curl/resources/log/enable_paper_trail/_header.mdx
+  - content/pages/01-reference/curl/resources/plex/plex.mdx
+  - content/pages/01-reference/curl/resources/plex/tv/tv.mdx
+  - content/pages/01-reference/curl/resources/plex/tv/get_pin/get_pin.mdx
+  - content/pages/01-reference/curl/resources/plex/tv/get_pin/_authentication.mdx
+  - content/pages/01-reference/curl/resources/plex/tv/get_pin/_response.mdx
+  - content/pages/01-reference/curl/resources/plex/tv/get_pin/_parameters.mdx
+  - content/pages/01-reference/curl/resources/plex/tv/get_pin/_usage.mdx
+  - content/pages/01-reference/curl/resources/plex/tv/get_pin/_header.mdx
+  - content/pages/01-reference/curl/resources/plex/tv/get_token/get_token.mdx
+  - content/pages/01-reference/curl/resources/plex/tv/get_token/_authentication.mdx
+  - content/pages/01-reference/curl/resources/plex/tv/get_token/_response.mdx
+  - content/pages/01-reference/curl/resources/plex/tv/get_token/_parameters.mdx
+  - content/pages/01-reference/curl/resources/plex/tv/get_token/_usage.mdx
+  - content/pages/01-reference/curl/resources/plex/tv/get_token/_header.mdx
   - content/pages/01-reference/curl/resources/playlists/playlists.mdx
   - content/pages/01-reference/curl/resources/playlists/create_playlist/create_playlist.mdx
   - content/pages/01-reference/curl/resources/playlists/create_playlist/_authentication.mdx
@@ -2593,7 +2674,7 @@ generatedFiles:
   - content/types/operations/get_recently_added_response/curl.mdx
   - content/types/operations/get_libraries_errors/curl.mdx
   - content/types/operations/get_libraries_library_response_body/curl.mdx
-  - content/types/operations/location/curl.mdx
+  - content/types/operations/get_libraries_location/curl.mdx
   - content/types/operations/get_libraries_directory/curl.mdx
   - content/types/operations/get_libraries_media_container/curl.mdx
   - content/types/operations/get_libraries_response_body/curl.mdx
@@ -2687,6 +2768,16 @@ generatedFiles:
   - content/types/operations/enable_paper_trail_errors/curl.mdx
   - content/types/operations/enable_paper_trail_response_body/curl.mdx
   - content/types/operations/enable_paper_trail_response/curl.mdx
+  - content/types/operations/get_pin_request/curl.mdx
+  - content/types/operations/get_pin_errors/curl.mdx
+  - content/types/operations/get_pin_plex_tv_response_body/curl.mdx
+  - content/types/operations/location/curl.mdx
+  - content/types/operations/get_pin_response_body/curl.mdx
+  - content/types/operations/get_pin_response/curl.mdx
+  - content/types/operations/get_token_request/curl.mdx
+  - content/types/operations/get_token_errors/curl.mdx
+  - content/types/operations/get_token_response_body/curl.mdx
+  - content/types/operations/get_token_response/curl.mdx
   - content/types/operations/query_param_type/curl.mdx
   - content/types/operations/smart/curl.mdx
   - content/types/operations/create_playlist_request/curl.mdx
@@ -3167,6 +3258,22 @@ generatedFiles:
   - src/.gen/pages/01-reference/python/resources/playlists/upload_playlist/upload_playlist_content.mdx
   - src/.gen/pages/01-reference/python/resources/playlists/playlists.mdx
   - src/.gen/pages/01-reference/python/resources/playlists/playlists_content.mdx
+  - src/.gen/pages/01-reference/python/resources/plex/tv/get_pin/_header.mdx
+  - src/.gen/pages/01-reference/python/resources/plex/tv/get_pin/_parameters.mdx
+  - src/.gen/pages/01-reference/python/resources/plex/tv/get_pin/_response.mdx
+  - src/.gen/pages/01-reference/python/resources/plex/tv/get_pin/_usage.mdx
+  - src/.gen/pages/01-reference/python/resources/plex/tv/get_pin/get_pin.mdx
+  - src/.gen/pages/01-reference/python/resources/plex/tv/get_pin/get_pin_content.mdx
+  - src/.gen/pages/01-reference/python/resources/plex/tv/get_token/_header.mdx
+  - src/.gen/pages/01-reference/python/resources/plex/tv/get_token/_parameters.mdx
+  - src/.gen/pages/01-reference/python/resources/plex/tv/get_token/_response.mdx
+  - src/.gen/pages/01-reference/python/resources/plex/tv/get_token/_usage.mdx
+  - src/.gen/pages/01-reference/python/resources/plex/tv/get_token/get_token.mdx
+  - src/.gen/pages/01-reference/python/resources/plex/tv/get_token/get_token_content.mdx
+  - src/.gen/pages/01-reference/python/resources/plex/tv/tv.mdx
+  - src/.gen/pages/01-reference/python/resources/plex/tv/tv_content.mdx
+  - src/.gen/pages/01-reference/python/resources/plex/plex.mdx
+  - src/.gen/pages/01-reference/python/resources/plex/plex_content.mdx
   - src/.gen/pages/01-reference/python/resources/search/get_search_results/_header.mdx
   - src/.gen/pages/01-reference/python/resources/search/get_search_results/_parameters.mdx
   - src/.gen/pages/01-reference/python/resources/search/get_search_results/_response.mdx
@@ -3369,6 +3476,10 @@ generatedFiles:
   - src/pages/python/playlists/update_playlist/_meta.json
   - src/pages/python/playlists/upload_playlist/_meta.json
   - src/pages/python/playlists/_meta.json
+  - src/pages/python/plex/tv/get_pin/_meta.json
+  - src/pages/python/plex/tv/get_token/_meta.json
+  - src/pages/python/plex/tv/_meta.json
+  - src/pages/python/plex/_meta.json
   - src/pages/python/search/get_search_results/_meta.json
   - src/pages/python/search/perform_search/_meta.json
   - src/pages/python/search/perform_voice_search/_meta.json
@@ -3635,6 +3746,22 @@ generatedFiles:
   - src/.gen/pages/01-reference/typescript/resources/playlists/upload_playlist/upload_playlist_content.mdx
   - src/.gen/pages/01-reference/typescript/resources/playlists/playlists.mdx
   - src/.gen/pages/01-reference/typescript/resources/playlists/playlists_content.mdx
+  - src/.gen/pages/01-reference/typescript/resources/plex/tv/get_pin/_header.mdx
+  - src/.gen/pages/01-reference/typescript/resources/plex/tv/get_pin/_parameters.mdx
+  - src/.gen/pages/01-reference/typescript/resources/plex/tv/get_pin/_response.mdx
+  - src/.gen/pages/01-reference/typescript/resources/plex/tv/get_pin/_usage.mdx
+  - src/.gen/pages/01-reference/typescript/resources/plex/tv/get_pin/get_pin.mdx
+  - src/.gen/pages/01-reference/typescript/resources/plex/tv/get_pin/get_pin_content.mdx
+  - src/.gen/pages/01-reference/typescript/resources/plex/tv/get_token/_header.mdx
+  - src/.gen/pages/01-reference/typescript/resources/plex/tv/get_token/_parameters.mdx
+  - src/.gen/pages/01-reference/typescript/resources/plex/tv/get_token/_response.mdx
+  - src/.gen/pages/01-reference/typescript/resources/plex/tv/get_token/_usage.mdx
+  - src/.gen/pages/01-reference/typescript/resources/plex/tv/get_token/get_token.mdx
+  - src/.gen/pages/01-reference/typescript/resources/plex/tv/get_token/get_token_content.mdx
+  - src/.gen/pages/01-reference/typescript/resources/plex/tv/tv.mdx
+  - src/.gen/pages/01-reference/typescript/resources/plex/tv/tv_content.mdx
+  - src/.gen/pages/01-reference/typescript/resources/plex/plex.mdx
+  - src/.gen/pages/01-reference/typescript/resources/plex/plex_content.mdx
   - src/.gen/pages/01-reference/typescript/resources/search/get_search_results/_header.mdx
   - src/.gen/pages/01-reference/typescript/resources/search/get_search_results/_parameters.mdx
   - src/.gen/pages/01-reference/typescript/resources/search/get_search_results/_response.mdx
@@ -3837,6 +3964,10 @@ generatedFiles:
   - src/pages/typescript/playlists/update_playlist/_meta.json
   - src/pages/typescript/playlists/upload_playlist/_meta.json
   - src/pages/typescript/playlists/_meta.json
+  - src/pages/typescript/plex/tv/get_pin/_meta.json
+  - src/pages/typescript/plex/tv/get_token/_meta.json
+  - src/pages/typescript/plex/tv/_meta.json
+  - src/pages/typescript/plex/_meta.json
   - src/pages/typescript/search/get_search_results/_meta.json
   - src/pages/typescript/search/perform_search/_meta.json
   - src/pages/typescript/search/perform_voice_search/_meta.json
@@ -4103,6 +4234,22 @@ generatedFiles:
   - src/.gen/pages/01-reference/go/resources/playlists/upload_playlist/upload_playlist_content.mdx
   - src/.gen/pages/01-reference/go/resources/playlists/playlists.mdx
   - src/.gen/pages/01-reference/go/resources/playlists/playlists_content.mdx
+  - src/.gen/pages/01-reference/go/resources/plex/tv/get_pin/_header.mdx
+  - src/.gen/pages/01-reference/go/resources/plex/tv/get_pin/_parameters.mdx
+  - src/.gen/pages/01-reference/go/resources/plex/tv/get_pin/_response.mdx
+  - src/.gen/pages/01-reference/go/resources/plex/tv/get_pin/_usage.mdx
+  - src/.gen/pages/01-reference/go/resources/plex/tv/get_pin/get_pin.mdx
+  - src/.gen/pages/01-reference/go/resources/plex/tv/get_pin/get_pin_content.mdx
+  - src/.gen/pages/01-reference/go/resources/plex/tv/get_token/_header.mdx
+  - src/.gen/pages/01-reference/go/resources/plex/tv/get_token/_parameters.mdx
+  - src/.gen/pages/01-reference/go/resources/plex/tv/get_token/_response.mdx
+  - src/.gen/pages/01-reference/go/resources/plex/tv/get_token/_usage.mdx
+  - src/.gen/pages/01-reference/go/resources/plex/tv/get_token/get_token.mdx
+  - src/.gen/pages/01-reference/go/resources/plex/tv/get_token/get_token_content.mdx
+  - src/.gen/pages/01-reference/go/resources/plex/tv/tv.mdx
+  - src/.gen/pages/01-reference/go/resources/plex/tv/tv_content.mdx
+  - src/.gen/pages/01-reference/go/resources/plex/plex.mdx
+  - src/.gen/pages/01-reference/go/resources/plex/plex_content.mdx
   - src/.gen/pages/01-reference/go/resources/search/get_search_results/_header.mdx
   - src/.gen/pages/01-reference/go/resources/search/get_search_results/_parameters.mdx
   - src/.gen/pages/01-reference/go/resources/search/get_search_results/_response.mdx
@@ -4305,6 +4452,10 @@ generatedFiles:
   - src/pages/go/playlists/update_playlist/_meta.json
   - src/pages/go/playlists/upload_playlist/_meta.json
   - src/pages/go/playlists/_meta.json
+  - src/pages/go/plex/tv/get_pin/_meta.json
+  - src/pages/go/plex/tv/get_token/_meta.json
+  - src/pages/go/plex/tv/_meta.json
+  - src/pages/go/plex/_meta.json
   - src/pages/go/search/get_search_results/_meta.json
   - src/pages/go/search/perform_search/_meta.json
   - src/pages/go/search/perform_voice_search/_meta.json
@@ -4597,6 +4748,24 @@ generatedFiles:
   - src/.gen/pages/01-reference/curl/resources/playlists/upload_playlist/upload_playlist_content.mdx
   - src/.gen/pages/01-reference/curl/resources/playlists/playlists.mdx
   - src/.gen/pages/01-reference/curl/resources/playlists/playlists_content.mdx
+  - src/.gen/pages/01-reference/curl/resources/plex/tv/get_pin/_authentication.mdx
+  - src/.gen/pages/01-reference/curl/resources/plex/tv/get_pin/_header.mdx
+  - src/.gen/pages/01-reference/curl/resources/plex/tv/get_pin/_parameters.mdx
+  - src/.gen/pages/01-reference/curl/resources/plex/tv/get_pin/_response.mdx
+  - src/.gen/pages/01-reference/curl/resources/plex/tv/get_pin/_usage.mdx
+  - src/.gen/pages/01-reference/curl/resources/plex/tv/get_pin/get_pin.mdx
+  - src/.gen/pages/01-reference/curl/resources/plex/tv/get_pin/get_pin_content.mdx
+  - src/.gen/pages/01-reference/curl/resources/plex/tv/get_token/_authentication.mdx
+  - src/.gen/pages/01-reference/curl/resources/plex/tv/get_token/_header.mdx
+  - src/.gen/pages/01-reference/curl/resources/plex/tv/get_token/_parameters.mdx
+  - src/.gen/pages/01-reference/curl/resources/plex/tv/get_token/_response.mdx
+  - src/.gen/pages/01-reference/curl/resources/plex/tv/get_token/_usage.mdx
+  - src/.gen/pages/01-reference/curl/resources/plex/tv/get_token/get_token.mdx
+  - src/.gen/pages/01-reference/curl/resources/plex/tv/get_token/get_token_content.mdx
+  - src/.gen/pages/01-reference/curl/resources/plex/tv/tv.mdx
+  - src/.gen/pages/01-reference/curl/resources/plex/tv/tv_content.mdx
+  - src/.gen/pages/01-reference/curl/resources/plex/plex.mdx
+  - src/.gen/pages/01-reference/curl/resources/plex/plex_content.mdx
   - src/.gen/pages/01-reference/curl/resources/search/get_search_results/_authentication.mdx
   - src/.gen/pages/01-reference/curl/resources/search/get_search_results/_header.mdx
   - src/.gen/pages/01-reference/curl/resources/search/get_search_results/_parameters.mdx
@@ -4810,6 +4979,10 @@ generatedFiles:
   - src/pages/curl/playlists/update_playlist/_meta.json
   - src/pages/curl/playlists/upload_playlist/_meta.json
   - src/pages/curl/playlists/_meta.json
+  - src/pages/curl/plex/tv/get_pin/_meta.json
+  - src/pages/curl/plex/tv/get_token/_meta.json
+  - src/pages/curl/plex/tv/_meta.json
+  - src/pages/curl/plex/_meta.json
   - src/pages/curl/search/get_search_results/_meta.json
   - src/pages/curl/search/perform_search/_meta.json
   - src/pages/curl/search/perform_voice_search/_meta.json
