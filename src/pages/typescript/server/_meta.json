@@ -1,10 +1,10 @@
 {
-  "get_server_capabilities": "Get Server Capabilities",
-  "get_server_preferences": "Get Server Preferences",
   "get_available_clients": "Get Available Clients",
   "get_devices": "Get Devices",
-  "get_server_identity": "Get Server Identity",
   "get_my_plex_account": "Get My Plex Account",
   "get_resized_photo": "Get Resized Photo",
-  "get_server_list": "Get Server List"
+  "get_server_capabilities": "Get Server Capabilities",
+  "get_server_identity": "Get Server Identity",
+  "get_server_list": "Get Server List",
+  "get_server_preferences": "Get Server Preferences"
 }

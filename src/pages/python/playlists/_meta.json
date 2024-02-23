@@ -1,11 +1,11 @@
 {
-  "create_playlist": "Create Playlist",
-  "get_playlists": "Get Playlists",
-  "get_playlist": "Get Playlist",
-  "delete_playlist": "Delete Playlist",
-  "update_playlist": "Update Playlist",
-  "get_playlist_contents": "Get Playlist Contents",
-  "clear_playlist_contents": "Clear Playlist Contents",
   "add_playlist_contents": "Add Playlist Contents",
+  "clear_playlist_contents": "Clear Playlist Contents",
+  "create_playlist": "Create Playlist",
+  "delete_playlist": "Delete Playlist",
+  "get_playlist": "Get Playlist",
+  "get_playlist_contents": "Get Playlist Contents",
+  "get_playlists": "Get Playlists",
+  "update_playlist": "Update Playlist",
   "upload_playlist": "Upload Playlist"
 }

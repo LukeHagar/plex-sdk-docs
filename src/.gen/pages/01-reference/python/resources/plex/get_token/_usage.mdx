@@ -1,0 +1,30 @@
+
+<CH.Code>
+```python GetToken.py
+import plex_api
+
+s = plex_api.PlexAPI(
+    access_token="<YOUR_API_KEY_HERE>",
+)
+
+
+res = s.plex.get_token(pin_id='<value>', x_plex_client_identifier='<value>')
+
+if res.status_code == 200:
+    # handle response
+    pass
+```
+---
+
+```json Example Response
+  {
+    "errors": [
+      {
+        "code": 1000,
+        "message": "X-Plex-Client-Identifier is missing",
+        "status": 400
+      }
+    ]
+  }
+```
+</CH.Code>

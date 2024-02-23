@@ -1,5 +1,5 @@
 {
+  "enable_paper_trail": "Enable Paper Trail",
   "log_line": "Log Line",
-  "log_multi_line": "Log Multi Line",
-  "enable_paper_trail": "Enable Paper Trail"
+  "log_multi_line": "Log Multi Line"
 }

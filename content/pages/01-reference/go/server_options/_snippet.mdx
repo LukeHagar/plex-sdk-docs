@@ -94,12 +94,12 @@ func main() {
 		plexgo.WithSecurity("<YOUR_API_KEY_HERE>"),
 	)
 
-	var xPlexClientIdentifier string = "string"
+	var xPlexClientIdentifier string = "<value>"
 
-	var strong *bool = false
+	var strong *bool = plexgo.Bool(false)
 
 	ctx := context.Background()
-	res, err := s.Plex.Tv.GetPin(ctx, operations.WithServerURL("https://plex.tv/api/v2"), xPlexClientIdentifier, strong)
+	res, err := s.Plex.GetPin(ctx, operations.WithServerURL("https://plex.tv/api/v2"), xPlexClientIdentifier, strong)
 	if err != nil {
 		log.Fatal(err)
 	}

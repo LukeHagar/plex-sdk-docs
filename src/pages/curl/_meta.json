@@ -10,6 +10,7 @@
   },
   "server": "Server",
   "media": "Media",
+  "video": "Video",
   "activities": "Activities",
   "butler": "Butler",
   "hubs": "Hubs",
@@ -19,7 +20,7 @@
   "plex": "Plex",
   "playlists": "Playlists",
   "security": "Security",
+  "statistics": "Statistics",
   "sessions": "Sessions",
-  "updater": "Updater",
-  "video": "Video"
+  "updater": "Updater"
 }

@@ -7,6 +7,7 @@ Handling errors in this SDK should largely match your expectations.  All operati
 
 ```python
 import plex_api
+from plex_api.models import errors
 
 s = plex_api.PlexAPI(
     access_token="<YOUR_API_KEY_HERE>",
@@ -17,10 +18,10 @@ res = None
 try:
     res = s.server.get_server_capabilities()
 except errors.GetServerCapabilitiesResponseBody as e:
-    print(e)  # handle exception
+    # handle exception
     raise(e)
 except errors.SDKError as e:
-    print(e)  # handle exception
+    # handle exception
     raise(e)
 
 if res.object is not None:

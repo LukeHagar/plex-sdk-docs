@@ -1,5 +1,5 @@
 {
-  "get_update_status": "Get Update Status",
+  "apply_updates": "Apply Updates",
   "check_for_updates": "Check For Updates",
-  "apply_updates": "Apply Updates"
+  "get_update_status": "Get Update Status"
 }

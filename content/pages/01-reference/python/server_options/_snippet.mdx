@@ -55,14 +55,13 @@ if res.object is not None:
 The server URL can also be overridden on a per-operation basis, provided a server list was specified for the operation. For example:
 ```python
 import plex_api
-from plex_api.models import operations
 
 s = plex_api.PlexAPI(
     access_token="<YOUR_API_KEY_HERE>",
 )
 
 
-res = s.plex.tv.get_pin(server_url="https://plex.tv/api/v2", x_plex_client_identifier='string', strong=False)
+res = s.plex.get_pin(server_url="https://plex.tv/api/v2", x_plex_client_identifier='<value>', strong=False)
 
 if res.object is not None:
     # handle response

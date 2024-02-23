@@ -1,0 +1,22 @@
+
+<CH.Code>
+```bash Example Request
+curl https://plex.tv/api/v2/pins/<value> \
+--header 'Accept: application/json' \
+--header 'X-Plex-Token: YOUR_API_KEY_HERE' \
+--header 'X-Plex-Client-Identifier: <value>'
+```
+---
+
+```json Example Response
+  {
+    "errors": [
+      {
+        "code": 1000,
+        "message": "X-Plex-Client-Identifier is missing",
+        "status": 400
+      }
+    ]
+  }
+```
+</CH.Code>

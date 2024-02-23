@@ -1,6 +1,6 @@
 {
-  "get_sessions": "Get Sessions",
   "get_session_history": "Get Session History",
+  "get_sessions": "Get Sessions",
   "get_transcode_sessions": "Get Transcode Sessions",
   "stop_transcode_session": "Stop Transcode Session"
 }
