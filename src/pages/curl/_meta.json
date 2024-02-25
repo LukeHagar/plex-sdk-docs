@@ -8,9 +8,7 @@
     "title": "Resources",
     "type": "separator"
   },
-  "server": "Server",
   "media": "Media",
-  "video": "Video",
   "activities": "Activities",
   "butler": "Butler",
   "hubs": "Hubs",
@@ -19,7 +17,10 @@
   "log": "Log",
   "plex": "Plex",
   "playlists": "Playlists",
+  "authentication": "Authentication",
   "security": "Security",
+  "server": "Server",
+  "video": "Video",
   "statistics": "Statistics",
   "sessions": "Sessions",
   "updater": "Updater"
