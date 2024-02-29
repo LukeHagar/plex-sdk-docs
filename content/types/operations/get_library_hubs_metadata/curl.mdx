@@ -131,32 +131,85 @@
 ---
 ##### `media` _array (optional)_
 <br/>
-**Example:** `[{"Part":[{"audioProfile":"lc","container":"mp4","duration":6017237,"file":"/movies/Tangled (2010)/Tangled (2010) Bluray-1080p.mp4","has64bitOffsets":false,"id":38247,"key":"/library/parts/38247/1589412494/file.mp4","optimizedForStreaming":true,"size":1545647447,"videoProfile":"high"}],"aspectRatio":1.78,"audioChannels":2,"audioCodec":"aac","audioProfile":"lc","bitrate":2051,"container":"mp4","duration":6017237,"has64bitOffsets":false,"height":1080,"id":38247,"optimizedForStreaming":1,"videoCodec":"h264","videoFrameRate":"24p","videoProfile":"high","videoResolution":"1080","width":1920}]`
+**Example:** `[
+{
+"id": 38247,
+"duration": 6017237,
+"bitrate": 2051,
+"width": 1920,
+"height": 1080,
+"aspectRatio": 1.78,
+"audioChannels": 2,
+"audioCodec": "aac",
+"videoCodec": "h264",
+"videoResolution": "1080",
+"container": "mp4",
+"videoFrameRate": "24p",
+"optimizedForStreaming": 1,
+"audioProfile": "lc",
+"has64bitOffsets": false,
+"videoProfile": "high",
+"Part": [
+{
+"id": 38247,
+"key": "/library/parts/38247/1589412494/file.mp4",
+"duration": 6017237,
+"file": "/movies/Tangled (2010)/Tangled (2010) Bluray-1080p.mp4",
+"size": 1545647447,
+"audioProfile": "lc",
+"container": "mp4",
+"has64bitOffsets": false,
+"optimizedForStreaming": true,
+"videoProfile": "high"
+}
+]
+}
+]`
 
 ---
 ##### `genre` _array (optional)_
 <br/>
-**Example:** `[{"tag":"Animation"}]`
+**Example:** `[
+{
+"tag": "Animation"
+}
+]`
 
 ---
 ##### `country` _array (optional)_
 <br/>
-**Example:** `[{"tag":"United States of America"}]`
+**Example:** `[
+{
+"tag": "United States of America"
+}
+]`
 
 ---
 ##### `director` _array (optional)_
 <br/>
-**Example:** `[{"tag":"Nathan Greno"}]`
+**Example:** `[
+{
+"tag": "Nathan Greno"
+}
+]`
 
 ---
 ##### `role` _array (optional)_
 <br/>
-**Example:** `[{"tag":"Donna Murphy"}]`
+**Example:** `[
+{
+"tag": "Donna Murphy"
+}
+]`
 
 ---
 ##### `writer` _array (optional)_
 <br/>
-**Example:** `[{"tag":"Wilhelm Grimm"}]`
+**Example:** `[
+{
+"tag": "Wilhelm Grimm"
+}
+]`
 
 ---
 ##### `skipCount` _integer (32-bit) (optional)_
