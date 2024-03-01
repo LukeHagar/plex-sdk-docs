@@ -85,14 +85,11 @@ package main
 import (
 	"context"
 	"github.com/LukeHagar/plexgo"
-	"github.com/LukeHagar/plexgo/models/components"
 	"log"
 )
 
 func main() {
-	s := plexgo.New(
-		plexgo.WithSecurity("<YOUR_API_KEY_HERE>"),
-	)
+	s := plexgo.New()
 
 	var xPlexClientIdentifier string = "<value>"
 
