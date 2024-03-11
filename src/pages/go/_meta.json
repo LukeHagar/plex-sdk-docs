@@ -24,7 +24,7 @@
   "log": "Log",
   "plex": "Plex",
   "playlists": "Playlists",
-  "security": "Security",
+  "authentication": "Authentication",
   "statistics": "Statistics",
   "sessions": "Sessions",
   "updater": "Updater"
