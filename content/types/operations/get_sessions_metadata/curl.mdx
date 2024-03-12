@@ -169,7 +169,54 @@ import Labels from "/src/lib/labels";
 ---
 ##### `media` _array (optional)_
 <br/>
-**Example:** `[{"Part":[{"Stream":[{"albumGain":"-12.94","albumPeak":"1.000000","albumRange":"4.751014","audioChannelLayout":"stereo","bitDepth":16,"bitrate":1014,"channels":2,"codec":"flac","displayTitle":"FLAC (Stereo)","extendedDisplayTitle":"FLAC (Stereo)","gain":"-12.94","id":"352487","index":0,"location":"direct","loudness":"-5.94","lra":"1.74","peak":"1.000000","samplingRate":44100,"selected":true,"streamType":2}],"container":"flac","decision":"directplay","duration":186240,"file":"/music/Green Day/Saviors (2024)/Green Day - Saviors - 01 - The American Dream Is Killing Me.flac","hasThumbnail":"1","id":"130625","key":"/library/parts/130625/1705543268/file.flac","selected":true,"size":23644000}],"audioChannels":2,"audioCodec":"flac","bitrate":1014,"container":"flac","duration":186240,"id":"130355","selected":true}]`
+**Example:** `[
+{
+"audioChannels": 2,
+"audioCodec": "flac",
+"bitrate": 1014,
+"container": "flac",
+"duration": 186240,
+"id": "130355",
+"selected": true,
+"Part": [
+{
+"container": "flac",
+"duration": 186240,
+"file": "/music/Green Day/Saviors (2024)/Green Day - Saviors - 01 - The American Dream Is Killing Me.flac",
+"hasThumbnail": "1",
+"id": "130625",
+"key": "/library/parts/130625/1705543268/file.flac",
+"size": 23644000,
+"decision": "directplay",
+"selected": true,
+"Stream": [
+{
+"albumGain": "-12.94",
+"albumPeak": "1.000000",
+"albumRange": "4.751014",
+"audioChannelLayout": "stereo",
+"bitDepth": 16,
+"bitrate": 1014,
+"channels": 2,
+"codec": "flac",
+"displayTitle": "FLAC (Stereo)",
+"extendedDisplayTitle": "FLAC (Stereo)",
+"gain": "-12.94",
+"id": "352487",
+"index": 0,
+"loudness": "-5.94",
+"lra": "1.74",
+"peak": "1.000000",
+"samplingRate": 44100,
+"selected": true,
+"streamType": 2,
+"location": "direct"
+}
+]
+}
+]
+}
+]`
 
 ---
 ##### `user` _object (optional)_
