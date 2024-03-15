@@ -1,0 +1,33 @@
+
+<CH.Code>
+```python GetTransientToken.py
+import plex_api
+from plex_api.models import operations
+
+s = plex_api.PlexAPI(
+    access_token="<YOUR_API_KEY_HERE>",
+)
+
+
+res = s.authentication.get_transient_token(type=operations.GetTransientTokenQueryParamType.DELEGATION, scope=operations.Scope.ALL)
+
+if res is not None:
+    # handle response
+    pass
+
+```
+---
+
+```json Example Response
+  {
+    "errors": [
+      {
+        "code": 1001,
+        "message": "User could not be authenticated",
+        "status": 401
+      }
+    ],
+    "HttpMeta": {}
+  }
+```
+</CH.Code>
