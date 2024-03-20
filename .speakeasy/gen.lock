@@ -1,19 +1,19 @@
 lockVersion: 2.0.0
 id: 7fc33f51-d778-40ef-b094-90972c025d39
 management:
-  docChecksum: 278d186496d83d5830ba4870f8cad39d
+  docChecksum: e34dac84738ebf2d447ea2b9055a6eeb
   docVersion: 0.0.3
   speakeasyVersion: internal
-  generationVersion: 2.269.0
-  releaseVersion: 0.4.0
-  configChecksum: 36a0bdf87b71fb5e9239da9afe59ff45
+  generationVersion: 2.283.1
+  releaseVersion: 0.4.1
+  configChecksum: f2ba99db334f17f348fbdb9a81234410
   published: true
 features:
   docs:
-    constsAndDefaults: 0.1.0
-    core: 1.26.2
+    constsAndDefaults: 0.1.1
+    core: 1.26.3
     flattening: 0.1.0
-    globalSecurity: 0.1.1
+    globalSecurity: 0.1.4
     globalServerURLs: 0.1.1
     methodServerURLs: 0.1.1
     nameOverrides: 0.1.0
@@ -34,6 +34,17 @@ generatedFiles:
   - content/pages/01-reference/go/resources/activities/get_server_activities/_response.mdx
   - content/pages/01-reference/go/resources/activities/get_server_activities/_usage.mdx
   - content/pages/01-reference/go/resources/activities/get_server_activities/get_server_activities.mdx
+  - content/pages/01-reference/go/resources/authentication/authentication.mdx
+  - content/pages/01-reference/go/resources/authentication/get_source_connection_information/_header.mdx
+  - content/pages/01-reference/go/resources/authentication/get_source_connection_information/_parameters.mdx
+  - content/pages/01-reference/go/resources/authentication/get_source_connection_information/_response.mdx
+  - content/pages/01-reference/go/resources/authentication/get_source_connection_information/_usage.mdx
+  - content/pages/01-reference/go/resources/authentication/get_source_connection_information/get_source_connection_information.mdx
+  - content/pages/01-reference/go/resources/authentication/get_transient_token/_header.mdx
+  - content/pages/01-reference/go/resources/authentication/get_transient_token/_parameters.mdx
+  - content/pages/01-reference/go/resources/authentication/get_transient_token/_response.mdx
+  - content/pages/01-reference/go/resources/authentication/get_transient_token/_usage.mdx
+  - content/pages/01-reference/go/resources/authentication/get_transient_token/get_transient_token.mdx
   - content/pages/01-reference/go/resources/butler/butler.mdx
   - content/pages/01-reference/go/resources/butler/get_butler_tasks/_header.mdx
   - content/pages/01-reference/go/resources/butler/get_butler_tasks/_parameters.mdx
@@ -232,17 +243,6 @@ generatedFiles:
   - content/pages/01-reference/go/resources/search/perform_voice_search/_usage.mdx
   - content/pages/01-reference/go/resources/search/perform_voice_search/perform_voice_search.mdx
   - content/pages/01-reference/go/resources/search/search.mdx
-  - content/pages/01-reference/go/resources/security/get_source_connection_information/_header.mdx
-  - content/pages/01-reference/go/resources/security/get_source_connection_information/_parameters.mdx
-  - content/pages/01-reference/go/resources/security/get_source_connection_information/_response.mdx
-  - content/pages/01-reference/go/resources/security/get_source_connection_information/_usage.mdx
-  - content/pages/01-reference/go/resources/security/get_source_connection_information/get_source_connection_information.mdx
-  - content/pages/01-reference/go/resources/security/get_transient_token/_header.mdx
-  - content/pages/01-reference/go/resources/security/get_transient_token/_parameters.mdx
-  - content/pages/01-reference/go/resources/security/get_transient_token/_response.mdx
-  - content/pages/01-reference/go/resources/security/get_transient_token/_usage.mdx
-  - content/pages/01-reference/go/resources/security/get_transient_token/get_transient_token.mdx
-  - content/pages/01-reference/go/resources/security/security.mdx
   - content/pages/01-reference/go/resources/server/get_available_clients/_header.mdx
   - content/pages/01-reference/go/resources/server/get_available_clients/_parameters.mdx
   - content/pages/01-reference/go/resources/server/get_available_clients/_response.mdx
@@ -356,6 +356,17 @@ generatedFiles:
   - content/pages/01-reference/python/resources/activities/get_server_activities/_response.mdx
   - content/pages/01-reference/python/resources/activities/get_server_activities/_usage.mdx
   - content/pages/01-reference/python/resources/activities/get_server_activities/get_server_activities.mdx
+  - content/pages/01-reference/python/resources/authentication/authentication.mdx
+  - content/pages/01-reference/python/resources/authentication/get_source_connection_information/_header.mdx
+  - content/pages/01-reference/python/resources/authentication/get_source_connection_information/_parameters.mdx
+  - content/pages/01-reference/python/resources/authentication/get_source_connection_information/_response.mdx
+  - content/pages/01-reference/python/resources/authentication/get_source_connection_information/_usage.mdx
+  - content/pages/01-reference/python/resources/authentication/get_source_connection_information/get_source_connection_information.mdx
+  - content/pages/01-reference/python/resources/authentication/get_transient_token/_header.mdx
+  - content/pages/01-reference/python/resources/authentication/get_transient_token/_parameters.mdx
+  - content/pages/01-reference/python/resources/authentication/get_transient_token/_response.mdx
+  - content/pages/01-reference/python/resources/authentication/get_transient_token/_usage.mdx
+  - content/pages/01-reference/python/resources/authentication/get_transient_token/get_transient_token.mdx
   - content/pages/01-reference/python/resources/butler/butler.mdx
   - content/pages/01-reference/python/resources/butler/get_butler_tasks/_header.mdx
   - content/pages/01-reference/python/resources/butler/get_butler_tasks/_parameters.mdx
@@ -554,17 +565,6 @@ generatedFiles:
   - content/pages/01-reference/python/resources/search/perform_voice_search/_usage.mdx
   - content/pages/01-reference/python/resources/search/perform_voice_search/perform_voice_search.mdx
   - content/pages/01-reference/python/resources/search/search.mdx
-  - content/pages/01-reference/python/resources/security/get_source_connection_information/_header.mdx
-  - content/pages/01-reference/python/resources/security/get_source_connection_information/_parameters.mdx
-  - content/pages/01-reference/python/resources/security/get_source_connection_information/_response.mdx
-  - content/pages/01-reference/python/resources/security/get_source_connection_information/_usage.mdx
-  - content/pages/01-reference/python/resources/security/get_source_connection_information/get_source_connection_information.mdx
-  - content/pages/01-reference/python/resources/security/get_transient_token/_header.mdx
-  - content/pages/01-reference/python/resources/security/get_transient_token/_parameters.mdx
-  - content/pages/01-reference/python/resources/security/get_transient_token/_response.mdx
-  - content/pages/01-reference/python/resources/security/get_transient_token/_usage.mdx
-  - content/pages/01-reference/python/resources/security/get_transient_token/get_transient_token.mdx
-  - content/pages/01-reference/python/resources/security/security.mdx
   - content/pages/01-reference/python/resources/server/get_available_clients/_header.mdx
   - content/pages/01-reference/python/resources/server/get_available_clients/_parameters.mdx
   - content/pages/01-reference/python/resources/server/get_available_clients/_response.mdx
@@ -678,6 +678,17 @@ generatedFiles:
   - content/pages/01-reference/typescript/resources/activities/get_server_activities/_response.mdx
   - content/pages/01-reference/typescript/resources/activities/get_server_activities/_usage.mdx
   - content/pages/01-reference/typescript/resources/activities/get_server_activities/get_server_activities.mdx
+  - content/pages/01-reference/typescript/resources/authentication/authentication.mdx
+  - content/pages/01-reference/typescript/resources/authentication/get_source_connection_information/_header.mdx
+  - content/pages/01-reference/typescript/resources/authentication/get_source_connection_information/_parameters.mdx
+  - content/pages/01-reference/typescript/resources/authentication/get_source_connection_information/_response.mdx
+  - content/pages/01-reference/typescript/resources/authentication/get_source_connection_information/_usage.mdx
+  - content/pages/01-reference/typescript/resources/authentication/get_source_connection_information/get_source_connection_information.mdx
+  - content/pages/01-reference/typescript/resources/authentication/get_transient_token/_header.mdx
+  - content/pages/01-reference/typescript/resources/authentication/get_transient_token/_parameters.mdx
+  - content/pages/01-reference/typescript/resources/authentication/get_transient_token/_response.mdx
+  - content/pages/01-reference/typescript/resources/authentication/get_transient_token/_usage.mdx
+  - content/pages/01-reference/typescript/resources/authentication/get_transient_token/get_transient_token.mdx
   - content/pages/01-reference/typescript/resources/butler/butler.mdx
   - content/pages/01-reference/typescript/resources/butler/get_butler_tasks/_header.mdx
   - content/pages/01-reference/typescript/resources/butler/get_butler_tasks/_parameters.mdx
@@ -876,17 +887,6 @@ generatedFiles:
   - content/pages/01-reference/typescript/resources/search/perform_voice_search/_usage.mdx
   - content/pages/01-reference/typescript/resources/search/perform_voice_search/perform_voice_search.mdx
   - content/pages/01-reference/typescript/resources/search/search.mdx
-  - content/pages/01-reference/typescript/resources/security/get_source_connection_information/_header.mdx
-  - content/pages/01-reference/typescript/resources/security/get_source_connection_information/_parameters.mdx
-  - content/pages/01-reference/typescript/resources/security/get_source_connection_information/_response.mdx
-  - content/pages/01-reference/typescript/resources/security/get_source_connection_information/_usage.mdx
-  - content/pages/01-reference/typescript/resources/security/get_source_connection_information/get_source_connection_information.mdx
-  - content/pages/01-reference/typescript/resources/security/get_transient_token/_header.mdx
-  - content/pages/01-reference/typescript/resources/security/get_transient_token/_parameters.mdx
-  - content/pages/01-reference/typescript/resources/security/get_transient_token/_response.mdx
-  - content/pages/01-reference/typescript/resources/security/get_transient_token/_usage.mdx
-  - content/pages/01-reference/typescript/resources/security/get_transient_token/get_transient_token.mdx
-  - content/pages/01-reference/typescript/resources/security/security.mdx
   - content/pages/01-reference/typescript/resources/server/get_available_clients/_header.mdx
   - content/pages/01-reference/typescript/resources/server/get_available_clients/_parameters.mdx
   - content/pages/01-reference/typescript/resources/server/get_available_clients/_response.mdx
@@ -984,6 +984,8 @@ generatedFiles:
   - content/pages/01-reference/typescript/resources/video/video.mdx
   - content/pages/01-reference/typescript/security_options/security_options.mdx
   - content/pages/01-reference/typescript/server_options/server_options.mdx
+  - content/types/models/components/http_metadata/go.mdx
+  - content/types/models/components/http_metadata/python.mdx
   - content/types/models/components/http_metadata/typescript.mdx
   - content/types/models/components/security/go.mdx
   - content/types/models/components/security/python.mdx
@@ -2492,19 +2494,19 @@ generatedFiles:
   - content/pages/01-reference/curl/resources/playlists/upload_playlist/_parameters.mdx
   - content/pages/01-reference/curl/resources/playlists/upload_playlist/_usage.mdx
   - content/pages/01-reference/curl/resources/playlists/upload_playlist/_header.mdx
-  - content/pages/01-reference/curl/resources/security/security.mdx
-  - content/pages/01-reference/curl/resources/security/get_transient_token/get_transient_token.mdx
-  - content/pages/01-reference/curl/resources/security/get_transient_token/_authentication.mdx
-  - content/pages/01-reference/curl/resources/security/get_transient_token/_response.mdx
-  - content/pages/01-reference/curl/resources/security/get_transient_token/_parameters.mdx
-  - content/pages/01-reference/curl/resources/security/get_transient_token/_usage.mdx
-  - content/pages/01-reference/curl/resources/security/get_transient_token/_header.mdx
-  - content/pages/01-reference/curl/resources/security/get_source_connection_information/get_source_connection_information.mdx
-  - content/pages/01-reference/curl/resources/security/get_source_connection_information/_authentication.mdx
-  - content/pages/01-reference/curl/resources/security/get_source_connection_information/_response.mdx
-  - content/pages/01-reference/curl/resources/security/get_source_connection_information/_parameters.mdx
-  - content/pages/01-reference/curl/resources/security/get_source_connection_information/_usage.mdx
-  - content/pages/01-reference/curl/resources/security/get_source_connection_information/_header.mdx
+  - content/pages/01-reference/curl/resources/authentication/authentication.mdx
+  - content/pages/01-reference/curl/resources/authentication/get_transient_token/get_transient_token.mdx
+  - content/pages/01-reference/curl/resources/authentication/get_transient_token/_authentication.mdx
+  - content/pages/01-reference/curl/resources/authentication/get_transient_token/_response.mdx
+  - content/pages/01-reference/curl/resources/authentication/get_transient_token/_parameters.mdx
+  - content/pages/01-reference/curl/resources/authentication/get_transient_token/_usage.mdx
+  - content/pages/01-reference/curl/resources/authentication/get_transient_token/_header.mdx
+  - content/pages/01-reference/curl/resources/authentication/get_source_connection_information/get_source_connection_information.mdx
+  - content/pages/01-reference/curl/resources/authentication/get_source_connection_information/_authentication.mdx
+  - content/pages/01-reference/curl/resources/authentication/get_source_connection_information/_response.mdx
+  - content/pages/01-reference/curl/resources/authentication/get_source_connection_information/_parameters.mdx
+  - content/pages/01-reference/curl/resources/authentication/get_source_connection_information/_usage.mdx
+  - content/pages/01-reference/curl/resources/authentication/get_source_connection_information/_header.mdx
   - content/pages/01-reference/curl/resources/statistics/statistics.mdx
   - content/pages/01-reference/curl/resources/statistics/get_statistics/get_statistics.mdx
   - content/pages/01-reference/curl/resources/statistics/get_statistics/_authentication.mdx
@@ -3097,6 +3099,20 @@ generatedFiles:
   - src/.gen/pages/01-reference/python/resources/activities/get_server_activities/get_server_activities_content.mdx
   - src/.gen/pages/01-reference/python/resources/activities/activities.mdx
   - src/.gen/pages/01-reference/python/resources/activities/activities_content.mdx
+  - src/.gen/pages/01-reference/python/resources/authentication/get_source_connection_information/_header.mdx
+  - src/.gen/pages/01-reference/python/resources/authentication/get_source_connection_information/_parameters.mdx
+  - src/.gen/pages/01-reference/python/resources/authentication/get_source_connection_information/_response.mdx
+  - src/.gen/pages/01-reference/python/resources/authentication/get_source_connection_information/_usage.mdx
+  - src/.gen/pages/01-reference/python/resources/authentication/get_source_connection_information/get_source_connection_information.mdx
+  - src/.gen/pages/01-reference/python/resources/authentication/get_source_connection_information/get_source_connection_information_content.mdx
+  - src/.gen/pages/01-reference/python/resources/authentication/get_transient_token/_header.mdx
+  - src/.gen/pages/01-reference/python/resources/authentication/get_transient_token/_parameters.mdx
+  - src/.gen/pages/01-reference/python/resources/authentication/get_transient_token/_response.mdx
+  - src/.gen/pages/01-reference/python/resources/authentication/get_transient_token/_usage.mdx
+  - src/.gen/pages/01-reference/python/resources/authentication/get_transient_token/get_transient_token.mdx
+  - src/.gen/pages/01-reference/python/resources/authentication/get_transient_token/get_transient_token_content.mdx
+  - src/.gen/pages/01-reference/python/resources/authentication/authentication.mdx
+  - src/.gen/pages/01-reference/python/resources/authentication/authentication_content.mdx
   - src/.gen/pages/01-reference/python/resources/butler/get_butler_tasks/_header.mdx
   - src/.gen/pages/01-reference/python/resources/butler/get_butler_tasks/_parameters.mdx
   - src/.gen/pages/01-reference/python/resources/butler/get_butler_tasks/_response.mdx
@@ -3341,20 +3357,6 @@ generatedFiles:
   - src/.gen/pages/01-reference/python/resources/search/perform_voice_search/perform_voice_search_content.mdx
   - src/.gen/pages/01-reference/python/resources/search/search.mdx
   - src/.gen/pages/01-reference/python/resources/search/search_content.mdx
-  - src/.gen/pages/01-reference/python/resources/security/get_source_connection_information/_header.mdx
-  - src/.gen/pages/01-reference/python/resources/security/get_source_connection_information/_parameters.mdx
-  - src/.gen/pages/01-reference/python/resources/security/get_source_connection_information/_response.mdx
-  - src/.gen/pages/01-reference/python/resources/security/get_source_connection_information/_usage.mdx
-  - src/.gen/pages/01-reference/python/resources/security/get_source_connection_information/get_source_connection_information.mdx
-  - src/.gen/pages/01-reference/python/resources/security/get_source_connection_information/get_source_connection_information_content.mdx
-  - src/.gen/pages/01-reference/python/resources/security/get_transient_token/_header.mdx
-  - src/.gen/pages/01-reference/python/resources/security/get_transient_token/_parameters.mdx
-  - src/.gen/pages/01-reference/python/resources/security/get_transient_token/_response.mdx
-  - src/.gen/pages/01-reference/python/resources/security/get_transient_token/_usage.mdx
-  - src/.gen/pages/01-reference/python/resources/security/get_transient_token/get_transient_token.mdx
-  - src/.gen/pages/01-reference/python/resources/security/get_transient_token/get_transient_token_content.mdx
-  - src/.gen/pages/01-reference/python/resources/security/security.mdx
-  - src/.gen/pages/01-reference/python/resources/security/security_content.mdx
   - src/.gen/pages/01-reference/python/resources/server/get_available_clients/_header.mdx
   - src/.gen/pages/01-reference/python/resources/server/get_available_clients/_parameters.mdx
   - src/.gen/pages/01-reference/python/resources/server/get_available_clients/_response.mdx
@@ -3492,6 +3494,9 @@ generatedFiles:
   - src/pages/python/activities/cancel_server_activities/_meta.json
   - src/pages/python/activities/get_server_activities/_meta.json
   - src/pages/python/activities/_meta.json
+  - src/pages/python/authentication/get_source_connection_information/_meta.json
+  - src/pages/python/authentication/get_transient_token/_meta.json
+  - src/pages/python/authentication/_meta.json
   - src/pages/python/butler/get_butler_tasks/_meta.json
   - src/pages/python/butler/start_all_tasks/_meta.json
   - src/pages/python/butler/start_task/_meta.json
@@ -3533,17 +3538,11 @@ generatedFiles:
   - src/pages/python/playlists/_meta.json
   - src/pages/python/plex/get_pin/_meta.json
   - src/pages/python/plex/get_token/_meta.json
-  - src/pages/python/plex/tv/get_pin/_meta.json
-  - src/pages/python/plex/tv/get_token/_meta.json
-  - src/pages/python/plex/tv/_meta.json
   - src/pages/python/plex/_meta.json
   - src/pages/python/search/get_search_results/_meta.json
   - src/pages/python/search/perform_search/_meta.json
   - src/pages/python/search/perform_voice_search/_meta.json
   - src/pages/python/search/_meta.json
-  - src/pages/python/security/get_source_connection_information/_meta.json
-  - src/pages/python/security/get_transient_token/_meta.json
-  - src/pages/python/security/_meta.json
   - src/pages/python/server/get_available_clients/_meta.json
   - src/pages/python/server/get_devices/_meta.json
   - src/pages/python/server/get_my_plex_account/_meta.json
@@ -3595,6 +3594,20 @@ generatedFiles:
   - src/.gen/pages/01-reference/typescript/resources/activities/get_server_activities/get_server_activities_content.mdx
   - src/.gen/pages/01-reference/typescript/resources/activities/activities.mdx
   - src/.gen/pages/01-reference/typescript/resources/activities/activities_content.mdx
+  - src/.gen/pages/01-reference/typescript/resources/authentication/get_source_connection_information/_header.mdx
+  - src/.gen/pages/01-reference/typescript/resources/authentication/get_source_connection_information/_parameters.mdx
+  - src/.gen/pages/01-reference/typescript/resources/authentication/get_source_connection_information/_response.mdx
+  - src/.gen/pages/01-reference/typescript/resources/authentication/get_source_connection_information/_usage.mdx
+  - src/.gen/pages/01-reference/typescript/resources/authentication/get_source_connection_information/get_source_connection_information.mdx
+  - src/.gen/pages/01-reference/typescript/resources/authentication/get_source_connection_information/get_source_connection_information_content.mdx
+  - src/.gen/pages/01-reference/typescript/resources/authentication/get_transient_token/_header.mdx
+  - src/.gen/pages/01-reference/typescript/resources/authentication/get_transient_token/_parameters.mdx
+  - src/.gen/pages/01-reference/typescript/resources/authentication/get_transient_token/_response.mdx
+  - src/.gen/pages/01-reference/typescript/resources/authentication/get_transient_token/_usage.mdx
+  - src/.gen/pages/01-reference/typescript/resources/authentication/get_transient_token/get_transient_token.mdx
+  - src/.gen/pages/01-reference/typescript/resources/authentication/get_transient_token/get_transient_token_content.mdx
+  - src/.gen/pages/01-reference/typescript/resources/authentication/authentication.mdx
+  - src/.gen/pages/01-reference/typescript/resources/authentication/authentication_content.mdx
   - src/.gen/pages/01-reference/typescript/resources/butler/get_butler_tasks/_header.mdx
   - src/.gen/pages/01-reference/typescript/resources/butler/get_butler_tasks/_parameters.mdx
   - src/.gen/pages/01-reference/typescript/resources/butler/get_butler_tasks/_response.mdx
@@ -3839,20 +3852,6 @@ generatedFiles:
   - src/.gen/pages/01-reference/typescript/resources/search/perform_voice_search/perform_voice_search_content.mdx
   - src/.gen/pages/01-reference/typescript/resources/search/search.mdx
   - src/.gen/pages/01-reference/typescript/resources/search/search_content.mdx
-  - src/.gen/pages/01-reference/typescript/resources/security/get_source_connection_information/_header.mdx
-  - src/.gen/pages/01-reference/typescript/resources/security/get_source_connection_information/_parameters.mdx
-  - src/.gen/pages/01-reference/typescript/resources/security/get_source_connection_information/_response.mdx
-  - src/.gen/pages/01-reference/typescript/resources/security/get_source_connection_information/_usage.mdx
-  - src/.gen/pages/01-reference/typescript/resources/security/get_source_connection_information/get_source_connection_information.mdx
-  - src/.gen/pages/01-reference/typescript/resources/security/get_source_connection_information/get_source_connection_information_content.mdx
-  - src/.gen/pages/01-reference/typescript/resources/security/get_transient_token/_header.mdx
-  - src/.gen/pages/01-reference/typescript/resources/security/get_transient_token/_parameters.mdx
-  - src/.gen/pages/01-reference/typescript/resources/security/get_transient_token/_response.mdx
-  - src/.gen/pages/01-reference/typescript/resources/security/get_transient_token/_usage.mdx
-  - src/.gen/pages/01-reference/typescript/resources/security/get_transient_token/get_transient_token.mdx
-  - src/.gen/pages/01-reference/typescript/resources/security/get_transient_token/get_transient_token_content.mdx
-  - src/.gen/pages/01-reference/typescript/resources/security/security.mdx
-  - src/.gen/pages/01-reference/typescript/resources/security/security_content.mdx
   - src/.gen/pages/01-reference/typescript/resources/server/get_available_clients/_header.mdx
   - src/.gen/pages/01-reference/typescript/resources/server/get_available_clients/_parameters.mdx
   - src/.gen/pages/01-reference/typescript/resources/server/get_available_clients/_response.mdx
@@ -3990,6 +3989,9 @@ generatedFiles:
   - src/pages/typescript/activities/cancel_server_activities/_meta.json
   - src/pages/typescript/activities/get_server_activities/_meta.json
   - src/pages/typescript/activities/_meta.json
+  - src/pages/typescript/authentication/get_source_connection_information/_meta.json
+  - src/pages/typescript/authentication/get_transient_token/_meta.json
+  - src/pages/typescript/authentication/_meta.json
   - src/pages/typescript/butler/get_butler_tasks/_meta.json
   - src/pages/typescript/butler/start_all_tasks/_meta.json
   - src/pages/typescript/butler/start_task/_meta.json
@@ -4031,17 +4033,11 @@ generatedFiles:
   - src/pages/typescript/playlists/_meta.json
   - src/pages/typescript/plex/get_pin/_meta.json
   - src/pages/typescript/plex/get_token/_meta.json
-  - src/pages/typescript/plex/tv/get_pin/_meta.json
-  - src/pages/typescript/plex/tv/get_token/_meta.json
-  - src/pages/typescript/plex/tv/_meta.json
   - src/pages/typescript/plex/_meta.json
   - src/pages/typescript/search/get_search_results/_meta.json
   - src/pages/typescript/search/perform_search/_meta.json
   - src/pages/typescript/search/perform_voice_search/_meta.json
   - src/pages/typescript/search/_meta.json
-  - src/pages/typescript/security/get_source_connection_information/_meta.json
-  - src/pages/typescript/security/get_transient_token/_meta.json
-  - src/pages/typescript/security/_meta.json
   - src/pages/typescript/server/get_available_clients/_meta.json
   - src/pages/typescript/server/get_devices/_meta.json
   - src/pages/typescript/server/get_my_plex_account/_meta.json
@@ -4093,6 +4089,20 @@ generatedFiles:
   - src/.gen/pages/01-reference/go/resources/activities/get_server_activities/get_server_activities_content.mdx
   - src/.gen/pages/01-reference/go/resources/activities/activities.mdx
   - src/.gen/pages/01-reference/go/resources/activities/activities_content.mdx
+  - src/.gen/pages/01-reference/go/resources/authentication/get_source_connection_information/_header.mdx
+  - src/.gen/pages/01-reference/go/resources/authentication/get_source_connection_information/_parameters.mdx
+  - src/.gen/pages/01-reference/go/resources/authentication/get_source_connection_information/_response.mdx
+  - src/.gen/pages/01-reference/go/resources/authentication/get_source_connection_information/_usage.mdx
+  - src/.gen/pages/01-reference/go/resources/authentication/get_source_connection_information/get_source_connection_information.mdx
+  - src/.gen/pages/01-reference/go/resources/authentication/get_source_connection_information/get_source_connection_information_content.mdx
+  - src/.gen/pages/01-reference/go/resources/authentication/get_transient_token/_header.mdx
+  - src/.gen/pages/01-reference/go/resources/authentication/get_transient_token/_parameters.mdx
+  - src/.gen/pages/01-reference/go/resources/authentication/get_transient_token/_response.mdx
+  - src/.gen/pages/01-reference/go/resources/authentication/get_transient_token/_usage.mdx
+  - src/.gen/pages/01-reference/go/resources/authentication/get_transient_token/get_transient_token.mdx
+  - src/.gen/pages/01-reference/go/resources/authentication/get_transient_token/get_transient_token_content.mdx
+  - src/.gen/pages/01-reference/go/resources/authentication/authentication.mdx
+  - src/.gen/pages/01-reference/go/resources/authentication/authentication_content.mdx
   - src/.gen/pages/01-reference/go/resources/butler/get_butler_tasks/_header.mdx
   - src/.gen/pages/01-reference/go/resources/butler/get_butler_tasks/_parameters.mdx
   - src/.gen/pages/01-reference/go/resources/butler/get_butler_tasks/_response.mdx
@@ -4337,20 +4347,6 @@ generatedFiles:
   - src/.gen/pages/01-reference/go/resources/search/perform_voice_search/perform_voice_search_content.mdx
   - src/.gen/pages/01-reference/go/resources/search/search.mdx
   - src/.gen/pages/01-reference/go/resources/search/search_content.mdx
-  - src/.gen/pages/01-reference/go/resources/security/get_source_connection_information/_header.mdx
-  - src/.gen/pages/01-reference/go/resources/security/get_source_connection_information/_parameters.mdx
-  - src/.gen/pages/01-reference/go/resources/security/get_source_connection_information/_response.mdx
-  - src/.gen/pages/01-reference/go/resources/security/get_source_connection_information/_usage.mdx
-  - src/.gen/pages/01-reference/go/resources/security/get_source_connection_information/get_source_connection_information.mdx
-  - src/.gen/pages/01-reference/go/resources/security/get_source_connection_information/get_source_connection_information_content.mdx
-  - src/.gen/pages/01-reference/go/resources/security/get_transient_token/_header.mdx
-  - src/.gen/pages/01-reference/go/resources/security/get_transient_token/_parameters.mdx
-  - src/.gen/pages/01-reference/go/resources/security/get_transient_token/_response.mdx
-  - src/.gen/pages/01-reference/go/resources/security/get_transient_token/_usage.mdx
-  - src/.gen/pages/01-reference/go/resources/security/get_transient_token/get_transient_token.mdx
-  - src/.gen/pages/01-reference/go/resources/security/get_transient_token/get_transient_token_content.mdx
-  - src/.gen/pages/01-reference/go/resources/security/security.mdx
-  - src/.gen/pages/01-reference/go/resources/security/security_content.mdx
   - src/.gen/pages/01-reference/go/resources/server/get_available_clients/_header.mdx
   - src/.gen/pages/01-reference/go/resources/server/get_available_clients/_parameters.mdx
   - src/.gen/pages/01-reference/go/resources/server/get_available_clients/_response.mdx
@@ -4488,6 +4484,9 @@ generatedFiles:
   - src/pages/go/activities/cancel_server_activities/_meta.json
   - src/pages/go/activities/get_server_activities/_meta.json
   - src/pages/go/activities/_meta.json
+  - src/pages/go/authentication/get_source_connection_information/_meta.json
+  - src/pages/go/authentication/get_transient_token/_meta.json
+  - src/pages/go/authentication/_meta.json
   - src/pages/go/butler/get_butler_tasks/_meta.json
   - src/pages/go/butler/start_all_tasks/_meta.json
   - src/pages/go/butler/start_task/_meta.json
@@ -4529,17 +4528,11 @@ generatedFiles:
   - src/pages/go/playlists/_meta.json
   - src/pages/go/plex/get_pin/_meta.json
   - src/pages/go/plex/get_token/_meta.json
-  - src/pages/go/plex/tv/get_pin/_meta.json
-  - src/pages/go/plex/tv/get_token/_meta.json
-  - src/pages/go/plex/tv/_meta.json
   - src/pages/go/plex/_meta.json
   - src/pages/go/search/get_search_results/_meta.json
   - src/pages/go/search/perform_search/_meta.json
   - src/pages/go/search/perform_voice_search/_meta.json
   - src/pages/go/search/_meta.json
-  - src/pages/go/security/get_source_connection_information/_meta.json
-  - src/pages/go/security/get_transient_token/_meta.json
-  - src/pages/go/security/_meta.json
   - src/pages/go/server/get_available_clients/_meta.json
   - src/pages/go/server/get_devices/_meta.json
   - src/pages/go/server/get_my_plex_account/_meta.json
@@ -4584,6 +4577,22 @@ generatedFiles:
   - src/.gen/pages/01-reference/curl/resources/activities/get_server_activities/get_server_activities_content.mdx
   - src/.gen/pages/01-reference/curl/resources/activities/activities.mdx
   - src/.gen/pages/01-reference/curl/resources/activities/activities_content.mdx
+  - src/.gen/pages/01-reference/curl/resources/authentication/get_source_connection_information/_authentication.mdx
+  - src/.gen/pages/01-reference/curl/resources/authentication/get_source_connection_information/_header.mdx
+  - src/.gen/pages/01-reference/curl/resources/authentication/get_source_connection_information/_parameters.mdx
+  - src/.gen/pages/01-reference/curl/resources/authentication/get_source_connection_information/_response.mdx
+  - src/.gen/pages/01-reference/curl/resources/authentication/get_source_connection_information/_usage.mdx
+  - src/.gen/pages/01-reference/curl/resources/authentication/get_source_connection_information/get_source_connection_information.mdx
+  - src/.gen/pages/01-reference/curl/resources/authentication/get_source_connection_information/get_source_connection_information_content.mdx
+  - src/.gen/pages/01-reference/curl/resources/authentication/get_transient_token/_authentication.mdx
+  - src/.gen/pages/01-reference/curl/resources/authentication/get_transient_token/_header.mdx
+  - src/.gen/pages/01-reference/curl/resources/authentication/get_transient_token/_parameters.mdx
+  - src/.gen/pages/01-reference/curl/resources/authentication/get_transient_token/_response.mdx
+  - src/.gen/pages/01-reference/curl/resources/authentication/get_transient_token/_usage.mdx
+  - src/.gen/pages/01-reference/curl/resources/authentication/get_transient_token/get_transient_token.mdx
+  - src/.gen/pages/01-reference/curl/resources/authentication/get_transient_token/get_transient_token_content.mdx
+  - src/.gen/pages/01-reference/curl/resources/authentication/authentication.mdx
+  - src/.gen/pages/01-reference/curl/resources/authentication/authentication_content.mdx
   - src/.gen/pages/01-reference/curl/resources/butler/get_butler_tasks/_authentication.mdx
   - src/.gen/pages/01-reference/curl/resources/butler/get_butler_tasks/_header.mdx
   - src/.gen/pages/01-reference/curl/resources/butler/get_butler_tasks/_parameters.mdx
@@ -4866,22 +4875,6 @@ generatedFiles:
   - src/.gen/pages/01-reference/curl/resources/search/perform_voice_search/perform_voice_search_content.mdx
   - src/.gen/pages/01-reference/curl/resources/search/search.mdx
   - src/.gen/pages/01-reference/curl/resources/search/search_content.mdx
-  - src/.gen/pages/01-reference/curl/resources/security/get_source_connection_information/_authentication.mdx
-  - src/.gen/pages/01-reference/curl/resources/security/get_source_connection_information/_header.mdx
-  - src/.gen/pages/01-reference/curl/resources/security/get_source_connection_information/_parameters.mdx
-  - src/.gen/pages/01-reference/curl/resources/security/get_source_connection_information/_response.mdx
-  - src/.gen/pages/01-reference/curl/resources/security/get_source_connection_information/_usage.mdx
-  - src/.gen/pages/01-reference/curl/resources/security/get_source_connection_information/get_source_connection_information.mdx
-  - src/.gen/pages/01-reference/curl/resources/security/get_source_connection_information/get_source_connection_information_content.mdx
-  - src/.gen/pages/01-reference/curl/resources/security/get_transient_token/_authentication.mdx
-  - src/.gen/pages/01-reference/curl/resources/security/get_transient_token/_header.mdx
-  - src/.gen/pages/01-reference/curl/resources/security/get_transient_token/_parameters.mdx
-  - src/.gen/pages/01-reference/curl/resources/security/get_transient_token/_response.mdx
-  - src/.gen/pages/01-reference/curl/resources/security/get_transient_token/_usage.mdx
-  - src/.gen/pages/01-reference/curl/resources/security/get_transient_token/get_transient_token.mdx
-  - src/.gen/pages/01-reference/curl/resources/security/get_transient_token/get_transient_token_content.mdx
-  - src/.gen/pages/01-reference/curl/resources/security/security.mdx
-  - src/.gen/pages/01-reference/curl/resources/security/security_content.mdx
   - src/.gen/pages/01-reference/curl/resources/server/get_available_clients/_authentication.mdx
   - src/.gen/pages/01-reference/curl/resources/server/get_available_clients/_header.mdx
   - src/.gen/pages/01-reference/curl/resources/server/get_available_clients/_parameters.mdx
@@ -5026,6 +5019,9 @@ generatedFiles:
   - src/pages/curl/activities/cancel_server_activities/_meta.json
   - src/pages/curl/activities/get_server_activities/_meta.json
   - src/pages/curl/activities/_meta.json
+  - src/pages/curl/authentication/get_source_connection_information/_meta.json
+  - src/pages/curl/authentication/get_transient_token/_meta.json
+  - src/pages/curl/authentication/_meta.json
   - src/pages/curl/butler/get_butler_tasks/_meta.json
   - src/pages/curl/butler/start_all_tasks/_meta.json
   - src/pages/curl/butler/start_task/_meta.json
@@ -5067,9 +5063,6 @@ generatedFiles:
   - src/pages/curl/playlists/_meta.json
   - src/pages/curl/plex/get_pin/_meta.json
   - src/pages/curl/plex/get_token/_meta.json
-  - src/pages/curl/plex/tv/get_pin/_meta.json
-  - src/pages/curl/plex/tv/get_token/_meta.json
-  - src/pages/curl/plex/tv/_meta.json
   - src/pages/curl/plex/_meta.json
   - src/pages/curl/search/get_search_results/_meta.json
   - src/pages/curl/search/perform_search/_meta.json
